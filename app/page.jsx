@@ -7,6 +7,7 @@ export default function Home() {
       {/* className="flex flex-col items-center justify-between p-16" */}
       <Header />
       <NavBar />
+      Home page
     </main>
   );
 }
