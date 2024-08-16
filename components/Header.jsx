@@ -1,28 +1,20 @@
 import React from "react"
-import Link from "next/link";
+import { FaSearch } from "react-icons/fa";
+import { FaMicrophone } from "react-icons/fa6";
+
+
 const Header = () => {
-    return(
-        <header>
-        <div className="flex"></div>
-        <ul className="flex space-x-8">
-          <Link href={"/"}>
-            <li>Home</li>
-          </Link>
-          <Link href={"/about"}>
-            <li>About</li>
-          </Link>
-          <Link href={"/activities"}>
-            <li>Activities</li>
-          </Link>
-          <Link href={"/organisation"}>
-            <li>Organisation</li>
-          </Link>
-          <Link href={"/contact"}>
-            <li>Contact us</li>
-          </Link>
-        </ul>
-        </header>
-    );
+  return (
+    <header className="flex flex-wrap items-center justify-between w-full p-4 bg-blue-100">
+      <div className="flex">DeTA</div>
+      <div className="flex items-center justify-between">
+        <input className="flex rounded-full bg-blue-50 p-2 px-4 mr-4" placeholder="Search in DeTA" />
+        <FaSearch /><FaMicrophone />
+
+      </div>
+
+    </header>
+  );
 }
 
 export default Header;

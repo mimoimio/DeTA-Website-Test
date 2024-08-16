@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
+import NavBar from "@/components/NavBar"
 export default function Contact() {
   return (
-    <main className="flex flex-col items-center justify-between p-16">
+    <main className="bg-blue-50">
       <Header/>
+      <NavBar/>
       Contact page
     </main>
   );
