@@ -1,14 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
-    font-family: 'Oswald';
-    src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2") format("woff2"),
-         url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff") format("woff"),
-         url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  main{
-    font-family: Oswald;
-  }
+  font-family: 'Oswald';
+  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2") format("woff2"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff") format("woff"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  font-family: Oswald;
+  height: fit-content;
+  background: #8ee;
+}

@@ -2,7 +2,8 @@ import Image from 'next/image';
 
 const DisplayProgram = ({ title, desc }) => {
   return (
-    <div className='relative w-full hover:scale-105 duration-150 rounded-sm'>
+    // hover:scale-105
+    <div className='relative w-full hover:shadow-lg hover:-translate-y-1 duration-150 rounded-sm'>
       <div className="relative w-full h-64 bg-transparent" >
         <Image
           src="/images/Deta.png" // Replace with your image path
