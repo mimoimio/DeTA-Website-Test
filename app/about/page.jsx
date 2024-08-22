@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Card from "@/components/Card";
 import Link from "next/link";
 export default function About() {
+  const bgDesc = "Our \"Origin\""
+  const whatWeDoDesc = "Lot\'s of Stuff"
   return (
     <main>
       <Header />
@@ -14,7 +16,7 @@ export default function About() {
       <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
         <div className="pb-4">
           <p className="text-4xl">Our Background</p>
-          <p className="text-slate-500 text-2xl">Our "Origin"</p>
+          <p className="text-slate-500 text-2xl">{bgDesc}</p>
         </div>
         <div className='flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 '>
           <p className="text-4xl mb-4">Wealth, Fame, Power</p>
@@ -31,7 +33,7 @@ export default function About() {
       <div className="flex flex-col bg-white p-4 gap-4 lg:p-16 lg:gap-16">
         <div className="pb-4">
           <p className="text-4xl">What We Do in DeTA</p>
-          <p className="text-slate-500 text-2xl">Lot's of Stuff</p>
+          <p className="text-slate-500 text-2xl">{whatWeDoDesc}</p>
         </div>
 
         <div className='flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 '>
