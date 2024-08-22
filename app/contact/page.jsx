@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 export default function Contact() {
   return (
-    <main className="bg-blue-50">
+    <main>
       <Header/>
       Contact page
     </main>

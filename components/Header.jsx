@@ -22,7 +22,7 @@ const Header = () => {
           <Pill address="gallery" title="Gallery"></Pill>
           <Pill address="contact" title="Contact Us"></Pill>
 
-          <Link href={"/"} className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
+          <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"} target="_blank" className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
             <li>Register Now</li>
           </Link>
         </ul>

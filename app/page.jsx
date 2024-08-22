@@ -38,7 +38,6 @@ export default function Home() {
           />
           <button className="bg-slate-300 h-min p-4 hover:bg-slate-500 duration-150 rounded-full">{biggerthan}</button>
         </div>
-
       </div>
 
       <div className="flex items-center bg-none flex-col w-full p-16">
@@ -48,7 +47,7 @@ export default function Home() {
         </div>
         <div className="flex justify-between gap-10 items-center">
           <Link href={"about"} className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl" >Know More</Link>
-          <Link href={""} className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl">Register Now</Link>
+          <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"} target="_blank" className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl">Register Now</Link>
         </div>
       </div>
 
