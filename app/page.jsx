@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Image from "next/image";
-import Perk from "@/components/Perk";
+import Card from "@/components/Card";
 import Link from "next/link";
 
 const lessthan = "<"
@@ -11,14 +11,14 @@ export default function Home() {
       {/*  bg-blue-50 flex flex-col w-full */}
       <Header />
       <div className="flex justify-center p-16">
-        <div className="flex items-center">
-          <Image src="/images/Deta.png" className="mix-blend-multiply"
-            width={800}
-            height={800}
+        <div className="flex flex-col items-center">
+          <Image src="/images/Deta.png" className="mix-blend-multiply "
+            width={600}
+            height={600}
           />
           <div className="flex flex-col items-center">
-            <p className="ml-20 text-9xl">DeTA</p>
-            <p className="ml-20 text-2xl">Developer Tanah Air</p>
+            <p className="text-9xl">DeTA</p>
+            <p className="text-2xl">Developer Tanah Air</p>
           </div>
         </div>
       </div>
@@ -58,14 +58,14 @@ export default function Home() {
           <p className="text-slate-500 text-2xl">“What will I get if I joined DeTA?”</p>
         </div>
         <div className="grid grid-cols-3 gap-16 w-full p-10">
-          <Perk/>
-          <Perk/>
-          <Perk/>
-          <Perk/>
-          <Perk/>
-          <Perk/>
-          <Perk/>
-          <Perk/>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
 
       </div>
