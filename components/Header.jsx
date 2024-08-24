@@ -12,6 +12,7 @@ const Header = () => {
         height={40}
         className="scale-[1.6] mix-blend-multiply mx-6"
       />
+      <div className="text-slate-300">Mior branch</div>
 
       <div className="flex flex-wrap items-center justify-center bg-white">
         <ul className="flex space-x-8">
