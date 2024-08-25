@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Card from "@/components/Card";
 import Link from "next/link";
@@ -11,8 +12,8 @@ export default function Home() {
       {/*  bg-blue-50 flex flex-col w-full */}
       <Header />
       <div className="flex justify-center p-16">
-        <div className="flex flex-col items-center">
-          <Image src="/images/Deta.png" className="mix-blend-multiply "
+        <div className="flex flex-row items-center">
+          <Image src="/images/Deta.png" className="mix-blend-multiply scale-[1.3] "
             width={600}
             height={600}
           />
@@ -68,6 +69,7 @@ export default function Home() {
         </div>
 
       </div>
+      <Footer/>
     </main>
   );
 }
