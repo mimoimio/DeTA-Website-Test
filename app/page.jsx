@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Card from "@/components/Card";
 import Link from "next/link";
@@ -57,17 +58,23 @@ export default function Home() {
           <p className="text-slate-500 text-2xl">“What will I get if I joined DeTA?”</p>
         </div>
         <div className="grid grid-cols-3 gap-16 w-full p-10">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card title={"Enhance Website Skill"} desc={"Introduce to you about the website skills!"}/>
+          <Card title={"Knowledge"} desc={"Many valuable knowledge can be gained!"}/>
+          <Card title={"Knowledge"} desc={"Many valuable knowledge can be gained!"}/>
+          <Card title={"Coding Mobility Enhancement"} desc={"You will get lots of chances to become a coding expertise!"}/>
+          <Card title={"Knowledge"} desc={"Many valuable knowledge can be gained!"}/>
+          <Card title={"Knowledge"} desc={"Many valuable knowledge can be gained!"}/>
+          <Card title={"Free Programming Skill"} desc={"Adding more new skills in programming!"}/>
+          <Card title={"Coding Language Improvement"} desc={"Improve your understanding in every coding languages!"}/>
+          <Card title={"Software Development Skill"} desc={"You can learn many things about software development with us!"}/>
+          <Card title={"Free Programming Skill"} desc={"Adding more new skills in programming!"}/>
+          <Card title={"Lifetime Project"} desc={"You can do many projects to show your developer's performance!"}/>
+          <Card title={"Developing Experiences"} desc={"Get to know many developers and website expertises!"}/>
         </div>
 
       </div>
+
+      <Footer />
     </main>
   );
 }
