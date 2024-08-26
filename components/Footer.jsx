@@ -5,14 +5,14 @@ import Image from "next/image";
 import FooterButton from "./FooterButton";
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap justify-between w-full p-8 bg-slate-200 text-gray-800">
+    <footer className="flex flex-wrap justify-between w-full px-[20%] py-8 bg-slate-50 text-gray-800">
       <div className="flex flex-col items-start mb-4 space-y-4">
         <Image
           src="/images/Deta.png"
           width={40}
           height={40}
           alt="DeTA Logo"
-          className="transform scale-150"
+          className="transform scale-150 mix-blend-multiply"
         />
         <a href="mailto:deta@gmail.com" className="flex items-center">
           <MdOutlineEmail className="text-2xl" />
