@@ -8,8 +8,8 @@ export default function Gallery() {
       <div className="flex justify-center p-16">
         <div className="flex items-center">
           <div className="flex flex-col items-center">
-            <p className="ml-20 text-9xl">Gallery</p>
-            <p className="ml-20 text-lg">For the memories within DeTA</p>
+            <p className="text-7xl">Gallery</p>
+            <p className="text-lg">For the memories within DeTA</p>
           </div>
         </div>
       </div>
