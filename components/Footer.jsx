@@ -1,48 +1,71 @@
-import React from "react"
+import React from "react";
 import Pill from "./Pill";
 import { MdOutlineEmail } from "react-icons/md";
 import Image from "next/image";
-import Link from "next/link";
+import FooterButton from "./FooterButton";
 const Footer = () => {
   return (
-    <footer className="flex flex-wrap items-center justify-between w-full p-11 bg-slate-200">
-        <div>
+    <footer className="flex flex-wrap justify-between w-full p-8 bg-slate-200 text-gray-800">
+      <div className="flex flex-col items-start mb-4 space-y-4">
         <Image
-        src={"/images/Deta.png"}
-        width={40}
-        height={40}
-        className="scale-[1.6] mix-blend-multiply mx-6"
-      />
-            <MdOutlineEmail />
-        </div>
+          src="/images/Deta.png"
+          width={40}
+          height={40}
+          alt="DeTA Logo"
+          className="transform scale-150"
+        />
+        <a href="mailto:deta@gmail.com" className="flex items-center">
+          <MdOutlineEmail className="text-2xl" />
+          <span className="ml-2">deta@gmail.com</span>
+        </a>
+      </div>
 
-        <div>
-                <p className="font-bold">About DeTA</p>
-                <br />
-                <h6>Home</h6>
-                <h6>About</h6>
-                <h6>Background</h6>
-        </div>
+      <div className="flex flex-col mb-4">
+        <p className="font-bold text-lg mb-2">About DeTA</p>
+        <ul className="flex flex-col space-y-1">
+          <FooterButton address="" title="Home" />
+          <FooterButton address="about" title="About" />
+          <FooterButton address="about" title="Background" />
+        </ul>
+      </div>
 
-        <div>
-        <p className="font-bold">Our programs</p>
-                <br />
-                <h6>Hackathon</h6>
-                <h6>Meetup</h6>
-                <h6>Study Group</h6>
-                <h6>Alumni Talk</h6>
-                <h6>Workshop</h6>
-        </div>
+      <div className="flex flex-col mb-4">
+        <p className="font-bold text-lg mb-2">Our Programs</p>
+        <nav className="flex flex-col space-y-1">
+          <a href="#" className="hover:underline">
+            Hackathon
+          </a>
+          <a href="#" className="hover:underline">
+            Meetup
+          </a>
+          <a href="#" className="hover:underline">
+            Study Group
+          </a>
+          <a href="#" className="hover:underline">
+            Alumni Talk
+          </a>
+          <a href="#" className="hover:underline">
+            Workshop
+          </a>
+        </nav>
+      </div>
 
-        <div>
-        <p className="font-bold">Organisation</p>
-                <br />
-                <h6>The Team</h6>
-                <h6>Register in DeTA</h6>
-                <h6>Contact Us</h6>
-        </div>
+      <div className="flex flex-col mb-4">
+        <p className="font-bold text-lg mb-2">Organization</p>
+        <nav className="flex flex-col space-y-1">
+          <a href="#" className="hover:underline">
+            The Team
+          </a>
+          <a href="#" className="hover:underline">
+            Register in DeTA
+          </a>
+          <a href="#" className="hover:underline">
+            Contact Us
+          </a>
+        </nav>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;

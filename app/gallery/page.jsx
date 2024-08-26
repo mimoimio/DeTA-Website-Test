@@ -1,9 +1,10 @@
 import Header from "@/components/Header";
 import GalleryDisplay from "@/components/GalleryDisplay";
+import Footer from "@/components/Footer";
 export default function Gallery() {
   return (
     <main>
-      <Header/>
+      <Header />
       <div className="flex justify-center p-16">
         <div className="flex items-center">
           <div className="flex flex-col items-center">
@@ -25,6 +26,7 @@ export default function Gallery() {
         <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
         <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
       </div>
+      <Footer />
     </main>
   );
 }
