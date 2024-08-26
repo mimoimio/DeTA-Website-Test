@@ -13,9 +13,7 @@ export default function Home() {
       <Header />
       <div className="flex justify-center p-16">
         <div className="flex flex-col items-center">
-          <Image
-            src="/images/Deta.png"
-            className="mix-blend-multiply "
+          <Image src="/images/Deta.png" className="mix-blend-multiply "
             width={600}
             height={600}
           />
@@ -139,7 +137,7 @@ export default function Home() {
           />
         </div>
       </div>
-      
+
       <Footer />
     </main>
   );
