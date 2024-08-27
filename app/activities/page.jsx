@@ -65,6 +65,7 @@ export default function Activities() {
         {/* Cards */}
         <div className="grid grid-cols-2 px-[10%]">
           <ActivityCard title="Workshop" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
+          <ActivityCard title="Study Group" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
           <ActivityCard title="Hackathon" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
           <ActivityCard title="Alumni Talk" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
           <ActivityCard title="Meetup" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />

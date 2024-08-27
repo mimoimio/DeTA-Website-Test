@@ -6,7 +6,7 @@ export default function Contact() {
     <main>
       <Header />
       <div>
-        <h1 className="text-9xl text-center">Contact Us</h1>
+        <h1 className="text-7xl text-center">Contact Us</h1>
         <h4 className="text-2xl text-center">Through</h4>
       </div>
 
@@ -20,19 +20,19 @@ export default function Contact() {
               <h5 className="text-xl text-end">DeTA@gmail.com</h5>
             </div>
           </div>
+
           <div className="flex justify-center">
-            <Link href={"https://mail.google.com/"}>
-              <button className="px-36 py-2 mb-10 bg-slate-800 hover:bg-slate-600 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
+            <Link href="#sendmessage">
+              <div className="px-36 py-2 mb-10 bg-slate-800 hover:bg-slate-600 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
                 Send a Message Now!
-              </button>
+              </div>
             </Link>
           </div>
         </div>
       </div>
 
-      <div>
-        <h1 className="text-9xl text-center">Send a Message Now</h1>
-        <h4 className="text-2xl text-center">Through</h4>
+      <div id="sendmessage">
+        <h1 className="text-7xl text-center">Send a Message Now</h1>
       </div>
 
       <div className="w-1/2 h-screen mx-auto bg-white p-10 rounded-lg mt-10 mb-12">

@@ -57,16 +57,11 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-between gap-10 items-center">
-          <Link
-            href={"about"}
-            className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
-          >
+          <Link href={"about"} className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl">
             Know More
           </Link>
           <Link
-            href={
-              "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
-            }
+            href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"}
             target="_blank"
             className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
           >
@@ -82,7 +77,7 @@ export default function Home() {
             “What will I get if I joined DeTA?”
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-16 w-full p-10">
+        <div className="grid grid-cols-3 gap-16 w-full px-[10%]">
           <Card
             title={"Enhance Website Skill"}
             desc={"Introduce to you about the website skills!"}
@@ -92,20 +87,8 @@ export default function Home() {
             desc={"Many valuable knowledge can be gained!"}
           />
           <Card
-            title={"Knowledge"}
-            desc={"Many valuable knowledge can be gained!"}
-          />
-          <Card
             title={"Coding Mobility Enhancement"}
             desc={"You will get lots of chances to become a coding expertise!"}
-          />
-          <Card
-            title={"Knowledge"}
-            desc={"Many valuable knowledge can be gained!"}
-          />
-          <Card
-            title={"Knowledge"}
-            desc={"Many valuable knowledge can be gained!"}
           />
           <Card
             title={"Free Programming Skill"}
@@ -117,19 +100,12 @@ export default function Home() {
           />
           <Card
             title={"Software Development Skill"}
-            desc={
-              "You can learn many things about software development with us!"
-            }
-          />
-          <Card
-            title={"Free Programming Skill"}
-            desc={"Adding more new skills in programming!"}
+            desc={"You can learn many things about software development with us!"}
           />
           <Card
             title={"Lifetime Project"}
             desc={
-              "You can do many projects to show your developer's performance!"
-            }
+              "You can do many projects to show your developer's performance"}
           />
           <Card
             title={"Developing Experiences"}
