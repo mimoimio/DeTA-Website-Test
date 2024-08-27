@@ -61,7 +61,7 @@ export default function Home() {
         <div className="flex justify-between gap-10 items-center">
           <Link
             href={"about"}
-            className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
+            className="bg-slate-50 h-min p-4 hover:bg-slate-950 duration-150 hover:text-white rounded-xl"
           >
             Know More
           </Link>
@@ -70,7 +70,7 @@ export default function Home() {
               "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
             }
             target="_blank"
-            className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
+            className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-400 duration-150 hover:text-black rounded-xl"
           >
             Register Now
           </Link>
