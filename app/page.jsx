@@ -11,48 +11,33 @@ export default function Home() {
     <main>
       {/*  bg-blue-50 flex flex-col w-full */}
       <Header />
-      <div className="flex justify-center p-16">
-        <div className="flex flex-col items-center">
-          <Image src="/images/Deta.png" className="mix-blend-multiply "
-            width={600}
-            height={600}
-          />
-          <div className="flex flex-col items-center">
-            <p className="text-9xl">DeTA</p>
-            <p className="text-2xl">Developer Tanah Air</p>
-          </div>
+      <div className="flex-col justify-center justify-items-center items-center mx-auto container p-16">
+        <Image src="/images/Deta.png" className="mix-blend-multiply m-auto" width={600} height={600} />
+        <div className="flex flex-col items-center ">
+          <p className="text-9xl">DeTA</p>
+          <p className="text-2xl">Developer Tanah Air</p>
         </div>
       </div>
 
-      <div className="flex justify-center bg-white flex-col w-full p-16">
+      <div className="flex justify-center mx-auto container bg-white flex-col w-full p-4 lg:p-16">
         <div className="pb-16">
-          <p className="text-4xl">Our recent activities</p>
-          <p className="text-slate-500 text-2xl">
-            Catch up to our latest events
-          </p>
+          <p className="text-2xl lg:text-4xl">Our recent activities</p>
+          <p className="text-slate-500 lg:text-2xl">Catch up to our latest events</p>
         </div>
-        <div className="flex justify-between gap-10 items-center">
-          <button className="bg-slate-300 h-min p-4 hover:bg-slate-500 duration-150 rounded-full">
-            {lessthan}
-          </button>
-          <Image
-            src={"/images/Deta.png"}
-            width={1000}
-            height={500}
-            className="w-full object-cover h-[500px] shadow-lg rounded-lg"
-          />
-          <button className="bg-slate-300 h-min p-4 hover:bg-slate-500 duration-150 rounded-full">
-            {biggerthan}
-          </button>
+
+        <div className="flex justify-between lg:gap-10 items-center">
+          <button className="bg-slate-300 h-min p-4 hover:bg-slate-500 duration-150 rounded-full">{lessthan}</button>
+          <Image src={"/images/Deta.png"} width={1000} height={500} className="w-full object-cover lg:h-[500px] shadow-lg rounded-lg" />
+          <button className="bg-slate-300 h-min p-4 hover:bg-slate-500 duration-150 rounded-full">{biggerthan}</button>
         </div>
       </div>
 
-      <div className="flex items-center bg-none flex-col w-full p-16">
-        <div className="pb-16 ">
-          <p className="text-4xl text-center">
+      <div className="flex items-center justify-center mx-auto container bg-none flex-col w-full p-2 lg:p-16">
+        <div className="pb-10 lg:pb-16 ">
+          <p className="lg:text-4xl text-center">
             Interested in web or software development?
           </p>
-          <p className="drop-shadow-md text-9xl text-center ">
+          <p className="text-4xl lg:text-9xl drop-shadow-md text-center ">
             DeTA is the community for you!
           </p>
         </div>
@@ -70,14 +55,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center bg-white flex-col w-full p-16">
+      <div className="flex justify-center mx-auto container bg-white flex-col w-full p-4 lg:p-16">
         <div className="pb-16">
-          <p className="text-4xl">Membership Perks</p>
-          <p className="text-slate-500 text-2xl">
+          <p className="text-2xl lg:text-4xl">Membership Perks</p>
+          <p className="text-slate-500 lg:text-2xl">
             “What will I get if I joined DeTA?”
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-16 w-full px-[10%]">
+        <div className="lg:grid lg:grid-cols-3 gap-16 w-full px-[10%]">
           <Card
             title={"Enhance Website Skill"}
             desc={"Introduce to you about the website skills!"}

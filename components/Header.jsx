@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
   return (
-    <header className="flex flex-wrap items-center justify-between w-full p-4 bg-white">
+    <header className="flex flex-col lg:flex-wrap lg:flex-row container m-auto justify-center items-center lg:justify-between w-full p-4 bg-white">
       <Link href={"/"}>
         <Image
           src={"/images/Deta.png"}
@@ -14,8 +14,8 @@ const Header = () => {
         />
       </Link>
 
-      <div className="flex flex-wrap items-center justify-center bg-white">
-        <ul className="flex space-x-8">
+      <div className="flex items-center bg-white ">
+        <ul className="grid grid-cols-3 gap-2 lg:flex lg:flex-wrap lg:space-x-8 p-2">
           <Pill address="" title="Home"></Pill>
           <Pill address="about" title="About"></Pill>
           <Pill address="activities" title="Activities"></Pill>
@@ -24,12 +24,9 @@ const Header = () => {
           <Pill address="contact" title="Contact Us"></Pill>
 
           <Link
-            href={
-              "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
-            }
+            href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"}
             target="_blank"
-            className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1"
-          >
+            className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
             <li>Register Now</li>
           </Link>
         </ul>
