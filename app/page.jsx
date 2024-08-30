@@ -11,11 +11,11 @@ export default function Home() {
     <main>
       {/*  bg-blue-50 flex flex-col w-full */}
       <Header />
-      <div className="flex-col justify-center justify-items-center items-center mx-auto container p-16">
-        <Image src="/images/Deta.png" className="mix-blend-multiply m-auto" width={600} height={600} />
+      <div className="flex-col justify-center justify-items-center items-center mx-auto container p-8">
+        <Image src="/images/Deta.png" className="mix-blend-multiply m-auto scale-110" width={600} height={600} />
         <div className="flex flex-col items-center ">
-          <p className="text-9xl">DeTA</p>
-          <p className="text-2xl">Developer Tanah Air</p>
+          <p className="text-5xl lg:text-9xl">DeTA</p>
+          <p className="text-xl lg:text-2xl">Developer Tanah Air</p>
         </div>
       </div>
 
