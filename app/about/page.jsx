@@ -7,6 +7,7 @@ export default function About() {
   const whatWeDoDesc = "Lot's of Stuff";
   return (
     <main>
+      {/* mention about DeTA is in UIAM */}
       <Header />
       <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
         <h1 className="text-7xl">Community for Developers</h1>
