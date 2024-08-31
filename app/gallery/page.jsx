@@ -15,7 +15,7 @@ export default function Gallery() {
           </div>
         </div>
         <div className="grid grid-cols-3 gap-16 w-full p-10">
-          <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
+          <GalleryDisplay title="Gambar 1" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczPAB1lzyBQP7r9aJmZaRNh-xeSPQ-SC6VKE4UulBqDcpo0f3BmYTRg3FdGYboXmOXU7GTcd3qmCLOEMOasrjE4GXAXkjcbUS5llji-q5T20JJO6JO1N5g1ey0A3ost3Dt1Z8Ol6iFSscbAVYXEUiCxLhg=w1260-h945-s-no-gm?authuser=0"></GalleryDisplay>
           <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
           <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
           <GalleryDisplay title="Gambar 1" desc="Description"></GalleryDisplay>
