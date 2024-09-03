@@ -10,11 +10,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
+  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
+}
 html{
   scroll-behavior: smooth;
 }
 main {
   font-family: Oswald;
+  /* font-family: "Comic Sans MS"; */
   height: fit-content;
   background: #bcf;
 }
