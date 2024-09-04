@@ -35,34 +35,39 @@ const RecentActivities = () => {
             </div>
             
             <div className="flex flex-col items-center">
-                    <div className="flex justify-between lg:gap-10 items-center">
-                        <button onClick={handlePrev} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
-                            &lt;
-                        </button>
+                <div className="flex justify-between lg:gap-10 items-center">
+                    <button onClick={handlePrev} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
+                        &lt;
+                    </button>
 
-                        <Image
-                            src={images[currentIndex]}
-                            width={1000}
-                            height={500}
-                            className= "object-cover w-[250px] md:w-[500px] lg:w-[1000px] h-[200px] md:h-[500px] shadow-lg rounded-lg"
-                            alt="Activity Image"
-                        />
-
-                        <button onClick={handleNext} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
-                            &gt;
-                        </button>
-                    </div>
-
-                    <div className="flex justify-center mt-4 space-x-2">
-                        {images.map((_, index) => (
-                            <button
+                    <div className="relative w-[250px] md:w-[500px] lg:w-[1000px] h-[200px] md:h-[500px]">
+                        {images.map((src, index) => (
+                            <Image
                                 key={index}
-                                onClick={() => handleDotClick(index)}
-                                className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-blue-600' : 'bg-gray-300'}`}
+                                src={src}
+                                width={1000}
+                                height={500}
+                                className={`absolute inset-0 w-full h-full object-cover shadow-lg rounded-lg transition-opacity duration-500 ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
+                                alt="Activity Image"
                             />
                         ))}
                     </div>
+
+                    <button onClick={handleNext} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
+                        &gt;
+                    </button>
                 </div>
+
+                <div className="flex justify-center mt-4 space-x-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handleDotClick(index)}
+                            className={`h-3 w-3 rounded-full ${currentIndex === index ? 'bg-blue-600' : 'bg-gray-300'}`}
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };

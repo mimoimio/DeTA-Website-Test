@@ -11,13 +11,13 @@ export default function About() {
       <Header />
       <div className="mx-auto container">
         <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-          <h1 className="text-7xl">Community for Developers</h1>
-          <h2 className="text-3xl flex-wrap lg:mx-[26rem] text-center">
+          <h1 className="text-5xl lg:text-7xl">Community for Developers</h1>
+          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
             DeTA is a community _______________________ ___ __________ ___
             __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
             __________ ___
           </h2>
-          <h2 className="text-3xl flex-wrap lg:mx-[26rem] text-center">
+          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
             Our objectives are _______________________ ___ __________ ___
             __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
             __________ ___
@@ -25,12 +25,12 @@ export default function About() {
         </div>
         <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
           <div className="pb-4">
-            <p className="text-4xl">Our Background</p>
-            <p className="text-slate-500 text-2xl">{bgDesc}</p>
+            <p className="text-2xl lg:text-4xl">Our Background</p>
+            <p className="text-slate-500 lg:text-2xl">{bgDesc}</p>
           </div>
           <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-            <p className="text-4xl mb-4">Wealth, Fame, Power</p>
-            <p className="text-slate-500 text-2xl">
+            <p className="text-2xl lg:text-4xl">Wealth, Fame, Power</p>
+            <p className="text-slate-500 lg:text-2xl">
               The man who had everything in this world... The Pirate King, Gold
               Roger. The great treasure he left behind, One Piece has opened the
               curtain on a grand era! It is a time when eager pirates set sail,
