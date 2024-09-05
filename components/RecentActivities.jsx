@@ -33,23 +33,24 @@ const RecentActivities = () => {
                 <p className="text-2xl lg:text-4xl">Recent pictures of activities in DeTA</p>
                 <p className="text-slate-500 lg:text-2xl">Check out more in the Gallery!</p>
             </div>
-            
+
             <div className="flex flex-col items-center">
                 <div className="flex justify-between lg:gap-10 items-center">
                     <button onClick={handlePrev} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
                         &lt;
                     </button>
 
-                    <div className="relative w-[250px] md:w-[500px] lg:w-[1000px] h-[200px] md:h-[500px]">
+                    <div className="relative m-2
+                    w-[400px] md:w-[500px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]
+                    h-[400px] md:h-[500px] lg:h-[700px]">
                         {images.map((src, index) => (
                             <Image
                                 key={index}
                                 src={src}
                                 width={1000}
-                                height={500}
+                                height={1000}
                                 className={`absolute inset-0 w-full h-full object-cover shadow-lg rounded-lg transition-opacity duration-500 ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
-                                alt="Activity Image"
-                            />
+                                alt="Activity Image" />
                         ))}
                     </div>
 

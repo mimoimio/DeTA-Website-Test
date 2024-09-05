@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Card from "@/components/Card";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import RecentActivities from "@/components/RecentActivities";
@@ -24,12 +23,8 @@ export default function Activities() {
       <Header />
       <div className="mx-auto container">
         <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-          <h1 className="text-7xl">Activities</h1>
-          <h2 className="text-3xl flex-wrap lg:mx-[26rem] text-center">
-            DeTA is a community _______________________ ___ __________ ___
-            __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
-            __________ ___
-          </h2>
+          <h1 className="text-5xl lg:text-7xl">Activities</h1>
+          {/* <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">For the memories within DeTA</h2> */}
         </div>
 
         <RecentActivities />

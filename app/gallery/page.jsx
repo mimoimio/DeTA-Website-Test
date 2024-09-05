@@ -6,13 +6,9 @@ export default function Gallery() {
     <main>
       <Header />
       <div className="mx-auto container">
-        <div className="flex justify-center p-[2rem]">
-          <div className="flex items-center">
-            <div className="flex flex-col items-center">
-              <p className="text-7xl">Gallery</p>
-              <p className="text-2xl">For the memories within DeTA</p>
-            </div>
-          </div>
+        <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
+          <h1 className="text-5xl lg:text-7xl">Gallery</h1>
+          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">For the memories within DeTA</h2>
         </div>
         <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3 md:gap-10 md:p-10 w-full bg-white rounded-xl">
           <GalleryDisplay title="The Mainboards" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczPAB1lzyBQP7r9aJmZaRNh-xeSPQ-SC6VKE4UulBqDcpo0f3BmYTRg3FdGYboXmOXU7GTcd3qmCLOEMOasrjE4GXAXkjcbUS5llji-q5T20JJO6JO1N5g1ey0A3ost3Dt1Z8Ol6iFSscbAVYXEUiCxLhg=w1260-h945-s-no-gm?authuser=0"></GalleryDisplay>

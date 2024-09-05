@@ -6,7 +6,7 @@ import FooterButton from "./FooterButton";
 const Footer = () => {
   return (
     <footer className="mt-[10rem] w-full p-4 bg-slate-50 text-gray-800">
-      <div className="flex flex-wrap justify-between mx-auto container">
+      <div className="flex flex-wrap justify-evenly mx-auto container">
         <div className="flex flex-col items-start mb-4 space-y-4">
           <Image
             src="/images/Deta.png"
@@ -15,8 +15,8 @@ const Footer = () => {
             alt="DeTA Logo"
             className="transform scale-150 mix-blend-multiply"
           />
-          <a href="mailto:deta@gmail.com" className="flex items-center">
-            <MdOutlineEmail className="text-2xl" />
+          <a href="mailto:deta@gmail.com" className="flex items-center flex-wrap">
+            <MdOutlineEmail className="lg:text-2xl" />
             <span className="ml-2">deta@gmail.com</span>
           </a>
         </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <FooterButton address="about" title="Background" />
           </ul>
         </div>
-        <div className="flex flex-col mb-4">
+        <div className="flex flex-col mb-4">  
           <p className="font-bold text-lg mb-2">Our Programs</p>
           <nav className="flex flex-col space-y-1">
             <a href="#" className="hover:underline">

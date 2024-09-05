@@ -9,7 +9,7 @@ export default function About() {
     <main>
       {/* mention about DeTA is in UIAM */}
       <Header />
-      <div className="mx-auto container">
+      <div className="mx-auto container"> 
         <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
           <h1 className="text-5xl lg:text-7xl">Community for Developers</h1>
           <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
@@ -85,7 +85,7 @@ export default function About() {
               If you wish to know more about what we do, continue in the
               <Link
                 href={"activities"}
-                className="bg-slate-300 h-min p-4 hover:bg-slate-400 duration-150 rounded-xl mx-2"
+                className="bg-slate-300 h-min px-2 hover:bg-slate-400 duration-150 rounded-xl mx-2"
               >
                 Activities
               </Link>

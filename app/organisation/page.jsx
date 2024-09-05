@@ -7,8 +7,9 @@ export default function Organisation() {
     <main>
       <Header />
       <div className="mx-auto container">
-        <div className="flex flex-col items-center gap-4 p-[2rem]">
-          <h1 className="text-7xl">Know The Team</h1>
+        <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
+          <h1 className="text-5xl lg:text-7xl">Know The Team</h1>
+          {/* <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center"></h2> */}
         </div>
 
         <div className="mx-auto container p-4 space-y-8">
