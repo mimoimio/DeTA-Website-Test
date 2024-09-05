@@ -41,8 +41,8 @@ const RecentActivities = () => {
                     </button>
 
                     <div className="relative m-2
-                    w-[400px] md:w-[500px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]
-                    h-[400px] md:h-[500px] lg:h-[700px]">
+                    w-[300px] md:w-[500px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]
+                    h-[300px] md:h-[500px] lg:h-[700px]">
                         {images.map((src, index) => (
                             <Image
                                 key={index}
