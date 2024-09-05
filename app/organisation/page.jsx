@@ -15,7 +15,12 @@ export default function Organisation() {
         <div className="mx-auto container p-4 space-y-8">
           <div className="flex flex-col bg-blue-100 p-10 rounded-lg gap-4 ">
             <div className="text-xl text-center mb-4 lg:text-4xl"> The Mainboards </div>
-            <OrganisationDisplay position="President" name="Hakim" linkedin="https://www.linkedin.com/in/hakim-nazri/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D" />
+            <OrganisationDisplay
+              position="President"
+              name="Hakim"
+              linkedin="https://www.linkedin.com/in/hakim-nazri/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"
+              imageSrc="https://media.licdn.com/dms/image/v2/C5603AQGFQo-iw7WstQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659781254837?e=1730937600&v=beta&t=qd0Po2EpgV4IXUOoWxb7o3N2AFTMLVZEFgRtTay86SM"
+            />
             <OrganisationDisplay position="Vice President" name="Luqman" />
             <OrganisationDisplay position="Secretary" name="Syamil" />
           </div>
@@ -23,7 +28,12 @@ export default function Organisation() {
           <div className="bg-blue-100 p-10 rounded-lg grid gap-4 ">
             <div className="text-xl text-center mb-4  lg:text-4xl "> Executive Members </div>
             <div className=" grid md:grid-cols-2 p-5 gap-4">
-              <div> <OrganisationDisplay position="Exco Meetup" name="Mior" linkedin="https://www.linkedin.com/in/adib-bida-4b312a296/"></OrganisationDisplay> </div>
+              <div>
+                <OrganisationDisplay position="Exco Meetup" name="Mior"
+                  linkedin="https://www.linkedin.com/in/adib-bida-4b312a296/"
+                  imageSrc="">
+                </OrganisationDisplay>
+              </div>
               <div> <OrganisationDisplay position="Exco Alumni Talk" name="Fadzwan" linkedin="https://www.linkedin.com/in/mohd-fadzwan-ashriq-5114a41aa/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"></OrganisationDisplay> </div>
               <div> <OrganisationDisplay position="Exco Hackathon" name="John Doe"></OrganisationDisplay> </div>
               <div> <OrganisationDisplay position="Exco Workshop" name="Emrul"></OrganisationDisplay> </div>
