@@ -39,8 +39,9 @@ const RecentActivities = () => {
                     <button onClick={handlePrev} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
                         &lt;
                     </button>
-
-                    <div className="relative m-2
+                    
+                    <div className="
+                    relative m-1
                     w-[300px] md:w-[500px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]
                     h-[300px] md:h-[500px] lg:h-[700px]">
                         {images.map((src, index) => (

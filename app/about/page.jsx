@@ -13,9 +13,7 @@ export default function About() {
         <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
           <h1 className="text-5xl lg:text-7xl">Community for Developers</h1>
           <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
-            DeTA is a community _______________________ ___ __________ ___
-            __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
-            __________ ___
+          DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software, web and development in general
           </h2>
           <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
             Our objectives are _______________________ ___ __________ ___
@@ -29,15 +27,9 @@ export default function About() {
             <p className="text-slate-500 lg:text-2xl">{bgDesc}</p>
           </div>
           <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-            <p className="text-2xl lg:text-4xl">Wealth, Fame, Power</p>
+            <p className="text-2xl lg:text-4xl">Aspiring Developers Friend Group</p>
             <p className="text-slate-500 lg:text-2xl">
-              The man who had everything in this world... The Pirate King, Gold
-              Roger. The great treasure he left behind, One Piece has opened the
-              curtain on a grand era! It is a time when eager pirates set sail,
-              battle, and become great! The Great Age of Pirates! Words he spoke
-              drove countless men out to sea. And so men set sights on the Grand
-              Line, in pursuit of their dreams. The world has truly entered a
-              Great Pirate Era!
+            We started off with only a friend group that likes to develop and create. From there, we, the students that are aspiring to gain experience and things in the near future, formed a community by inviting more and more curious students into our group. In the current time, DeTA is the culmination of said story.
             </p>
           </div>
         </div>
