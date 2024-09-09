@@ -11,9 +11,9 @@ export default function OrganisationDisplay({ position, name, title, linkedin = 
         <Image
           src={imageSrc}
           alt={title}
-          height={200}
-          width={200}
-          className="rounded border-2" />
+          height={500}
+          width={500}
+          className="rounded border-2 h-[100px] w-[100px] md:h-[200px] md:w-[200px]" />
       </div>
       <div className="text-lg font-bold text-center">{name}</div>
       <div className="text-lg text-gray-600 text-center">{position}</div>
