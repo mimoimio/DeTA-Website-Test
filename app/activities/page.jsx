@@ -5,8 +5,8 @@ import RecentActivities from "@/components/RecentActivities";
 const ActivityCard = ({ title, desc, src = "/images/DeTA.png" }) => {
   return (
     <div className='flex flex-col lg:flex-row bg-slate-100 bg-opacity-25 shadow-xl hover:-translate-y-1 duration-150 rounded-2xl p-4 lg:p-8'>
-      <div className="flex flex-shrink-0 bg-slate-500 rounded-xl object-cover ">
-        <Image src={src} alt="gambar" width={200} height={200} className="w-full h-64 lg:h-40 lg:w-40 object-cover mix-blend-multiply bg-black" />
+      <div className="flex flex-shrink-0  rounded-xl object-cover "> {/*bg-slate-500*/}
+        <Image src={src} alt="gambar" width={200} height={200} className="w-full h-32 lg:h-40 lg:w-40 object-cover mix-blend-multiply bg-black" />
       </div>
       <div className="flex flex-col m-4">
         <p className="text-wrap text-2xl lg:text-4xl">{title}</p>
@@ -36,7 +36,7 @@ export default function Activities() {
                 <p className="text-slate-500 lg:text-2xl">The list of activities that we do in DeTA</p>
             </div>
           {/* Cards */}
-          <div className="lg:grid lg:grid-cols-2">
+          <div className="grid grid-cols-2 gap-2">
             <ActivityCard title="Workshop" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
             <ActivityCard title="Study Group" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />
             <ActivityCard title="Hackathon" desc="Description desc descdesc descdesc descdesc descdesc descdesc descdesc desc" />

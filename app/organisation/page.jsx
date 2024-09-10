@@ -29,13 +29,13 @@ export default function Organisation() {
 
           <div className="flex flex-col bg-blue-100 p-2 md:p-10 rounded-lg">
             <div className="text-xl text-center mb-4  lg:text-4xl "> Executive Commitees </div>
-            <div className=" grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-4">
+            <div className=" grid grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-4">
               <OrganisationDisplay position="Exco Meetup" name="Mior"
                 linkedin="https://www.linkedin.com/in/adib-bida-4b312a296/"
                 imageSrc="">
               </OrganisationDisplay>
               <OrganisationDisplay position="Exco Alumni Talk" name="Fadzwan" linkedin="https://www.linkedin.com/in/mohd-fadzwan-ashriq-5114a41aa/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"></OrganisationDisplay>
-              <OrganisationDisplay position="Exco Hackathon" name="John Doe"></OrganisationDisplay>
+              <OrganisationDisplay position="Exco Hackathon" name="To be determined"></OrganisationDisplay>
               <OrganisationDisplay position="Exco Workshop" name="Emrul"></OrganisationDisplay>
             </div>
           </div>

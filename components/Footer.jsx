@@ -6,7 +6,7 @@ import FooterButton from "./FooterButton";
 const Footer = () => {
   return (
     <footer className="mt-[10rem] w-full p-4 bg-slate-50 text-gray-800">
-      <div className="flex flex-wrap justify-evenly mx-auto container">
+      <div className="container grid grid-cols-2 grid-rows-2 md:flex md:flex-wrap md:justify-evenly md:mx-auto ">
         <div className="flex flex-col items-start mb-4 space-y-4">
           <Image
             src="/images/Deta.png"

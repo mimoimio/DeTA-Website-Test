@@ -9,13 +9,13 @@ export default function About() {
     <main>
       {/* mention about DeTA is in UIAM */}
       <Header />
-      <div className="mx-auto container"> 
-        <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-          <h1 className="text-5xl lg:text-7xl">Community for Developers</h1>
-          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
-          DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software, web and development in general
+      <div className="mx-auto container">
+        <div className="flex flex-col items-center gap-4 p-[2rem] md:p-[2rem]">
+          <h1 className="text-5xl md:text-7xl">Community for Developers</h1>
+          <h2 className="text-xl md:text-2xl flex-wrap xl:mx-[10rem] text-center">
+            DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software, web and development in general
           </h2>
-          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
+          <h2 className="text-xl md:text-2xl flex-wrap xl:mx-[10rem] text-center">
             Our objectives are _______________________ ___ __________ ___
             __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
             __________ ___
@@ -23,16 +23,17 @@ export default function About() {
         </div>
         <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
           <div className="pb-4">
-            <p className="text-2xl lg:text-4xl">Our Background</p>
-            <p className="text-slate-500 lg:text-2xl">{bgDesc}</p>
+            <p className="text-2xl md:text-4xl">Our Background</p>
+            <p className="text-slate-500 md:text-2xl">{bgDesc}</p>
           </div>
-          <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-            <p className="text-2xl lg:text-4xl">Aspiring Developers Friend Group</p>
-            <p className="text-slate-500 lg:text-2xl">
-            We started off with only a friend group that likes to develop and create. From there, we, the students that are aspiring to gain experience and things in the near future, formed a community by inviting more and more curious students into our group. In the current time, DeTA is the culmination of said story.
+          <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-32 ">
+            <p className="text-2xl md:text-4xl">Aspiring Developers Friend Group</p>
+            <p className="text-slate-500 md:text-2xl">
+              We started off with only a friend group that likes to develop and create. From there, we, the students that are aspiring to gain experience and things in the near future, formed a community by inviting more and more curious students into our group. In the current time, DeTA is the culmination of said story.
             </p>
           </div>
         </div>
+
         <div className="grid grid-cols-2 bg-white p-4 gap-4 sm:p-16 sm:gap-16">
           <Card
             title={"Vision"}
@@ -47,12 +48,14 @@ export default function About() {
             }
           ></Card>
         </div>
-        <div className="flex flex-col bg-white p-4 gap-4 lg:p-16 lg:gap-16">
+
+        <div className="flex flex-col bg-white p-4 gap-4 md:p-16 md:gap-16">
           <div className="pb-4">
-            <p className="text-4xl">What We Do in DeTA</p>
-            <p className="text-slate-500 text-2xl">{whatWeDoDesc}</p>
+            <p className="text-2xl md:text-4xl">What We Do in DeTA</p>
+            <p className="text-slate-500 md:text-2xl">{whatWeDoDesc}</p>
           </div>
-          <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
+
+          <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-64 ">
             <p className="text-4xl mb-4">
               Eventful and Active Continuous Programs
             </p>
@@ -63,7 +66,8 @@ export default function About() {
               finally, _____ _____ _____ _____.
             </p>
           </div>
-          <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
+
+          <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-64 ">
             <p className="text-4xl mb-4">Study and Sharing</p>
             <p className="text-slate-500 text-2xl">
               As a community of growing young developers, we prioritize our
@@ -72,19 +76,16 @@ export default function About() {
               finally, _____ _____ _____ _____.
             </p>
           </div>
-          <div className="flex justify-center items-center">
+        </div>
+
+        <div className="flex justify-center items-center">
             <p className="text-slate-500 text-2xl text-center">
               If you wish to know more about what we do, continue in the
-              <Link
-                href={"activities"}
-                className="bg-slate-300 h-min px-2 hover:bg-slate-400 duration-150 rounded-xl mx-2"
-              >
+              <Link href={"activities"} className="bg-slate-300 h-min px-2 hover:bg-slate-400 duration-150 rounded-xl mx-2">
                 Activities
-              </Link>
-              section
+              </Link>section
             </p>
           </div>
-        </div>
       </div>
       <Footer />
     </main>
