@@ -2,6 +2,10 @@ import Header from "@/components/Header";
 import Card from "@/components/Card";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+
+import { HiChatBubbleLeftRight } from "react-icons/hi2";
+
+
 export default function About() {
   const bgDesc = 'Our "Origin"';
   const whatWeDoDesc = "Lot's of Stuff";
@@ -55,11 +59,38 @@ export default function About() {
             <p className="text-slate-500 md:text-2xl">{whatWeDoDesc}</p>
           </div>
 
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 md:flex md:justify-evenly border-4 rounded-xl py-10">
+            <div className="flex flex-col items-center">
+              <div className=" border-4 border-cyan-500 rounded-full p-2 w-min">
+                <HiChatBubbleLeftRight className="text-4xl md:text-9xl text-cyan-500" />
+              </div>
+              <p className="text-2xl md:text-4xl">Workshop</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" border-4 border-cyan-500 rounded-full p-2 w-min">
+                <HiChatBubbleLeftRight className="text-4xl md:text-9xl text-cyan-500" />
+              </div>
+              <p className="text-2xl md:text-4xl">Alumni Talk</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" border-4 border-cyan-500 rounded-full p-2 w-min">
+                <HiChatBubbleLeftRight className="text-4xl md:text-9xl text-cyan-500" />
+              </div>
+              <p className="text-2xl md:text-4xl">Meetup</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className=" border-4 border-cyan-500 rounded-full p-2 w-min">
+                <HiChatBubbleLeftRight className="text-4xl md:text-9xl text-cyan-500" />
+              </div>
+              <p className="text-2xl md:text-4xl">Hackathon</p>
+            </div>
+          </div>
+          {/* 
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-64 ">
-            <p className="text-4xl mb-4">
+            <p className="text-xl md:text-2xl mb-4">
               Eventful and Active Continuous Programs
             </p>
-            <p className="text-slate-500 text-2xl">
+            <p className="text-slate-500 md:text-2xl">
               As a community of growing young developers, we prioritize our
               learning and experience. We have _____ _____ _____ _____ _____ _____
               _____ from _____ _____ _____ _____ to _____ _____ _____ _____ _____,
@@ -68,24 +99,24 @@ export default function About() {
           </div>
 
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-64 ">
-            <p className="text-4xl mb-4">Study and Sharing</p>
-            <p className="text-slate-500 text-2xl">
+            <p className="text-2xl md:text-4xl mb-4">Study and Sharing</p>
+            <p className="text-slate-500 md:text-2xl">
               As a community of growing young developers, we prioritize our
               learning and experience. We have _____ _____ _____ _____ _____ _____
               _____ from _____ _____ _____ _____ to _____ _____ _____ _____ _____,
               finally, _____ _____ _____ _____.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-center items-center">
-            <p className="text-slate-500 text-2xl text-center">
-              If you wish to know more about what we do, continue in the
-              <Link href={"activities"} className="bg-slate-300 h-min px-2 hover:bg-slate-400 duration-150 rounded-xl mx-2">
-                Activities
-              </Link>section
-            </p>
-          </div>
+          <p className="text-slate-500 text-center p-4">
+            If you wish to know more about what we do, please continue in the
+            <Link href={"activities"} className="bg-blue-400 h-min px-2 hover:bg-blue-500 text-white duration-150 rounded-xl mx-1">
+              Activities
+            </Link>section
+          </p>
+        </div>
       </div>
       <Footer />
     </main>
