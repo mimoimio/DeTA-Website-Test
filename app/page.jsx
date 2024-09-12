@@ -14,8 +14,8 @@ export default function Home() {
 
       <div className="mx-auto container">
 
-        <div className="flex-col justify-center justify-items-center items-center p-8">
-          <Image src="/images/Deta.png" className="mix-blend-multiply m-auto scale-110" width={600} height={600} />
+        <div className="flex md:flex-row flex-col justify-center justify-items-center items-center p-8">
+          <Image src="/images/Deta.png" className="mix-blend-multiply scale-110 md:w-[500px] lg:w-[600px]" width={600} height={600} />
           <div className="flex flex-col items-center ">
             <p className="text-5xl lg:text-9xl">DeTA</p>
             <p className="text-xl lg:text-2xl">Developer Tanah Air</p>
@@ -48,7 +48,7 @@ export default function Home() {
           <div className="pb-16">
             <p className="text-2xl lg:text-4xl">Membership Perks</p>
             <p className="text-slate-500 lg:text-2xl">
-              “What will I get if I joined DeTA?”
+              “What will I get if I join DeTA?”
             </p>
           </div>
 

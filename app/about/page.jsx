@@ -85,6 +85,12 @@ export default function About() {
               <p className="text-2xl md:text-4xl">Hackathon</p>
             </div>
           </div>
+          <p className="text-slate-500 text-center p-4">
+            If you wish to know more about what we do, please continue in the
+            <Link href={"activities"} className="bg-blue-400 h-min px-2 hover:bg-blue-500 text-white duration-150 rounded-xl mx-1">
+              Activities
+            </Link>section
+          </p>
           {/* 
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-64 ">
             <p className="text-xl md:text-2xl mb-4">
@@ -107,15 +113,6 @@ export default function About() {
               finally, _____ _____ _____ _____.
             </p>
           </div> */}
-        </div>
-
-        <div className="flex justify-center items-center">
-          <p className="text-slate-500 text-center p-4">
-            If you wish to know more about what we do, please continue in the
-            <Link href={"activities"} className="bg-blue-400 h-min px-2 hover:bg-blue-500 text-white duration-150 rounded-xl mx-1">
-              Activities
-            </Link>section
-          </p>
         </div>
       </div>
       <Footer />

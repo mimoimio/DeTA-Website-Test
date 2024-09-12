@@ -1,7 +1,7 @@
 import Link from "next/link";
 const FooterButton = ({ address, title }) => {
   return (
-    <Link href={"/".concat(address)}>
+    <Link className="hover:underline" href={"/".concat(address)}>
       <li>{title}</li>
     </Link>
   );
