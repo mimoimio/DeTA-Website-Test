@@ -33,7 +33,13 @@ export default function About() {
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-32 ">
             <p className="text-2xl md:text-4xl">Aspiring Developers Friend Group</p>
             <p className="text-slate-500 md:text-2xl">
-              We started off with only a friend group that likes to develop and create. From there, we, the students that are aspiring to gain experience and things in the near future, formed a community by inviting more and more curious students into our group. In the current time, DeTA is the culmination of said story.
+            What began as a small group of friends passionate about developing and creating has blossomed into something much greater.<br></br><br></br>
+
+United by our shared curiosity and ambition, we – a group of aspiring students eager to gain experience and shape our future – formed a community that welcomed others like us. Over time, we grew, inviting more and more students who were excited to explore new possibilities.<br></br><br></br>
+
+Today, that journey has culminated in DeTA – a vibrant and thriving community born from our collective passion, creativity, and desire to learn together.
+
+
             </p>
           </div>
         </div>
