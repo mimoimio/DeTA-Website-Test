@@ -40,13 +40,8 @@ To welcome new members to the DeTA community by introducing them to the tech cul
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-32 ">
             <p className="text-2xl md:text-4xl">Aspiring Developers Friend Group</p>
             <p className="text-slate-500 md:text-2xl">
-            What began as a small group of friends passionate about developing and creating has blossomed into something much greater.<br></br><br></br>
-
-United by our shared curiosity and ambition, we – a group of aspiring students eager to gain experience and shape our future – formed a community that welcomed others like us. Over time, we grew, inviting more and more students who were excited to explore new possibilities.<br></br><br></br>
-
+            What began as a small group of friends passionate about developing and creating has blossomed into something much greater.<br/><br/>United by our shared curiosity and ambition, we – a group of aspiring students eager to gain experience and shape our future – formed a community that welcomed others like us. Over time, we grew, inviting more and more students who were excited to explore new possibilities.<br></br><br></br>
 Today, that journey has culminated in DeTA – a vibrant and thriving community born from our collective passion, creativity, and desire to learn together.
-
-
             </p>
           </div>
         </div>
