@@ -11,18 +11,25 @@ export default function About() {
   const whatWeDoDesc = "Lot's of Stuff";
   return (
     <main>
-      {/* mention about DeTA is in UIAM */}
+      {/* mention about DeTA is in UIAM 
+      1 Knowledge Sharing and Skill Enhancement
+
+2.2 Community Building and Networking
+To strengthen the connections between students and alumni within the DeTA community, fostering a collaborative environment where members can network, share experiences, and support each other's professional growth.
+Q
+2.3 Introduction to Tech Culture
+To welcome new members to the DeTA community by introducing them to the tech culture, emphasizing the importance of collaboration, innovation, and continuous learning within the field of software development.
+
+      */}
       <Header />
       <div className="mx-auto container">
         <div className="flex flex-col items-center gap-4 p-[2rem] md:p-[2rem]">
           <h1 className="text-5xl md:text-7xl">Community for Developers</h1>
           <h2 className="text-xl md:text-2xl flex-wrap xl:mx-[10rem] text-center">
-            DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software, web and development in general
+            DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software development
           </h2>
           <h2 className="text-xl md:text-2xl flex-wrap xl:mx-[10rem] text-center">
-            Our objectives are _______________________ ___ __________ ___
-            __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
-            __________ ___
+            Our objectives are to foster a collaborative environment where members can network, share experiences, and support each other's professional growth
           </h2>
         </div>
         <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
