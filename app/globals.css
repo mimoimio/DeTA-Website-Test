@@ -51,7 +51,7 @@ main {
   max-height: 100vh;   /* Ensures main takes up at least the full screen */
   overflow-y: scroll;
   overflow-x: hidden;
-  background:  linear-gradient(#aabbfff0,#ff00fff0), url('/images/DeTA.png') repeat center center fixed;
+  background:  linear-gradient(#aabbfff0,#ff00fff0), url('/images/DeTA.png') repeat center fixed;
   background-size: 10vh;
   display: flex;
   flex-direction: column;
