@@ -51,7 +51,7 @@ main {
   max-height: 100vh;   /* Ensures main takes up at least the full screen */
   overflow-y: scroll;
   overflow-x: hidden;
-  background:  linear-gradient(#aabbfff0,#ff00fff0), url('/images/DeTA.png') repeat center fixed;
+  background:  linear-gradient(#aabbfff0,#ff00fff0), url('https://lh3.googleusercontent.com/pw/AP1GczO8hM8YPsQ8Uf0QtbnAMOvZ5jn0xsf5z0JlU2GM_yjAb1JQDZaVDxE2hzUkuSqppxy93KTaK-LzWbCMUXrBqbO-SfRWfld_LhaypT-V7Ndg7rOVJhNu-ZwTU5vzB0xS4uqsASz4KQ9VTrIky0RS6GxnoQ=w912-h912-s-no-gm?authuser=0') repeat center fixed;
   background-size: 10vh;
   display: flex;
   flex-direction: column;
