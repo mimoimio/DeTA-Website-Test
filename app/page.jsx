@@ -4,7 +4,6 @@ import Image from "next/image";
 import Card from "@/components/Card";
 import Link from "next/link";
 import RecentActivities from "@/components/RecentActivities";
-
 const lessthan = "<";
 const biggerthan = ">";
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
       <div className="mx-auto container">
 
         <div className="flex md:flex-row flex-col justify-center justify-items-center items-center p-8">
-          <Image src="/images/Deta.png" className="mix-blend-multiply scale-110 md:w-[500px] lg:w-[600px]" width={600} height={600} />
+          <Image src="/images/Deta.png" className="scale-110 md:w-[500px] lg:w-[600px]" width={600} height={600} />
           <div className="flex flex-col items-center ">
             <p className="text-5xl lg:text-9xl">DeTA</p>
             <p className="text-xl lg:text-2xl">Developer Tanah Air</p>

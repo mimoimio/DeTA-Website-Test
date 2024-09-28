@@ -19,7 +19,7 @@
   url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
 }
-html{
+/* html{
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -29,10 +29,31 @@ body{
 }
 main {
   font-family: Oswald;
-  /* font-family: "Comic Sans MS"; */
   min-height: 100%;
   background: #bcf;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
+} */
+/* Apply the background to the body or html */
+html, body {
+  background: #bcf;
+  background-attachment: fixed; /* This keeps the background static */
+  background-size: cover;       /* Ensures the background covers the whole screen */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the main element */
+main {
+  font-family: Oswald;
+  max-height: 100vh;   /* Ensures main takes up at least the full screen */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background:  linear-gradient(#aabbfff0,#ff00fff0), url('/images/DeTA.png') repeat center center fixed;
+  background-size: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
