@@ -38,8 +38,6 @@ main {
 /* Apply the background to the body or html */
 html, body {
   background: #bcf;
-  background-attachment: fixed; /* This keeps the background static */
-  background-size: cover;       /* Ensures the background covers the whole screen */
   height: 100%;
   margin: 0;
   padding: 0;
@@ -51,8 +49,8 @@ main {
   max-height: 100vh;   /* Ensures main takes up at least the full screen */
   overflow-y: scroll;
   overflow-x: hidden;
-  background:  linear-gradient(#aabbfff0,#ff00fff0), url('https://lh3.googleusercontent.com/pw/AP1GczM6PqTVeIlPtBv527_2g3BWdKng13hcXZzVMfxA3eWPMWpnQXuTv-BoOpcZ7mUmx2SyoY4IzBLkkflndk5FXUCsqG0O8R9PdEw8Ggi51d9mthAlxqFQCHPZxRySriygNPUBWrUNRUna6KXoHao2vMZy6g=w912-h912-s-no-gm?authuser=0') repeat center fixed;
-  background-size: 10vh;
+  background:  linear-gradient(#aabbfff0,#2020fff0), url('/images/DeTAPattern.png') repeat center fixed;
+  background-size: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
