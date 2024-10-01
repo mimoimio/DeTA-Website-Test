@@ -22,12 +22,6 @@ export const NavList = () => {
           className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
           <li>Register Now</li>
         </Link>
-        <Link
-          href={"test"}
-          target="_blank"
-          className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
-          <li>Test</li>
-        </Link>
       </ul>
     </div>
   )

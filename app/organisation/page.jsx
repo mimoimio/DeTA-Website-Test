@@ -13,7 +13,7 @@ export default function Organisation() {
         </div>
 
         <div className="mx-auto container p-4 space-y-8">
-          <div className="flex flex-col bg-blue-100 p-2 md:p-10 rounded-lg">
+          <div className="flex flex-col bg-orange-100 p-2 md:p-10 rounded-lg">
             <div className="text-xl text-center mb-4 lg:text-4xl"> The Mainboards </div>
             <div className="grid grid-cols-3 w-full gap-4">
               <OrganisationDisplay
@@ -27,7 +27,7 @@ export default function Organisation() {
             </div>
           </div>
 
-          <div className="flex flex-col bg-blue-100 p-2 md:p-10 rounded-lg">
+          <div className="flex flex-col bg-orange-100 p-2 md:p-10 rounded-lg">
             <div className="text-xl text-center mb-4  lg:text-4xl "> Executive Commitees </div>
             <div className=" grid grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-4">
               <OrganisationDisplay position="Exco Meetup" name="Mior"
