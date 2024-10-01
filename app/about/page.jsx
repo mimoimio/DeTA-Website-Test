@@ -16,7 +16,7 @@ export default function About() {
             DeTA is a community that is born in the International Islamic University Malaysia (IIUM). We consist of students that are enthusiastic in software development
           </h2>
           <h2 className="text-xl md:text-2xl flex-wrap xl:mx-[10rem] text-center">
-            Our objectives are to foster a collaborative environment where members can network, share experiences, and support each other's professional growth
+            Our objectives are to foster a collaborative environment where members can network, share experiences, and support each of our professional growth
           </h2>
         </div>
         <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
