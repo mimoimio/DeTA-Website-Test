@@ -6,8 +6,6 @@ import Footer from "@/components/Footer";
 import { HiChatBubbleLeftRight } from "react-icons/hi2";
 
 export default function About() {
-  const bgDesc = 'Our "Origin"';
-  const whatWeDoDesc = "Lot's of Stuff";
   return (
     <main>
       <Header />
@@ -24,13 +22,21 @@ export default function About() {
         <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
           <div className="pb-4">
             <p className="text-2xl md:text-4xl">Our Background</p>
-            <p className="text-slate-500 md:text-2xl">{bgDesc}</p>
+            <p className="text-slate-500 md:text-2xl">Our Origin</p>
           </div>
           <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-32">
             <p className="text-2xl md:text-4xl mb-4">A study group</p>
             <p className="text-slate-500 md:text-2xl text-justify">
-              DeTA started as a study group called Lambda. Lambda focuses on current technologies being used in the Industry such as Docker, and niche topics like Reactive Extensions. Lambda also has a small focus in Functional Programming hence the name which originates from Lambda expressions which is an important concept in functional programming.
-              <br /><br />Owing to the effectiveness of the study group, the members of Lambda decided to expand the concept as a movement that advocates for learning and teaching advanced development concepts. That movement became Gerakan Developer Tanahair, now shortened to Developer Tanah Air (DeTA).
+              DeTA started as a study group called Lambda. Lambda focuses on current 
+              technologies being used in the Industry such as Docker, and niche topics 
+              like Reactive Extensions. Lambda also has a small focus in Functional
+              Programming hence the name which originates from Lambda expressions which 
+              is an important concept in functional programming.
+              <br/><br/>
+              Owing to the effectiveness of the study group, the members of Lambda 
+              decided to expand the concept as a movement that advocates for learning 
+              and teaching advanced development concepts. That movement became Gerakan 
+              Developer Tanahair, now shortened to Developer Tanah Air (DeTA).
               {/* What began as a small group of friends passionate about developing and creating has blossomed into something much greater.
 <br/><br/>United by our shared curiosity and ambition, we - a group of aspiring students eager to gain experience and shape our future - formed a community that welcomed others like us. Over time, we grew, inviting more and more students who were excited to explore new possibilities.
 <br/><br/>Today, that journey has culminated in DeTA - a vibrant and thriving community born from our collective passion, creativity, and desire to learn together. */}
@@ -42,7 +48,6 @@ export default function About() {
           <Card
             title={"Vision"}
             desc={
-              // As a movement, and a club, DeTA's vision is 
               "To create a thriving developer culture in IIUM.  We believe that IIUM alumni and students are excellent agents of change and we want to help them become the best they can be."
             }
           ></Card>
