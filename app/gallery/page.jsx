@@ -17,6 +17,9 @@ export default function Gallery() {
           <GalleryDisplay title="Study session" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczOmo_yLsnPA6SiHhOcaILvrQ6KJWeC6_yPWZZ4L4FaystIFHOlqjSZoSmBnF2A8QY-eGBjz5BVWr3HObdeguNa9-dM_4mrrcnaLMY2_LfoswRNLdktsd_xTxxpk8x7QLrsRDnB8NU60MyTvh-mz--1M=w1260-h945-s-no-gm?authuser=0"></GalleryDisplay>
           <GalleryDisplay title="Alumni Talk" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczMAmlqWtAiYcQGT9DUKak-bgZ1hLtR--fWgdqe7w9yiwoHF_cs_KTHUduyj4WpcHfkRueIV8qpDVHvCFuj70JzI3k3tgLEY2HkzfgwvaJZ84Rua9vJrvT-Iv1MYZ6baptPNSlnMRl3s2J6RLW3D4kli=w1020-h768-s-no-gm?authuser=0"></GalleryDisplay>
           <GalleryDisplay title="Alumni Talk" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczM04VSLMTRrteuIZ-3G4gix7AqcTntI6ST9gYuaar6k3o-DDrFzFCPdoSQpJnJbLnxB9Lre1JCO3Hxrk8SDSClCAUBY71VqnWKmEzON9N3b1h8SzjJFVbX0pt1SH8bo-QGDTCbaaNmBWGvb59ShhXhN=w1020-h768-s-no-gm?authuser=0"></GalleryDisplay>
+          <GalleryDisplay title="Regular meetup" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczMLwfS0_oWf_mJchIG_N0NNjMV3Exzz1ntCdxLmcztq82oauPp3hb8NUoTd8O3NyQ7CdPxFTW4MTNBe4WIdxuHQ6GFZ6mM1SrQZ-1-yVxD_XhBaGtSfZt9GieVtgurCKnxvAq4olD5jyY67XLuNJGFoUw=w1280-h576-s-no-gm?authuser=0"></GalleryDisplay>
+          <GalleryDisplay title="Regular meetup" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczONqQH5lcqJzqXz4Y_HeovZx56zSUYRquu0cLC5wFhfFIIQrsPq3DYWbsZL2NDSx2eH4k4F2dXSg_lLzJtqtkMVPVO0K5Y6S_0HSbbmkMrUjfZfNDjQ2vOfZ4ZWje0JfUFoSbBfwDila9WnTmXpcKsHjg=w1280-h576-s-no-gm?authuser=0"></GalleryDisplay>
+          {/* <GalleryDisplay title="Alumni Talk" desc="Description" url=""></GalleryDisplay> */}
         </div>
       </div>
       <Footer />

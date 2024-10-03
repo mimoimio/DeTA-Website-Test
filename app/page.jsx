@@ -4,6 +4,7 @@ import Image from "next/image";
 import Card from "@/components/Card";
 import Link from "next/link";
 import RecentActivities from "@/components/RecentActivities";
+import FeaturedProjects from "@/components/FeaturedProjects";
 const lessthan = "<";
 const biggerthan = ">";
 export default function Home() {
@@ -20,7 +21,8 @@ export default function Home() {
             <p className="text-xl lg:text-2xl">Developer Tanah Air</p>
           </div>
         </div>
-        <RecentActivities />
+        {/* <RecentActivities /> */}
+        <FeaturedProjects/>
 
 
         <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
@@ -49,7 +51,7 @@ export default function Home() {
             <p className="text-slate-500 lg:text-2xl">
               “What will I get if I join DeTA?”
             </p>
-          </div>
+          </div>  
 
           <div className="lg:grid lg:grid-cols-3 gap-16 w-full px-[10%]">
             <Card
