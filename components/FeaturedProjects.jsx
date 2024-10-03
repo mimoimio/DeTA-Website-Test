@@ -5,7 +5,7 @@ const FeaturedProjects = () => {
         <div className="flex justify-center bg-white flex-col w-full p-4 lg:p-16">
             <div className="pb-2 lg:pb-16">
                 <p className="text-2xl lg:text-4xl">Featured Projects done in DeTA</p>
-                <p className="text-slate-500 lg:text-2xl">Here's a few, and more to come!</p>
+                <p className="text-slate-500 lg:text-2xl">Here&apos;s a few, and more to come!</p>
             </div>
 
             <div className="flex flex-col items-center md:grid md:grid-cols-3 gap-4">
