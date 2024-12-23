@@ -15,7 +15,7 @@ export default function Home() {
       <div className="mx-auto container">
 
         <div className="flex md:flex-row flex-col justify-center justify-items-center items-center p-8">
-          <Image src="/images/Deta.png" className="scale-110 md:w-[500px] lg:w-[600px]" width={600} height={600} />
+          <Image src="/images/Deta.png" className="scale-110 md:w-[500px] lg:w-[600px]" width={500} height={500} />
           <div className="flex flex-col items-center ">
             <p className="text-5xl lg:text-9xl">DeTA</p>
             <p className="text-xl lg:text-2xl">Developer Tanah Air</p>
@@ -46,18 +46,17 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center bg-white flex-col w-full p-4 lg:p-16">
-          <div className="pb-16">
+          <div className="pb-5">
             <p className="text-2xl lg:text-4xl">Membership Perks</p>
             <p className="text-slate-500 lg:text-2xl">
               “What will I get if I join DeTA?”
             </p>
           </div>  
 
-          <div className="lg:grid lg:grid-cols-3 gap-16 w-full px-[10%]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 w-full px-[10%]">
             <Card
               title={"Enhance Website Skill"}
-              desc={"Introduce to you about the website skills!"}
-            />
+              desc={"Introduce to you about the website skills!"}/>
             <Card
               title={"Knowledge"}
               desc={"Many valuable knowledge can be gained!"}

@@ -24,7 +24,7 @@ export default function About() {
             <p className="text-2xl md:text-4xl">Our Background</p>
             <p className="text-slate-500 md:text-2xl">Our Origin</p>
           </div>
-          <div className="flex flex-col shadow-xl rounded-2xl p-4 md:p-16 md:mx-32">
+          <div className="flex flex-col rounded-2xl p-4 md:p-16 md:mx-32 bg-[#F7F7F7] border hover:bg-[#F2F2F2]">
             <p className="text-2xl md:text-4xl mb-4">Lambda</p>
             <p className="text-slate-500 md:text-2xl text-justify">
               DeTA started as a study group called Lambda. Lambda focuses on current 
@@ -41,7 +41,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 bg-white p-4 gap-4 sm:p-16 sm:gap-16">
+        <div className="grid grid-cols-2 bg-white p-4 gap-4 sm:p-16 sm:gap-5">
           <Card
             title={"Vision"}
             desc={
@@ -56,8 +56,8 @@ export default function About() {
           />
         </div>
 
-        <div className="flex flex-col bg-white p-4 gap-4 md:p-16 md:gap-16">
-          <div className="pb-4">
+        <div className="flex flex-col bg-white p-4 gap-1 md:p-16 md:gap-5">
+          <div className="">
             <p className="text-2xl md:text-4xl">Ongoing efforts to achieve our Vision</p>
             <p className="text-slate-500 md:text-2xl">What we do in DeTA</p>
           </div>

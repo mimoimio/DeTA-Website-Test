@@ -37,7 +37,6 @@ main {
 } */
 /* Apply the background to the body or html */
 html, body {
-  background: #ff8000;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -45,13 +44,38 @@ html, body {
 
 /* Styling for the main element */
 main {
-  font-family: Oswald;
-  height: 100vh;   /* Ensures main takes up at least the full screen */
+  /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
   overflow-y: scroll;
   overflow-x: hidden;
-  background:  linear-gradient(#ffd030f0,#ff3000f0), url('/images/DeTAPattern.png') repeat center fixed;
+  position: relative;
   background-size: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  /* Add the background image here */
+  background: url('/images/DeTAPattern.png') repeat fixed;
+}
+
+main::before {
+  content: "";
+  /*height: 100%;   !* Ensures main takes up at least the full screen *!*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* Frosted glass effect */
+  background-color: rgba(244, 104, 0, 0.27);
+  backdrop-filter: blur(10px);
+
+  /* Ensure this layer is behind the main content */
+  z-index: 0;
+}
+
+/* Ensure main's content is above the frosted glass layer */
+main > * {
+  position: relative;
+  z-index: 1;
 }

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import RecentActivities from "@/components/RecentActivities";
 const ActivityCard = ({ title, desc, src = "/images/DeTA.png" }) => {
   return (
-    <div className='flex flex-col lg:flex-row bg-slate-100 bg-opacity-25 shadow-xl hover:-translate-y-1 duration-150 rounded-2xl p-4 lg:p-8'>
+    <div className='flex flex-col lg:flex-row bg-slate-100 bg-opacity-25 border duration-150 rounded-2xl p-4 lg:p-8'>
       <div className="flex flex-shrink-0  rounded-xl object-cover "> {/*bg-slate-500*/}
         <Image src={src} alt="gambar" width={200} height={200} className="w-full h-32 lg:h-40 lg:w-40 object-cover mix-blend-multiply bg-black" />
       </div>
@@ -29,7 +29,7 @@ export default function Activities() {
 
         <RecentActivities />
         
-        <div className="flex flex-col gap-10 p-4 lg:p-16 bg-white">
+        <div className="flex flex-col gap-1 p-4 lg:p-16 bg-white">
           {/* Title of section */}
             <div className="pb-2 lg:pb-16">
                 <p className="text-2xl lg:text-4xl">Types of Activities</p>

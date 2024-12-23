@@ -9,7 +9,7 @@ import DropdownMenu from "./DropDownMenu";
 export const NavList = () => {
   return (
     <div className="items-center bg-white ">
-      <ul className="grid grid-cols-3 gap-2 lg:flex lg:flex-wrap lg:space-x-8 p-2">
+      <ul className="grid grid-cols-3 gap-2 text-xl lg:flex lg:flex-wrap lg:space-x-8 p-2">
         <Pill address="" title="Home"></Pill>
         <Pill address="about" title="About"></Pill>
         <Pill address="activities" title="Activities"></Pill>
@@ -19,7 +19,7 @@ export const NavList = () => {
         <Link
           href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"}
           target="_blank"
-          className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75 hover:-translate-y-1">
+          className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75">
           <li>Register Now</li>
         </Link>
       </ul>
