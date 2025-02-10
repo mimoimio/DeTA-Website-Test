@@ -18,7 +18,7 @@ export default function Organisation() {
             <div className="text-xl text-center mb-4 lg:text-4xl"> The Benevolent Dictator For Life </div>
 
             <div className="grid grid-cols-1 w-full gap-4">
-              <OrganisationDisplay name="Aiman Rahim" linkedin="https://www.linkedin.com/in/hakim-nazri/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"/>
+              <OrganisationDisplay name="Aiman Rahim" linkedin="https://www.linkedin.com/in/aiman-rahim-grad-eng-4267091a3/"/>
             </div>
 
           </div>
