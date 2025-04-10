@@ -1,22 +1,28 @@
 import { useState } from "react";
 import { NavList } from "./Header";
-const DropdownMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
+import { PiListDashesLight } from "react-icons/pi";
 
-    return (
-        <div className="lg:hidden relative inline-block text-center">
-            <div>
-                <button
-                    type="button"
-                    className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    Menu
-                </button>
-            </div>
-            {isOpen && (<NavList/> || <div>cat</div>)}
-        </div>
-    );
+const DropdownMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="lg:hidden relative inline-block text-center">
+      <div>
+        <button
+          type="button"
+          className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-100 focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Menu
+        </button>
+      </div>
+      {isOpen && (
+        <>
+          <NavList />
+        </>
+      )}
+    </div>
+  );
 };
 
 export default DropdownMenu;

@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Oswald';
-  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2") format("woff2"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff") format("woff"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf") format("truetype");
+  font-family: "Oswald";
+  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Comic Sans MS";
   src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
-  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")
+      format("svg");
 }
 /* html{
   height: 100%;
@@ -36,7 +44,8 @@ main {
   justify-content:space-between;
 } */
 /* Apply the background to the body or html */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -45,37 +54,38 @@ html, body {
 /* Styling for the main element */
 main {
   /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   position: relative;
   background-size: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  background: #f82;
   /* Add the background image here */
-  background: url('/images/DeTAPattern.png') repeat fixed;
+  /* background: url('/images/DeTAPattern.png') repeat fixed; */
 }
-
-main::before {
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url("/images/DetaMeetup7.png") no-repeat center center/cover fixed;
+  font-family: "Montserrat";
+  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)) */
+}
+/* main::before {
   content: "";
-  /*height: 100%;   !* Ensures main takes up at least the full screen *!*/
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 
-  /* Frosted glass effect */
   background-color: rgba(244, 104, 0, 0.27);
   backdrop-filter: blur(10px);
 
-  /* Ensure this layer is behind the main content */
   z-index: 0;
 }
 
-/* Ensure main's content is above the frosted glass layer */
 main > * {
   position: relative;
   z-index: 1;
-}
+} */

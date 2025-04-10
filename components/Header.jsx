@@ -1,49 +1,67 @@
-'use client'
+"use client";
 
 import React from "react";
 import Pill from "./Pill";
 import Image from "next/image";
 import Link from "next/link";
 import DropdownMenu from "./DropDownMenu";
+import { useState } from "react";
+import { GoArrowUpRight } from "react-icons/go";
+import { stringify } from "postcss";
 
 export const NavList = () => {
   return (
-    <div className="items-center bg-white ">
-      <ul className="grid grid-cols-3 gap-2 text-xl lg:flex lg:flex-wrap lg:space-x-8 p-2">
-        <Pill address="" title="Home"></Pill>
+    <div className=" flex lg:h-[56px] lg:bg-white rounded-full shadow-md">
+      <ul className="flex flex-wrap space-x-8 static m-0 w-full gap-2 text-xl p-2 ">
+        <Pill address="blogs" title="Blogs"></Pill>
         <Pill address="about" title="About"></Pill>
-        <Pill address="activities" title="Activities"></Pill>
-        <Pill address="organisation" title="Team"></Pill>
         <Pill address="gallery" title="Gallery"></Pill>
-        <Pill address="contact" title="Contact Us"></Pill>
-        <Link
-          href={"https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"}
-          target="_blank"
-          className="bg-slate-800 hover:bg-slate-600 px-4 py-1 rounded-lg text-slate-50 duration-75">
-          <li>Register Now</li>
-        </Link>
       </ul>
     </div>
-  )
-}
+  );
+};
+
+const Logo = () => {
+  return (
+    <Link
+      href={"/"}
+      className="flex items-center font-black bg-white rounded-full py-2 px-4 gap-4 text-xl h-[56px]  shadow-md"
+    >
+      {" "}
+      <Image
+        src={"/images/Deta.png"}
+        width={40}
+        height={40}
+        alt="DeTA Logo"
+        className="mix-blend-multiply"
+      />
+      DeTA
+    </Link>
+  );
+};
+
+const ContactUs = () => {
+  return (
+    <Link
+      href=""
+      className={
+        "h-[56px] flex items-center bg-white rounded-full px-4  shadow-md"
+      }
+    >
+      Contact Us
+      <GoArrowUpRight className="rounded-full bg-yellow-600 h-8 w-8 ml-4 text-white p-1" />
+    </Link>
+  );
+};
 
 const Header = () => {
   return (
-    <header className="flex flex-col bg-white">
-      <div className="flex flex-col lg:flex-wrap lg:flex-row container m-auto justify-center items-center lg:justify-between p-4 ">
-        <Link href={"/"}>
-          <Image
-            src={"/images/Deta.png"}
-            width={40}
-            height={40}
-            className="scale-[1.6] mix-blend-multiply mx-6"
-          />
-        </Link>
-        <div className="hidden lg:flex">
-          <NavList />
-        </div>
+    <header className="flex flex-col fixed w-full top-0 z-50 ">
+      <div className="flex lg:flex-wrap lg:flex-row container m-auto  items-center justify-between p-4">
+        <Logo />
+        <NavList />
+        <ContactUs />
       </div>
-      <DropdownMenu />
     </header>
   );
 };
