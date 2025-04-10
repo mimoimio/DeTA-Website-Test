@@ -9,13 +9,13 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <div className="flex md:flex-row flex-col justify-start justify-items-center items-center p-8 h-[100dvh] hero-section">
-        <div className="flex flex-col items-start text-white font-montserrat container m-auto">
+      <div className="flex md:flex-row flex-col justify-start justify-items-center items-center p-8 h-[100dvh] hero-section ">
+        <div className="flex flex-col items-start text-white container m-auto">
           <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
           <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
             Developer Tanah Air
           </h2>
-          <p className="font-plus-jakarta-sans mt-10  lg:w-1/3">
+          <p className="lg:w-1/3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -23,7 +23,7 @@ export default function Home() {
             <li className="flex">
               <Link
                 href={"about"}
-                className="bg-[#FD7014] h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
+                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
               >
                 Join Us
               </Link>
@@ -41,9 +41,26 @@ export default function Home() {
       </div>
 
       <div className="mx-auto container">
-        <FeaturedProjects />
+        {/* What Do We Do? */}
+        <div className="container bg-white p-[4rem] ">
+          <h1 className="text-[40px] font-bold text-center">
+            What Do We <span className="bg-[#FD7014] px-2 text-white">Do?</span>
+          </h1>
 
-        <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
+          <p className="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        {/* Innovations by Our Community */}
+
+        {/* Upcoming Events */}
+
+        <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
+          “Build the future, one project at a time.” - Aiman, DeTA Founder
+        </h2>
+
+        {/* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
           <div className="pb-10 lg:pb-16 ">
             <p className="lg:text-4xl text-center">
               Interested in web or software development?
@@ -120,7 +137,7 @@ export default function Home() {
               desc={"Get to know many developers and website expertises!"}
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

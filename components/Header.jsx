@@ -25,7 +25,7 @@ const Logo = () => {
   return (
     <Link
       href={"/"}
-      className="flex items-center font-black bg-white rounded-full py-2 px-4 gap-4 text-xl h-[56px]  shadow-md"
+      className="flex items-center font-bold font-montserrat bg-white rounded-full py-2 px-4 gap-4 text-xl h-[56px]  shadow-md"
     >
       {" "}
       <Image
@@ -33,7 +33,7 @@ const Logo = () => {
         width={40}
         height={40}
         alt="DeTA Logo"
-        className="mix-blend-multiply"
+        className=""
       />
       DeTA
     </Link>

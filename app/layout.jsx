@@ -2,17 +2,13 @@ import {
   Inter,
   Lato,
   Open_Sans,
-  Roboto,
   Montserrat,
   Plus_Jakarta_Sans,
 } from "next/font/google";
 import "./globals.css";
 
-// const inter = Inter({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"], weight: "400" });
 
-// alternative fonts
-// const roboto = Inter({ subsets: ["latin"], weight: "300" });
 const openSans = Open_Sans({ subsets: ["latin"], weight: "300" });
 const lato = Lato({ subsets: ["latin"], weight: "300" });
 export const metadata = {
@@ -21,7 +17,14 @@ export const metadata = {
 };
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-plusjakartasans",
 });
 
 export default function RootLayout({ children }) {
@@ -72,7 +75,9 @@ export default function RootLayout({ children }) {
 
         <title>Developer Tanah Air</title>
       </head>
-      <body className={openSans.className}>{children}</body>
+      <body className={`${montserrat.variable} ${plusJakartaSans.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
