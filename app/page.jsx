@@ -1,12 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import Card from "@/components/Card";
 import Link from "next/link";
-import RecentActivities from "@/components/RecentActivities";
 import FeaturedProjects from "@/components/FeaturedProjects";
-const lessthan = "<";
-const biggerthan = ">";
 export default function Home() {
   return (
     <main>
@@ -14,22 +10,11 @@ export default function Home() {
 
       {/* Hero */}
       <div className="flex md:flex-row flex-col justify-start justify-items-center items-center p-8 h-[100dvh] hero-section">
-        {/* <Image
-            src="/images/Deta.png"
-            className="scale-110 md:w-[500px] lg:w-[600px]"
-            width={500}
-            height={500}
-            alt="DeTA Logo"
-          />
-          <div className="flex flex-col items-center ">
-            <p className="text-5xl lg:text-9xl">DeTA</p>
-            <p className="text-xl lg:text-2xl">Developer Tanah Air</p>
-          </div> */}
         <div className="flex flex-col items-start text-white font-montserrat container m-auto">
-          <p className="text-5xl lg:text-9xl font-bold">DeTA</p>
-          <p className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
+          <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
+          <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
             Developer Tanah Air
-          </p>
+          </h2>
           <p className="font-plus-jakarta-sans mt-10  lg:w-1/3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
