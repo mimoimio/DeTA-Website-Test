@@ -1,3 +1,4 @@
+New commit by Mior 19:53 23 August 2024 owo
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

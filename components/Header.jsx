@@ -5,14 +5,14 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="flex flex-wrap items-center justify-between w-full p-4 bg-white">
-      <Link href={"/"}>
-        <Image
-          src={"/images/Deta.png"}
-          width={40}
-          height={40}
-          className="scale-[1.6] mix-blend-multiply mx-6"
-        />
-      </Link>
+      {/* <div className="flex text-4xl">DeTA</div> */}
+      <Image
+        src={"/images/Deta.png"}
+        width={40}
+        height={40}
+        className="scale-[1.6] mix-blend-multiply mx-6"
+      />
+      <div className="text-slate-300">Mior branch</div>
 
       <div className="flex flex-wrap items-center justify-center bg-white">
         <ul className="flex space-x-8">
