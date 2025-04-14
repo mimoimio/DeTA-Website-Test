@@ -63,30 +63,30 @@ export default function Home() {
         {/* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
           <div className="pb-10 lg:pb-16 ">
             <p className="lg:text-4xl text-center">
-            Interested in web or software development?
-          </p>
+              Interested in web or software development?
+            </p>
           <p className="drop-shadow-md text-9xl text-center ">
-            DeTA is the community for you!
-          </p>
+              DeTA is the community for you!
+            </p>
+          </div>
+          <div className="flex justify-between gap-10 items-center">
+            <Link
+              href={"about"}
+              className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
+            >
+              Know More
+            </Link>
+            <Link
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
+              }
+              target="_blank"
+              className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
+            >
+              Register Now
+            </Link>
+          </div>
         </div>
-        <div className="flex justify-between gap-10 items-center">
-          <Link
-            href={"about"}
-            className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
-          >
-            Know More
-          </Link>
-          <Link
-            href={
-              "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
-            }
-            target="_blank"
-            className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
-          >
-            Register Now
-          </Link>
-        </div>
-      </div>
 
         <div className="flex justify-center bg-white flex-col w-full p-4 lg:p-16">
           <div className="pb-5">
