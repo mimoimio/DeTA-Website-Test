@@ -2,102 +2,157 @@ import Header from "@/components/Header";
 import Card from "@/components/Card";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import { HiChatBubbleLeftRight } from "react-icons/hi2";
+
 export default function About() {
-  const bgDesc = 'Our "Origin"';
-  const whatWeDoDesc = "Lot's of Stuff";
   return (
-    <main>
+    <>
       <Header />
-      <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-        <h1 className="text-7xl">Community for Developers</h1>
-        <h2 className="text-3xl flex-wrap lg:mx-[26rem] text-center">
-          DeTA is a community _______________________ ___ __________ ___
-          __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
-          __________ ___
-        </h2>
-        <h2 className="text-3xl flex-wrap lg:mx-[26rem] text-center">
-          Our objectives are _______________________ ___ __________ ___
-          __________ ___ __________ ___ ____ ___ __________ ___ __________ ___
-          __________ ___
-        </h2>
-      </div>
-
-      <div className="flex flex-col bg-white p-4 gap-4 sm:p-16 sm:gap-4">
-        <div className="pb-4">
-          <p className="text-4xl">Our Background</p>
-          <p className="text-slate-500 text-2xl">{bgDesc}</p>
-        </div>
-        <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-          <p className="text-4xl mb-4">Wealth, Fame, Power</p>
-          <p className="text-slate-500 text-2xl">
-            The man who had everything in this world... The Pirate King, Gold
-            Roger. The great treasure he left behind, One Piece has opened the
-            curtain on a grand era! It is a time when eager pirates set sail,
-            battle, and become great! The Great Age of Pirates! Words he spoke
-            drove countless men out to sea. And so men set sights on the Grand
-            Line, in pursuit of their dreams. The world has truly entered a
-            Great Pirate Era!
+      <div className="mx-auto h-screen flex items-center justify-center">
+        <div className="pl-20 pr-20">
+          <h1 className="text-6xl font-bold pb-12">
+            Developing Excellence Together
+          </h1>
+          <p className="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            eveniet eius cumque necessitatibus dignissimos, corporis odio enim
+            voluptate nemo nihil. Quaerat nulla aperiam, commodi iste
+            accusantium ea quos itaque eveniet.
           </p>
+        </div>
+        <div className="pr-20 flex justify-center">
+          <Image
+            src="/images/DetaMeetup7.png"
+            alt="gambar"
+            width={700}
+            height={700}
+            className="object-cover mix-blend-multiply bg-black"
+          />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 bg-white p-4 gap-4 sm:p-16 sm:gap-16">
-        <Card
-          title={"Vision"}
-          desc={
-            "To ___ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ ______"
-          }
-        ></Card>
-        <Card
-          title={"Mission"}
-          desc={
-            "To ___ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ _________ ___ _____ ____ ____ ___ ___ ______"
-          }
-        ></Card>
-      </div>
-
-      <div className="flex flex-col bg-white p-4 gap-4 lg:p-16 lg:gap-16">
-        <div className="pb-4">
-          <p className="text-4xl">What We Do in DeTA</p>
-          <p className="text-slate-500 text-2xl">{whatWeDoDesc}</p>
+      <div className="mx-auto h-screen text-center pt-10">
+        <div className="px-20">
+          <h1 className="text-2xl font-semibold">
+            At DeTA we are committed to revolutionizing the digital world with
+            innovative, sustainable, and cost effective solutions. With a proven
+            track record of delivering exceptional projects, we combine
+            state-of-the-art technology, skill expertise, and customer-centric
+            approaches to bring vision to life.
+          </h1>
         </div>
-
-        <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-          <p className="text-4xl mb-4">
-            Eventful and Active Continuous Programs
-          </p>
-          <p className="text-slate-500 text-2xl">
-            As a community of growing young developers, we prioritize our
-            learning and experience. We have _____ _____ _____ _____ _____ _____
-            _____ from _____ _____ _____ _____ to _____ _____ _____ _____ _____,
-            finally, _____ _____ _____ _____.
-          </p>
-        </div>
-
-        <div className="flex flex-col shadow-xl rounded-2xl p-4 lg:p-16 lg:mx-64 ">
-          <p className="text-4xl mb-4">Study and Sharing</p>
-          <p className="text-slate-500 text-2xl">
-            As a community of growing young developers, we prioritize our
-            learning and experience. We have _____ _____ _____ _____ _____ _____
-            _____ from _____ _____ _____ _____ to _____ _____ _____ _____ _____,
-            finally, _____ _____ _____ _____.
-          </p>
-        </div>
-
-        <div className="flex justify-center items-center">
-          <p className="text-slate-500 text-2xl text-center">
-            If you wish to know more about what we do, continue in the
-            <Link
-              href={"activities"}
-              className="bg-slate-300 h-min p-4 hover:bg-slate-400 duration-150 rounded-xl mx-2"
-            >
-              Activities
-            </Link>
-            section
-          </p>
+        <div className="flex space-x-10 pt-10 justify-center">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">10+</h1>
+            <p>Completed Projects</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">60+</h1>
+            <p>Community Members</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">10+</h1>
+            <p>Organized Events</p>
+          </div>
         </div>
       </div>
-      <Footer />
-    </main>
+
+      <div className="mx-auto h-screen  flex">
+      <div className="pl-20 pr-20">
+          <Image
+            src="/images/DetaMeetup7.png"
+            alt="gambar"
+            width={700}
+            height={700}
+            className="object-cover mix-blend-multiply bg-black"
+          />
+        </div>
+        <div>
+          <h1 className="text-4xl font-bold pb-5">
+              Our Mission
+          </h1>
+          <h2 className=" pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+          <h3 className="space-y-5">
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+          </h3>
+        </div>
+      </div>
+
+      <div className="mx-auto h-screen  flex">
+      <div className="pl-20">
+          <h1 className="text-4xl font-bold pb-5">
+              Our Mission
+          </h1>
+          <h2 className=" pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+          <h3 className="space-y-5">
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+          </h3>
+        </div>
+      <div className="pr-20">
+          <Image
+            src="/images/DetaMeetup7.png"
+            alt="gambar"
+            width={700}
+            height={700}
+            className="object-cover mix-blend-multiply bg-black"
+          />
+        </div>
+     
+      </div>
+
+      <div className="mx-auto h-screen  flex">
+      <div className="pl-20 pr-20">
+          <Image
+            src="/images/DetaMeetup7.png"
+            alt="gambar"
+            width={700}
+            height={700}
+            className="object-cover mix-blend-multiply bg-black"
+          />
+        </div>
+        <div>
+          <h1 className="text-4xl font-bold pb-5">
+              Our Mission
+          </h1>
+          <h2 className=" pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+          <h3 className="space-y-5">
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+            <p> ✅ Bla3 We target to be the best in the world.</p>
+          </h3>
+        </div>
+      </div>
+
+      <div className="mx-auto bg-black text-white text-center pb-32">
+  <h1 className="font-semibold text-6xl p-5">
+    How <span className="bg-orange-600">We</span> Do Work
+  </h1>
+  <p className="text-2xl font-light p-5">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <Image
+    src="/images/DetaMeetup7.png"
+    alt="gambar"
+    width={500} // reduced from 700
+    height={500}
+    className="mx-auto "
+  />
+</div>
+<Footer />
+    </>
   );
 }

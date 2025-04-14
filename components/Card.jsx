@@ -2,10 +2,9 @@ import Image from 'next/image';
 
 const Card = ({ title, desc }) => {
     return (
-        // hover:scale-105
-        <div className='relative w-full shadow-xl hover:-translate-y-1 duration-150 rounded-2xl p-16'>
-            <p className="text-4xl">{title}</p>
-            <p className="text-slate-500 text-2xl">{desc}</p>
+        <div className="bg-[#F7F7F7] border hover:bg-[#F2F2F2] transition duration-150 rounded-2xl p-4 lg:p-8">
+            <h2 className="text-2xl lg:text-4xl font-bold">{title}</h2>
+            <p className="text-slate-500 text-sm lg:text-2xl mt-2 lg:mt-4">{desc}</p>
         </div>
     );
 };

@@ -1,0 +1,27 @@
+import React from "react";
+import Image from 'next/image';
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+
+export default function OrganisationDisplay({ position, name, title, linkedin = "", imageSrc = "/images/DeTA.png" }) {
+
+  return (
+    <div className="flex flex-col gap-2 bg-white p-2 rounded-lg ">
+      {/* <div className="flex justify-center bg-white rounded-lg ">
+        <Image
+          src={imageSrc}
+          alt={title}
+          height={500}
+          width={500}
+          className="rounded border-2 h-[100px] w-[100px] md:h-[200px] md:w-[200px]" />
+      </div> */}
+      <div className="text-lg font-bold text-center">{name}</div>
+      <Link href={linkedin} target="_blank" className="flex justify-center items-center text-blue-600">
+        <FaLinkedin className="h-10 w-10" />
+      </Link>
+    </div>
+
+
+  );
+}
+
