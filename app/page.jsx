@@ -50,7 +50,7 @@ export default function Home() {
             What Do We <span className="bg-[#FD7014] px-2 text-white">Do?</span>
           </h1>
 
-          <p className="text-center">
+          <p className="text-center text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -58,7 +58,7 @@ export default function Home() {
           <div className="flex gap-2 py-16 px-[2rem] bg-white m-auto h-[512px] box-content">
             <div className="flex flex-col w-full h-full ">
               <img
-                src="/images/joker.gif"
+                src="/images/mainpage/focuscoding.png"
                 alt="joker"
                 className="w-full h-full flex rounded-2xl"
               />
@@ -66,7 +66,7 @@ export default function Home() {
             <div className="flex gap-1 flex-col w-full h-full">
               <div className="flex w-full h-[50%]">
                 <img
-                  src="/images/joker.gif"
+                  src="/images/mainpage/lepakcoding.png"
                   alt="joker"
                   className="w-full object-cover rounded-2xl"
                 />
