@@ -5,7 +5,7 @@ export default function blogs() {
   return (
     <main>
       <Header />
-      <div className="mt-20 container bg-white">
+      <div className="flex flex-col pt-20 bg-white justify-center items-center">
           <p>The Blog</p>
           <h1>Writings from our community</h1>
           <p>
