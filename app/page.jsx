@@ -3,13 +3,16 @@ import Footer from "@/components/Footer";
 import Card from "@/components/Card";
 import Link from "next/link";
 import FeaturedProjects from "@/components/FeaturedProjects";
+import Image from "next/image";
+import ProjectCard from "@/components/new/ProjectCard";
+
 export default function Home() {
   return (
     <main>
       <Header />
 
       {/* Hero */}
-      <div className="flex md:flex-row flex-col justify-start justify-items-center items-center p-8 h-[100dvh] hero-section ">
+      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
         <div className="flex flex-col items-start text-white container m-auto">
           <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
           <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
@@ -40,9 +43,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto container">
+      <div className="mx-auto container ">
         {/* What Do We Do? */}
-        <div className="container bg-white p-[4rem] ">
+        <div className="container bg-white lg:p-[6rem] pb-0 ">
           <h1 className="text-[40px] font-bold text-center">
             What Do We <span className="bg-[#FD7014] px-2 text-white">Do?</span>
           </h1>
@@ -51,10 +54,80 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+
+          <div className="flex gap-2 py-16 px-[2rem] bg-white m-auto h-[512px] box-content">
+            <div className="flex flex-col w-full h-full ">
+              <img
+                src="/images/joker.gif"
+                alt="joker"
+                className="w-full h-full flex rounded-2xl"
+              />
+            </div>
+            <div className="flex gap-1 flex-col w-full h-full">
+              <div className="flex w-full h-[50%]">
+                <img
+                  src="/images/joker.gif"
+                  alt="joker"
+                  className="w-full object-cover rounded-2xl"
+                />
+              </div>
+              <div className="flex w-full flex-col h-[50%] p-4">
+                <p className=" text-[2em] font-bold font-montserrat">
+                  Join a supportive{" "}
+                  <span className="bg-[#FD7014] px-2 text-white">network</span>{" "}
+                  of fellow programmers who share your{" "}
+                  <span className="bg-[#FD7014] px-2 text-white">passion</span>.
+                </p>
+                <Link
+                  href={"about"}
+                  className="inline w-fit mt-4 hover:underline"
+                >
+                  Read more info
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
+
         {/* Innovations by Our Community */}
+        <div className="container bg-white lg:p-[6rem] pb-0 ">
+          <h1 className="text-[40px] font-bold text-center">
+            <span className="bg-[#FD7014] px-2 text-white">Innovations</span> by
+            Our Community
+          </h1>
+
+          <p className="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </div>
 
         {/* Upcoming Events */}
+        <div className="container bg-black text-white lg:p-[6rem] pb-0 ">
+          <h1 className="text-[40px] font-bold text-center">
+            <span className="bg-[#FD7014] px-2 text-white">Innovations</span> by
+            Our Community
+          </h1>
+
+          <p className="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </div>
 
         <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
           “Build the future, one project at a time.” - Aiman, DeTA Founder
