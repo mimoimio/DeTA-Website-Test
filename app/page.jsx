@@ -138,11 +138,10 @@ export default function Home() {
             <p className="lg:text-4xl text-center">
               Interested in web or software development?
             </p>
-            <p className="text-4xl lg:text-9xl drop-shadow-md text-center ">
+          <p className="drop-shadow-md text-9xl text-center ">
               DeTA is the community for you!
             </p>
           </div>
-
           <div className="flex justify-between gap-10 items-center">
             <Link
               href={"about"}
