@@ -25,7 +25,7 @@ export default function About() {
         </div>
         <div className="lg:pr-10 flex justify-center lg:w-1/2">
           <Image
-            src="/images/DetaMeetup7.png"
+            src="/images/about/catcode.png"
             alt="gambar"
             width={700}
             height={700}
@@ -38,7 +38,7 @@ export default function About() {
       {/* Stats Section */}
       <div className="mx-auto min-h-screen text-center py-10 px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
         <div className="px-4 lg:px-20 mb-10 lg:mb-20">
-          <h1 className="text-xl sm:text-2xl font-semibold">
+          <h1 className="text-l sm:text-2xl font-semibold  lg:px-20">
             At DeTA we are committed to revolutionizing the digital world with
             innovative, sustainable, and cost effective solutions. With a proven
             track record of delivering exceptional projects, we combine
@@ -46,7 +46,7 @@ export default function About() {
             approaches to bring vision to life.
           </h1>
         </div>
-        <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-10 pt-10 justify-center">
+        <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-6 lg:space-x-10  justify-center">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold">10+</h1>
             <p>Completed Projects</p>
@@ -63,48 +63,53 @@ export default function About() {
       </div>
 
       {/* Mission Sections - Repeating pattern */}
-      {[1, 2, 3].map((item, index) => (
-        <div 
-          key={index} 
-          className={`mx-auto min-h-screen flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} py-10 px-4 sm:px-6 lg:px-8 items-center`}
-        >
-          <div className="lg:w-1/2 mb-10 lg:mb-0 lg:px-10">
-            <Image
-              src="/images/DetaMeetup7.png"
-              alt="gambar"
-              width={700}
-              height={700}
-              className="object-cover mix-blend-multiply bg-black w-full max-w-md mx-auto lg:max-w-full"
-            />
-          </div>
-          <div className="lg:w-1/2 lg:px-10">
-            <h1 className="text-3xl sm:text-4xl font-bold pb-5">
-              Our Mission
-            </h1>
-            <h2 className="pb-5 text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h2>
-            <div className="space-y-3">
-              <p className="flex items-start">
-                <span className="mr-2">✅</span> 
-                <span>Bla3 We target to be the best in the world.</span>
-              </p>
-              <p className="flex items-start">
-                <span className="mr-2">✅</span> 
-                <span>Bla3 We target to be the best in the world.</span>
-              </p>
-              <p className="flex items-start">
-                <span className="mr-2">✅</span> 
-                <span>Bla3 We target to be the best in the world.</span>
-              </p>
-              <p className="flex items-start">
-                <span className="mr-2">✅</span> 
-                <span>Bla3 We target to be the best in the world.</span>
-              </p>
-            </div>
-          </div>
+      {[1, 2, 3].map((item, index) => {
+  const imageName = ['first', 'second', 'third'][index];
+  const imageSrc = `/images/about/${imageName}.png`;
+  
+  return (
+    <div 
+      key={index} 
+      className={`mx-auto min-h-screen flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} py-10 px-4 sm:px-6 lg:px-8 items-center`}
+    >
+      <div className="lg:w-1/2 mb-10 lg:mb-0 lg:px-10">
+        <Image
+          src={imageSrc}
+          alt={`gambar ${imageName}`}
+          width={700}
+          height={700}
+          className="object-cover mix-blend-multiply bg-black w-full max-w-md mx-auto lg:max-w-full"
+        />
+      </div>
+      <div className="lg:w-1/2 lg:px-10">
+        <h1 className="text-3xl sm:text-4xl font-bold pb-5">
+          Our Mission
+        </h1>
+        <h2 className="pb-5 text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </h2>
+        <div className="space-y-3">
+          <p className="flex items-start">
+            <span className="mr-2">✅</span> 
+            <span>Bla3 We target to be the best in the world.</span>
+          </p>
+          <p className="flex items-start">
+            <span className="mr-2">✅</span> 
+            <span>Bla3 We target to be the best in the world.</span>
+          </p>
+          <p className="flex items-start">
+            <span className="mr-2">✅</span> 
+            <span>Bla3 We target to be the best in the world.</span>
+          </p>
+          <p className="flex items-start">
+            <span className="mr-2">✅</span> 
+            <span>Bla3 We target to be the best in the world.</span>
+          </p>
         </div>
-      ))}
+      </div>
+    </div>
+  );
+})}
 
       {/* Work Section */}
       <div className="mx-auto bg-black text-white text-center py-16 px-4 sm:px-6 lg:px-8">
@@ -116,7 +121,7 @@ export default function About() {
         </p>
         <div className="mt-10">
           <Image
-            src="/images/DetaMeetup7.png"
+            src="/images/about/last.png"
             alt="gambar"
             width={500}
             height={500}
