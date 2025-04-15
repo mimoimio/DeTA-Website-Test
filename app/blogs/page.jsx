@@ -10,11 +10,11 @@ export default function blogs() {
           <h1>Writings from our community</h1>
           <p>
             The latest industry news, interviews, technology, and resources.
-          </p>{" "}
+          </p>
           <Image
-            src={"/images/Deta.png"}
-            width={40}
-            height={40}
+            src={"/images/hacker.jpg"}
+            width={500}
+            height={500}
             alt="DeTA Logo"
             className=""
           />
