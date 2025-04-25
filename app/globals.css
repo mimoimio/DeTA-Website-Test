@@ -37,6 +37,7 @@ body {
 /* Styling for the main element */
 main {
   /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
+  margin-top: 4rem;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
@@ -44,7 +45,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f82;
+  background: #fff /*#f82*/;
   /* Add the background image here */
   /* background: url('/images/DeTAPattern.png') repeat fixed; */
 }

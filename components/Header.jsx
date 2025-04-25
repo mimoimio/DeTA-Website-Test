@@ -10,7 +10,13 @@ import { FiMenu, FiX } from "react-icons/fi";
 export const NavList = ({ mobile = false, closeMenu = () => {} }) => {
   return (
     <div className={`${mobile ? "w-full" : "lg:h-[30px]"}`}>
-      <ul className={`flex ${mobile ? "flex-col gap-4" : "items-center justify-center gap-6 text-base font-medium "}`}>
+      <ul
+        className={`flex ${
+          mobile
+            ? "flex-col gap-4"
+            : "items-center justify-center gap-6 text-base font-medium "
+        }`}
+      >
         <Pill address="blogs" title="Blogs" onClick={closeMenu} />
         <Pill address="about" title="About" onClick={closeMenu} />
         <Pill address="gallery" title="Gallery" onClick={closeMenu} />
@@ -35,7 +41,9 @@ const ContactUs = ({ mobile = false }) => {
   return (
     <Link
       href="#contact"
-      className={`flex items-center rounded-full px-4 py-2 shadow-md bg-white font-medium ${mobile ? "w-full justify-center mt-4" : ""} hover:scale-105 transition-transform`}
+      className={`flex items-center rounded-full px-4 py-2 shadow-md bg-white font-medium ${
+        mobile ? "w-full justify-center mt-4" : ""
+      } hover:scale-105 transition-transform`}
     >
       Contact Us
       <GoArrowUpRight className="ml-3 bg-orange-500 text-white rounded-full h-6 w-6 p-1" />
