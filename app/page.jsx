@@ -123,7 +123,7 @@ export default function Home() {
             Upcoming Event
           </div>
           <h1 className="text-[40px] font-bold text-center">
-            Upcoming DeTA Events - Don't Miss Out!
+            {"Upcoming DeTA Events - Don't Miss Out!"}
           </h1>
 
           <p className="text-center">
