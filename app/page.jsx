@@ -19,8 +19,7 @@ export default function Home() {
             Developer Tanah Air
           </h2>
           <p className="lg:w-1/3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            A community of developers, git pushers, and turbo-nerds. Made in IIUM.
           </p>
           <ul className="flex mt-4">
             <li className="flex">
@@ -215,7 +214,7 @@ export default function Home() {
         </div>
 
         <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
-          “Build the future, one project at a time.” - Aiman, DeTA Founder
+          “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
         </h2>
 
         {/* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
