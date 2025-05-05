@@ -19,7 +19,8 @@ export default function Home() {
             Developer Tanah Air
           </h2>
           <p className="lg:w-1/3">
-            A community of developers, git pushers, and turbo-nerds. Made in IIUM.
+            A community of developers, git pushers, and turbo-nerds. Made in
+            IIUM.
           </p>
           <ul className="flex mt-4">
             <li className="flex">
@@ -42,14 +43,74 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto container ">
-        {/* What Do We Do? */}
+      <div className="min-h-screen xl:p-8">
+        <div className="pt-4">
+          <h1 className="text-center font-bold text-3xl md:text-4xl xl:text-6xl">
+            What Do We <span className="bg-[#FD7014] text-white p-1">Do?</span>
+          </h1>
+          <p className="text-center pt-3 md:text-xl ">
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="flex flex-col  md:flex-row md:p-11  ">
+          <div className="relative">
+            <Image
+              src="/images/mainpage/focuscoding.png"
+              alt="focus coding"
+              width={1000}
+              height={1000}
+              className="p-2   object-scale-down rounded-2xl md:object-cover brightness-50"
+            />
+            <div className="absolute top-20 xl:top-72 p-5 text-center ">
+              <h1 className="text-white font-bold text-lg xl:text-3xl ">
+                Coding for Everyone
+              </h1>
+              <p className="text-white text-sm xl:text-xl xl:pt-2 pb-2">
+                From weekend hobbyst to aspiring pros, we believe coding should
+                be acccessible and enjoyable for all.
+              </p>
+              <button className="backdrop-blur-sm text-white p-2 rounded-xl font-light shadow-xl border border-white xl:text-xl xl:border-solid ">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <Image
+                src="/images/mainpage/lepakcoding.png"
+                alt="focus coding"
+                width={1000}
+                height={1000}
+                className="p-2 object-scale-down rounded-2xl md:object-cover "
+              />
+            </div>
+
+            <div className="p-2">
+              <p className="text-center font-bold text-2xl xl:text-3xl xl:p-10">
+                Join a supportive{" "}
+                <span className="bg-[#FD7014] text-white p-1">network</span> of
+                fellow programmers who share your{" "}
+                <span className="bg-[#FD7014] text-white p-1">passion.</span>
+              </p>
+              <div className="text-center">
+                <Link href="about" className="inline hover:underline md:text-xl xl:text-2xl">
+                  Read more info
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* What Do We Do?
         <div className="container bg-white pt-[2rem] lg:p-[6rem] pb-0 ">
-          <h1 className="text-[40px] font-bold text-center">
+          <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold text-center">
             What Do We <span className="bg-[#FD7014] px-2 text-white">Do?</span>
           </h1>
 
-          <p className="text-center text-lg">
+          <p className="text-center text-lg md:text-xl pt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -86,138 +147,144 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div> */}
+
+      {/* Innovations by Our Community */}
+      <div className="container bg-white lg:p-[6rem] pb-0 ">
+        <h1 className="text-[40px] font-bold text-center">
+          <span className="bg-[#FD7014] px-2 text-white">Innovations</span> by
+          Our Community
+        </h1>
+
+        <p className="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
+          <ProjectCard
+            src="/images/ProReg.webp"
+            title="ProReg: Manage Your Studies"
+            desc="Lorem Ipsum"
+          />
+          <ProjectCard
+            src="/images/SimplifiedImaluum.png"
+            title="Simplified Imaluum"
+            desc="Lorem Ipsum"
+          />
+          <ProjectCard />
+          <ProjectCard />
         </div>
+      </div>
 
-        {/* Innovations by Our Community */}
-        <div className="container bg-white lg:p-[6rem] pb-0 ">
-          <h1 className="text-[40px] font-bold text-center">
-            <span className="bg-[#FD7014] px-2 text-white">Innovations</span> by
-            Our Community
-          </h1>
-
-          <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
-            <ProjectCard
-              src="/images/ProReg.webp"
-              title="ProReg: Manage Your Studies"
-              desc="Lorem Ipsum"
-            />
-            <ProjectCard
-              src="/images/SimplifiedImaluum.png"
-              title="Simplified Imaluum"
-              desc="Lorem Ipsum"
-            />
-            <ProjectCard />
-            <ProjectCard />
-          </div>
+      {/* Upcoming Events */}
+      <div className="container bg-[#121212] text-white lg:p-[6rem] pb-0">
+        <div className="bg-[#FD7014] flex w-fit m-auto rounded-full px-2  mb-4">
+          Upcoming Event
         </div>
+        <h1 className="text-[40px] font-bold text-center">
+          {"Upcoming DeTA Events - Don't Miss Out!"}
+        </h1>
 
-        {/* Upcoming Events */}
-        <div className="container bg-[#121212] text-white lg:p-[6rem] pb-0">
-          <div className="bg-[#FD7014] flex w-fit m-auto rounded-full px-2  mb-4">
-            Upcoming Event
-          </div>
-          <h1 className="text-[40px] font-bold text-center">
-            {"Upcoming DeTA Events - Don't Miss Out!"}
-          </h1>
+        <p className="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
 
-          <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <div className="font-montserrat flex gap-8 py-16 m-auto w-full ">
-            <ul className="flex flex-col gap-4 w-full">
-              <li className="flex justify-around">
-                <div className="flex flex-col justify-center h-[240px] px-4">
-                  <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
-                    26 April 2025
-                  </p>
-                  <p>Male Student Lounge, KICT, IIUM</p>
-                </div>
-                <img
-                  src="images/DeTAMeetup7_2.png"
-                  alt="DeTA Meetup 8.0"
-                  title="DeTA Meetup 8.0"
-                  className="h-[240px] w-[350px] rounded-xl object-cover"
-                />
-                <div className="flex flex-col justify-center w-[400px] px-4">
-                  <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
-                  <p>
-                    Gather and network with everybody with different background
-                    in IT industry
-                  </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Start</th>
-                        <th>End</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>09.00 PM</td>
-                        <td>11:00 PM</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
-                    RSVP
-                  </a>
-                </div>
-              </li>
-              <hr />
-              <li className="flex justify-around">
-                <div className="flex flex-col justify-center h-[240px] px-4">
-                  <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
-                    26 April 2025
-                  </p>
-                  <p>Male Student Lounge, KICT, IIUM</p>
-                </div>
-                <img
-                  src="images/Hackathon.png"
-                  alt="DeTA Meetup 8.0"
-                  title="DeTA Meetup 8.0"
-                  className="h-[240px] w-[350px] rounded-xl object-cover"
-                />
-                <div className="flex flex-col justify-center w-[400px] px-4">
-                  <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
-                  <p>
-                    Gather and network with everybody with different background
-                    in IT industry
-                  </p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Start</th>
-                        <th>End</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>09.00 PM</td>
-                        <td>11:00 PM</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
-                    RSVP
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div className="font-montserrat flex gap-8 py-16 m-auto w-full ">
+          <ul className="flex flex-col gap-4 w-full">
+            <li className="flex justify-around">
+              <div className="flex flex-col justify-center h-[240px] px-4">
+                <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
+                  26 April 2025
+                </p>
+                <p>Male Student Lounge, KICT, IIUM</p>
+              </div>
+              <img
+                src="images/DeTAMeetup7_2.png"
+                alt="DeTA Meetup 8.0"
+                title="DeTA Meetup 8.0"
+                className="h-[240px] w-[350px] rounded-xl object-cover"
+              />
+              <div className="flex flex-col justify-center w-[400px] px-4">
+                <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
+                <p>
+                  Gather and network with everybody with different background in
+                  IT industry
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>09.00 PM</td>
+                      <td>11:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
+                  RSVP
+                </a>
+              </div>
+            </li>
+            <hr />
+            <li className="flex justify-around">
+              <div className="flex flex-col justify-center h-[240px] px-4">
+                <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
+                  26 April 2025
+                </p>
+                <p>Male Student Lounge, KICT, IIUM</p>
+              </div>
+              <img
+                src="images/Hackathon.png"
+                alt="DeTA Meetup 8.0"
+                title="DeTA Meetup 8.0"
+                className="h-[240px] w-[350px] rounded-xl object-cover"
+              />
+              <div className="flex flex-col justify-center w-[400px] px-4">
+                <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
+                <p>
+                  Gather and network with everybody with different background in
+                  IT industry
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>09.00 PM</td>
+                      <td>11:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
+                  RSVP
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
-          “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
-        </h2>
+      <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
+        “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
+      </h2>
 
-        {/* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
+      <Footer />
+    </main>
+  );
+}
+
+{
+  /* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
           <div className="pb-10 lg:pb-16 ">
             <p className="lg:text-4xl text-center">
               Interested in web or software development?
@@ -293,10 +360,5 @@ export default function Home() {
               desc={"Get to know many developers and website expertises!"}
             />
           </div>
-        </div> */}
-      </div>
-
-      <Footer />
-    </main>
-  );
+        </div> */
 }
