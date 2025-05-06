@@ -7,6 +7,7 @@ import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiMenu, FiX } from "react-icons/fi";
 
+
 export const NavList = ({ mobile = false, closeMenu = () => {} }) => {
   return (
     <div className={`${mobile ? "w-full" : "lg:h-[30px]"}`}>
@@ -89,7 +90,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="w-full lg:hidden mt-4 space-y-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl">
+          <div className="w-full lg:hidden mt-4 space-y-4 bg-white p-4 rounded-xl">
             <NavList mobile closeMenu={closeMenu} />
             <ContactUs mobile />
           </div>
