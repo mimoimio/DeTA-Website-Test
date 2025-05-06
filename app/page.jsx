@@ -95,7 +95,10 @@ export default function Home() {
                 <span className="bg-[#FD7014] text-white p-1">passion.</span>
               </p>
               <div className="text-center">
-                <Link href="about" className="inline hover:underline md:text-xl xl:text-2xl">
+                <Link
+                  href="about"
+                  className="inline hover:underline md:text-xl xl:text-2xl"
+                >
                   Read more info
                 </Link>
               </div>
@@ -150,13 +153,13 @@ export default function Home() {
         </div> */}
 
       {/* Innovations by Our Community */}
-      <div className="container bg-white lg:p-[6rem] pb-0 ">
-        <h1 className="text-[40px] font-bold text-center">
-          <span className="bg-[#FD7014] px-2 text-white">Innovations</span> by
+      <div className="container mx-auto bg-white lg:p-[6rem] pb-0 ">
+        <h1 className="text-3xl font-bold text-center xl:text-6xl">
+          <span className="bg-[#FD7014] px-2 text-white ">Innovations</span> by
           Our Community
         </h1>
 
-        <p className="text-center">
+        <p className="text-center pt-3 md:text-xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
@@ -177,16 +180,80 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Upcoming Events */}
-      <div className="container bg-[#121212] text-white lg:p-[6rem] pb-0">
-        <div className="bg-[#FD7014] flex w-fit m-auto rounded-full px-2  mb-4">
+  
+      
+<div className="bg-[#121212] text-white lg:p-[6rem] pb-0">
+  <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl">
+    Upcoming Event
+  </div>
+  <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
+    Upcoming DeTA Events - Don't Miss Out!
+  </h1>
+  <p className="text-center pt-3 md:text-xl">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <div className="font-montserrat flex flex-col gap-8 py-16 m-auto w-full">
+    <ul className="flex flex-col gap-8 w-full">
+      {[1, 2].map((item) => (
+        <li
+          key={item}
+          className="flex flex-col lg:flex-row items-center justify-around gap-6"
+        >
+          {/* Date and Location */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left h-auto px-4">
+            <p className="bg-[#FD7014] flex w-fit rounded-full px-2 py-1 text-sm">
+              26 April 2025
+            </p>
+            <p className="mt-2">Male Student Lounge, KICT, IIUM</p>
+          </div>
+
+          {/* Image */}
+          <img
+            src={item === 1 ? "images/DeTAMeetup7_2.png" : "images/Hackathon.png"}
+            alt="DeTA Meetup 8.0"
+            title="DeTA Meetup 8.0"
+            className="w-full max-w-[350px] h-[240px] rounded-xl object-cover"
+          />
+
+          {/* Details */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-[400px] px-4">
+            <h3 className="text-2xl lg:text-3xl font-bold">DeTA Meetup 8.0</h3>
+            <p className="my-2">
+              Gather and network with everybody with different background in IT industry
+            </p>
+            <div className="flex gap-6 my-2">
+              <div>
+                <p className="font-semibold">Start</p>
+                <p>09:00 PM</p>
+              </div>
+              <div>
+                <p className="font-semibold">End</p>
+                <p>11:00 PM</p>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="bg-[#FD7014] mt-2 px-4 py-2 rounded-xl text-white font-semibold"
+            >
+              RSVP
+            </a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+      {/* <div className=" bg-[#121212] text-white lg:p-[6rem] pb-0">
+        <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl  ">
           Upcoming Event
         </div>
-        <h1 className="text-[40px] font-bold text-center">
+        <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
           {"Upcoming DeTA Events - Don't Miss Out!"}
         </h1>
 
-        <p className="text-center">
+        <p className="text-center pt-3 md:text-xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
@@ -272,9 +339,9 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      <h2 className="text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
+      <h2 className="text-xl md:text-2xl xl:text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
         “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
       </h2>
 
