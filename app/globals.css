@@ -51,8 +51,16 @@ main {
 }
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
-    url("/images/DetaMeetup7.png") no-repeat center center/cover fixed;
+    url("/images/DetaMeetup7.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Montserrat";
-  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)) */
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll; /* Override for mobile */
+  }
+}
+
 

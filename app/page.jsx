@@ -10,9 +10,45 @@ export default function Home() {
   return (
     <main className="mt-0">
       <Header />
+{/* <div>
+  <div className="relative">
+    <Image
+      src="/images/DetaMeetup7.png"
+      alt="hero"
+      width={1000}
+      height={1000}
+      className="w-full h-[100dvh] object-cover brightness-50"
+    />
+    <div className="absolute top-1/2  transform  -translate-y-1/2  text-white p-10 xl:p-24 flex flex-col items-start  container m-auto mt-10">
+      <h1 className=" text-6xl lg:text-9xl font-bold">DeTA</h1>
+      <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-1 md:p-2">Developer Tanah Air</h2>
+      <p className="md:text-xl"> A community of developers, git pushers and turbo-nerds. Made in
+      IIUM.</p>
+      <ul className="flex mt-4">
+            <li className="flex">
+              <Link
+                href={"about"}
+                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
+              >
+                Join Us
+              </Link>
+            </li>
+            <li className="flex">
+              <Link
+                href={"about"}
+                className="bg-[#eee] h-min text-black ms-4 p-4 hover:bg-slate-500 duration-150 rounded-xl"
+              >
+                Why Join Us?
+              </Link>
+            </li>
+          </ul>
+    </div>
+  </div>
+
+</div> */}
 
       {/* Hero */}
-      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
+       <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
         <div className="flex flex-col items-start text-white container m-auto">
           <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
           <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
@@ -41,7 +77,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> 
 
       <div className="min-h-screen xl:p-8">
         <div className="pt-4">
