@@ -48,7 +48,7 @@ export default function Home() {
           <h1 className="text-center font-bold text-3xl md:text-4xl xl:text-6xl">
             What Do We <span className="bg-[#FD7014] text-white p-1">Do?</span>
           </h1>
-          <p className="text-center pt-3 md:text-xl ">
+          <p className="text-center text-sm pt-3 md:text-xl p-3">
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -61,7 +61,7 @@ export default function Home() {
               alt="focus coding"
               width={1000}
               height={1000}
-              className="p-2   object-scale-down rounded-2xl md:object-cover brightness-50"
+              className="p-2  rounded-2xl md:object-cover brightness-50"
             />
             <div className="absolute top-20 xl:top-72 p-5 text-center ">
               <h1 className="text-white font-bold text-lg xl:text-3xl ">
@@ -83,7 +83,7 @@ export default function Home() {
                 alt="focus coding"
                 width={1000}
                 height={1000}
-                className="p-2 object-scale-down rounded-2xl md:object-cover "
+                className="p-2 rounded-2xl md:object-cover "
               />
             </div>
 
@@ -93,8 +93,8 @@ export default function Home() {
                 <span className="bg-[#FD7014] text-white p-1">network</span> of
                 fellow programmers who share your{" "}
                 <span className="bg-[#FD7014] text-white p-1">passion.</span>
-              </p>
-              <div className="text-center">
+              </p> 
+              <div className=" text-center p-2 pb-10">
                 <Link
                   href="about"
                   className="inline hover:underline md:text-xl xl:text-2xl"
