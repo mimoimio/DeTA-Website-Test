@@ -85,7 +85,6 @@ export default function Home() {
             What Do We <span className="bg-[#FD7014] text-white p-1">Do?</span>
           </h1>
           <p className="text-center text-sm pt-3 md:text-xl p-3">
-            {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -223,7 +222,7 @@ export default function Home() {
     Upcoming Event
   </div>
   <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
-    Upcoming DeTA Events - Don't Miss Out!
+{"Upcoming DeTA Events - Don't Miss Out!"}
   </h1>
   <p className="text-center pt-3 md:text-xl">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
