@@ -8,7 +8,7 @@ export default async function BlogPage({ params }) {
         <main className="min-h-full flex flex-col ">
             <Header />
             <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-4">
-                <h1 className="text-2xl">This is the page "{slug}" </h1>
+                <h1 className="text-2xl">{`This is the page "${slug}" `}</h1>
                 <p>
                     {`
                     ${<Link href={"/"} className="bg-blue-100 px-2 rounded-md">DeTA</Link>}'s stocks have been rising since 2023. We are now the most
