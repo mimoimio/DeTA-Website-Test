@@ -13,16 +13,20 @@ const Blogs = () => {
     <main >
       <Header />
       <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-        <h1 className="text-5xl lg:text-7xl">Blogs</h1>
-        <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">
-          For the memories within DeTA
+        <h1 className="text-5xl lg:text-7xl max-w-2xl w-full text-start">Blogs</h1>
+        <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] max-w-2xl w-full text-start">
+          Latest stories
         </h2>
-        <div className="grid grid-cols-3 max-w-4xl w-full gap-4 " >
+        <div className="grid grid-cols-2 max-w-4xl w-full gap-4 " >
           {
             blogs.map((item, index) => (
-              <Link href={`/blogs/${item}`} key={index} className="flex flex-col items-center justify-center">
-                <div key={index} className="flex w-full border p-2 rounded-md h-[300px] shadow-md ">
-                  {item}
+              <Link href={`/blogs/${item}`} key={index} className="flex flex-col items-center justify-center hover:scale-105 duration-75">
+                <div key={index} className="flex flex-col w-full border p-2 rounded-md h-[300px] shadow-md ">
+                  <img src="images/DetaMeetup7.png" alt="joker" className="h-1/2 object-cover rounded-sm" />
+                  <div className="p-4">
+                    <h1 className="text-xl font-semibold mb-4">{item}</h1>
+                    <p className="line-clamp-3"> desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc</p>
+                  </div>
                 </div>
               </Link>
             ))
