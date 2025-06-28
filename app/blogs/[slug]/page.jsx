@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Link from "next/link";
 
 import Markdown from "markdown-to-jsx"
 import getPostMetadata from "@/utils/getPostMetadata";
@@ -38,19 +37,23 @@ export async function generateMetadata({ params, searchParams }) {
 export default async function BlogPage({ params }) {
     const slug = await params.slug;
     const post = getPostContent(slug)
-    console.log(post)
     return (
-        <main className="min-h-full flex flex-col ">
+        <main className="min-h-full flex flex-col">
             <Header />
             <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-4">
                 <h1 className="text-2xl">{`${post.data.title}`}</h1>
+
+
+                <hr />
+
+
+                <article>
+                    <Markdown className="prose prose-lg prose-slate max-w-none">
+                        {`${post.content}`}
+                    </Markdown>
+                </article>
+
             </div>
-            <hr />
-            <article>
-                <Markdown className="prose prose-lg max-w-2xl mx-auto p-4">
-                    {`${post.content}`}
-                </Markdown>
-            </article>
             {/* <p>
 
                 {`
