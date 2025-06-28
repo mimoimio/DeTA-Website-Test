@@ -1,14 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import getPostMetadata from "@/utils/getPostMetadata";
+
 const Card = ({ bool = false }) => {
   return <>{bool ? "true" : "false"}</>;
 };
 
 const Blogs = () => {
-  // const blogs = [];
-  const blogs = "abdefghij".split("");
-
+  const postMetadata = getPostMetadata('posts')
   return (
     <main >
       <Header />
@@ -19,13 +19,13 @@ const Blogs = () => {
         </h2>
         <div className="grid grid-cols-2 max-w-4xl w-full gap-4 " >
           {
-            blogs.map((item, index) => (
-              <Link href={`/blogs/${item}`} key={index} className="flex flex-col items-center justify-center hover:scale-105 duration-75">
+            postMetadata.map((item, index) => (
+              <Link key={index} href={`/blogs/${item.slug}`} className="flex flex-col items-center justify-center hover:scale-105 duration-75">
                 <div key={index} className="flex flex-col w-full border p-2 rounded-md h-[300px] shadow-md ">
-                  <img src="images/DetaMeetup7.png" alt="joker" className="h-1/2 object-cover rounded-sm" />
+                  <img src={`images/${item.image}`} alt="joker" className="h-1/2 object-cover rounded-sm" />
                   <div className="p-4">
-                    <h1 className="text-xl font-semibold mb-4">{item}</h1>
-                    <p className="line-clamp-3"> desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc</p>
+                    <h1 className="text-xl font-semibold mb-4">{item.title}</h1>
+                    <p className="line-clamp-3"> {item.description}</p>
                   </div>
                 </div>
               </Link>
