@@ -1,7 +1,7 @@
 ---
 title: "Telur separuh masak" 
 description: "Mulakan hari anda dengan sarapan yang bernutrisi"
-image: "telur.jpeg" 
+image: "images (3).jpeg" 
 ---
 # Breakfast telur separuh masak harini
-![yeah](../public/images/DeTA.png)
+![yeah](../public/images/images (3).jpeg)
