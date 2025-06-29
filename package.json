@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "serve": "npx serve@latest out",
     "lint": "next lint"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.7.10",
     "next": "^15.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
