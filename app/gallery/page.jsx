@@ -3,12 +3,14 @@ import GalleryDisplay from "@/components/GalleryDisplay";
 import Footer from "@/components/Footer";
 export default function Gallery() {
   return (
-    <main>
+    <main className="mt-0">
       <Header />
-      <div className="mx-auto container">
-        <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
-          <h1 className="text-5xl lg:text-7xl">Gallery</h1>
-          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">For the memories within DeTA</h2>
+      <div className="">
+        <div className="flex flex-col items-center gap-4 pt-32 pb-16 bg-[url('/images/gallery/herobg.png')] bg-cover min-h-screen bg-center bg-no-repeat justify-center items-center text-white">
+          <h1 className="text-5xl lg:text-7xl w-1/2 text-center">Past Events, Future Inspirations Ahead</h1>
+          <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {/* For the memories within DeTA */}
+          </h2>
         </div>
         <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3 md:gap-10 md:p-10 w-full bg-white rounded-xl">
           <GalleryDisplay title="The Mainboards" desc="Description" url="https://lh3.googleusercontent.com/pw/AP1GczPAB1lzyBQP7r9aJmZaRNh-xeSPQ-SC6VKE4UulBqDcpo0f3BmYTRg3FdGYboXmOXU7GTcd3qmCLOEMOasrjE4GXAXkjcbUS5llji-q5T20JJO6JO1N5g1ey0A3ost3Dt1Z8Ol6iFSscbAVYXEUiCxLhg=w1260-h945-s-no-gm?authuser=0"></GalleryDisplay>
