@@ -52,7 +52,7 @@ export default function About() {
 
 
               <p className="text-base sm:text-lg">
-                We don't just build <span className="text-lime-500">apps</span>, we build future <span className="text-lime-500">innovators</span>.
+                {"We don't just build "}<span className="text-lime-500">apps</span>{", we build future "}<span className="text-lime-500">{"innovators"}</span>.
               </p>
 
 
