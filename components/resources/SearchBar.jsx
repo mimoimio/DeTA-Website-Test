@@ -99,7 +99,7 @@ export default function SearchBar({ setActiveCategory }) {
                         <div className="px-4 py-3 text-gray-500 text-sm">
                             <div className="flex items-center gap-2">
                                 <IoMdSearch className="text-gray-400" />
-                                <span>No categories found for "{searchTerm}"</span>
+                                <span>No categories found for &quot;{searchTerm}&quot;</span>
                             </div>
                         </div>
                     )}
