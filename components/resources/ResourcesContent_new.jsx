@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { getResourcesData } from "@/utils/getResourcesData";
 
-export default function ResourcesContent({ activeCategory, resourcesData }) {
-    const items = resourcesData?.[activeCategory] || [];
+export default function ResourcesContent({ activeCategory }) {
+    const resourcesData = getResourcesData();
+    const items = resourcesData[activeCategory] || [];
 
     return (
         <div className="px-8 py-4 w-full">

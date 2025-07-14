@@ -4,7 +4,7 @@ import SearchBar from './resources/SearchBar';
 import ResourcesSidebar from './resources/ResourcesSidebar';
 import ResourcesContent from './resources/ResourcesContent';
 
-export default function Resources() {
+export default function Resources({ resourcesData }) {
     const [activeCategory, setActiveCategory] = useState("Blogs");
 
     return (
@@ -26,7 +26,10 @@ export default function Resources() {
                     activeCategory={activeCategory}
                     setActiveCategory={setActiveCategory}
                 />
-                <ResourcesContent activeCategory={activeCategory} />
+                <ResourcesContent
+                    activeCategory={activeCategory}
+                    resourcesData={resourcesData}
+                />
             </div>
 
 
