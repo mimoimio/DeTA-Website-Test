@@ -1,0 +1,13 @@
+name: Rebuild site when Markdown changes
+on:
+  push:
+    branches: [main, dev]   # branches that trigger site rebuild
+jobs:
+  ping-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Vercel deploy hook
+        run: |
+          curl -fsSL -X POST "$VERCEL_DEPLOY_HOOK"
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
