@@ -8,7 +8,9 @@
     "start": "next start",
     "serve": "npx serve@latest out",
     "lint": "next lint",
-    "vercel-build": "git submodule update --init --recursive && next build"
+    "fetch-content": "node scripts/fetch-content.js",
+    "prebuild": "npm run fetch-content",
+    "vercel-build": "npm run fetch-content && next build"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
