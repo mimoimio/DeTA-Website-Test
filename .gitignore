@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Content submodule (optional - depends if you want to track submodule commits)
+# /content
+
+# But ignore any local content for development
+/posts

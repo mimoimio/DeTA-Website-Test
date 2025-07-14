@@ -9,9 +9,9 @@ const Card = ({ bool = false }) => {
 };
 
 const Blogs = () => {
-  const postMetadata = getPostMetadata('posts')
+  const postMetadata = getPostMetadata()
   const firstPost = postMetadata[0]
-  console.log(firstPost.tags)
+  console.log("😭😭😭" + firstPost.tags)
   return (
     <main >
       <Header />
@@ -50,6 +50,7 @@ const Blogs = () => {
         </div>
         <div className="grid grid-cols-2 max-w-4xl w-full gap-4 " >
           {
+
             postMetadata.map((item, index) => (
               <Link key={index} href={`/blogs/${item.slug}`} className="flex flex-col items-center justify-center hover:scale-105 duration-75">
                 <div key={index} className="flex flex-col w-full border p-2 rounded-md h-[300px] shadow-md ">

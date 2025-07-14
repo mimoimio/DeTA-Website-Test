@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { notFound } from 'next/navigation'
 
 import Markdown from "markdown-to-jsx"
 import getPostMetadata from "@/utils/getPostMetadata";
@@ -9,20 +10,28 @@ import matter from "gray-matter";
 
 
 function getPostContent(slug) {
-    const folder = 'posts/'
+    const folder = 'content/posts/'  // Changed from 'posts/' to 'content/posts/'
     const file = folder + `${slug}.md`
-    const content = fs.readFileSync(file, 'utf-8')
 
+    // Check if file exists before trying to read it
+    if (!fs.existsSync(file)) {
+        return null;
+    }
+
+    const content = fs.readFileSync(file, 'utf-8')
     const matterResult = matter(content)
     return matterResult
-
 }
 
 
 export const generateStaticParams = async () => {
-    const posts = getPostMetadata('posts')
+    const posts = getPostMetadata()  // Updated path
     return posts.map((post) => ({ slug: post.slug }))
 }
+
+// This controls what happens with dynamic params not returned by generateStaticParams
+// false = 404 for non-static params, true = generate on-demand
+// export const dynamicParams = false
 
 
 export async function generateMetadata({ params, searchParams }) {
@@ -35,17 +44,20 @@ export async function generateMetadata({ params, searchParams }) {
 
 
 export default async function BlogPage({ params }) {
-    const slug = await params.slug;
+    const { slug } = await params;
     const post = getPostContent(slug)
+
+    // If post doesn't exist, trigger 404
+    if (!post) {
+        notFound();
+    }
+
     return (
         <main className="min-h-full flex flex-col">
             <Header />
             <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-4">
                 <h1 className="text-2xl">{`${post.data.title}`}</h1>
-
-
                 <hr />
-
 
                 <article>
                     <Markdown className="prose prose-lg prose-slate max-w-none">
@@ -54,15 +66,6 @@ export default async function BlogPage({ params }) {
                 </article>
 
             </div>
-            {/* <p>
-
-                {`
-                    ${<Link href={"/"} className="bg-blue-100 px-2 rounded-md">DeTA</Link>}'s stocks have been rising since 2023. We are now the most
-                    wanted community in IIUM. We are the best community in IIUM.
-                    The numbers of shareholders are expected to rise to 1.5 million
-                    by the end of 2023. We are the best community in IIUM.
-                    `}
-            </p> */}
             <Footer />
         </main>
     )
