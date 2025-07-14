@@ -9,7 +9,7 @@ import matter from "gray-matter";
 
 
 function getPostContent(slug) {
-    const folder = 'posts/'
+    const folder = 'content/posts/'  // Changed from 'posts/' to 'content/posts/'
     const file = folder + `${slug}.md`
     const content = fs.readFileSync(file, 'utf-8')
 
@@ -20,7 +20,7 @@ function getPostContent(slug) {
 
 
 export const generateStaticParams = async () => {
-    const posts = getPostMetadata('posts')
+    const posts = getPostMetadata('content/posts')  // Updated path
     return posts.map((post) => ({ slug: post.slug }))
 }
 
@@ -42,10 +42,7 @@ export default async function BlogPage({ params }) {
             <Header />
             <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-4">
                 <h1 className="text-2xl">{`${post.data.title}`}</h1>
-
-
                 <hr />
-
 
                 <article>
                     <Markdown className="prose prose-lg prose-slate max-w-none">
@@ -54,15 +51,6 @@ export default async function BlogPage({ params }) {
                 </article>
 
             </div>
-            {/* <p>
-
-                {`
-                    ${<Link href={"/"} className="bg-blue-100 px-2 rounded-md">DeTA</Link>}'s stocks have been rising since 2023. We are now the most
-                    wanted community in IIUM. We are the best community in IIUM.
-                    The numbers of shareholders are expected to rise to 1.5 million
-                    by the end of 2023. We are the best community in IIUM.
-                    `}
-            </p> */}
             <Footer />
         </main>
     )
