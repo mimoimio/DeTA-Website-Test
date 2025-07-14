@@ -9,7 +9,7 @@ export default async function NotFound() {
             <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-8 text-center">
                 <h1 className="text-4xl font-bold">{`📝 Blog Post Not Found`}</h1>
                 <p className="text-lg text-gray-600">
-                    Sorry, the blog post you're looking for doesn't exist.
+                    {`Sorry, the blog post you're looking for doesn't exist.`}
                 </p>
                 <div className="flex flex-col gap-4">
                     <Link
