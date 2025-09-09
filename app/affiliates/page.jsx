@@ -157,7 +157,7 @@ export default function About() {
                     Enhancing and improving the skills, knowledge, abilities, and overall potential of individuals within a youth society or organization.
                   </p>
 
-                  <Link href="https://motionu.iium.edu.my/" target="_blank" className="flex items-center px-16 py-4 shadow-md bg-white font-medium mt-6 w-fit text-black rounded-full transition-transform">
+                  <Link href="https://mulhaq.org" target="_blank" className="flex items-center px-16 py-4 shadow-md bg-white font-medium mt-6 w-fit text-black rounded-full transition-transform">
                     Visit Us
                   </Link>
 

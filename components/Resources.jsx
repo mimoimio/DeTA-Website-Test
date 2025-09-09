@@ -11,7 +11,7 @@ export default function Resources({ resourcesData }) {
         <div className="mx-auto max-w-4xl w-full min-h-screen flex flex-col justify-start pt-32">
 
 
-            <div className="w-full flex items-center justify-between py-2 border-b-2">
+            <div className="w-full flex-col p-4 items-center justify-between py-2 border-b-2 md:flex-row">
                 <h1 className="text-2xl font-semibold">
                     Resources
                 </h1>
@@ -21,7 +21,7 @@ export default function Resources({ resourcesData }) {
             {/* amek dari markdown file nanti */}
 
 
-            <div className="flex">
+            <div className="flex flex-col md:flex-row">
                 <ResourcesSidebar
                     activeCategory={activeCategory}
                     setActiveCategory={setActiveCategory}

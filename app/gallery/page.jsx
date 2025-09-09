@@ -42,8 +42,8 @@ export default function Gallery() {
       </div>
 
       {/* Newest events */}
-      <div className="flex max-h-screen p-32">
-        <div className="flex flex-col items-center justify-center w-1/3 p-8 ">
+      <div className="flex flex-col max-h-screen p-4 md:flex-row  md:p-32">
+        <div className="flex flex-col items-center  justify-center md:w-1/3 p-8 ">
           <h2 className="text-5xl font-bold mb-4">{"What's Happening in Our Community"}</h2>
           <p className="text-gray-600 mb-6">Check out our latest events and activities.</p>
           <a href="/events" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">

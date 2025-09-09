@@ -34,7 +34,7 @@ export default function EventSwiper() {
   ];
 
   return (
-    <div className="w-2/3 relative">
+    <div className=" w-full md:w-2/3 relative">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={30}
