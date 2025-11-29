@@ -55,7 +55,7 @@ export default async function BlogPage({ params }) {
     return (
         <main className="min-h-full flex flex-col">
             <Header />
-            <div className="flex flex-col max-w-2xl w-full mx-auto p-4 pt-12 gap-4">
+            <div className="flex flex-col max-w-4xl w-full mx-auto p-4 pt-12 gap-4">
                 <h1 className="text-2xl">{`${post.data.title}`}</h1>
                 <hr />
 
@@ -69,4 +69,5 @@ export default async function BlogPage({ params }) {
             <Footer />
         </main>
     )
+
 }
