@@ -2,65 +2,208 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Oswald";
-  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2")
-      format("woff2"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff")
-      format("woff"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
+/* Import distinctive fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --color-bg: #080808;
+  --color-bg-secondary: #111111;
+  --color-accent: #FF6B00;
+  --color-accent-hover: #FF8533;
+  --color-text: #EAEAEA;
+  --color-text-muted: #9CA3AF;
+  --color-border: #222222;
+  --font-display: 'Archivo Black', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
-@font-face {
-  font-family: "Comic Sans MS";
-  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
-  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")
-      format("svg");
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-html,
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Styling for the main element */
-main {
-  /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
-  margin-top: 4rem;
-  overflow-y: auto;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   overflow-x: hidden;
-  position: relative;
-  background-size: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #fff /*#f82*/;
-  /* Add the background image here */
-  /* background: url('/images/DeTAPattern.png') repeat fixed; */
-}
-.hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
-    url("/images/DetaMeetup7.png") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "Montserrat";
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    background-attachment: scroll; /* Override for mobile */
+main {
+  margin-top: 0;
+  overflow-x: hidden;
+}
+
+/* Tech grid pattern background */
+@keyframes gridMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 107, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 20s linear infinite;
+}
+
+/* Glowing accent effect */
+@keyframes glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.glow-accent {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Reveal animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
+.reveal-delay-4 { animation-delay: 0.4s; }
+.reveal-delay-5 { animation-delay: 0.5s; }
+
+/* Staggered child animations */
+.stagger-children > * {
+  opacity: 0;
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hero section with gradient overlay */
+.hero-section {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.7) 50%, rgba(255, 107, 0, 0.15) 100%),
+    url("/images/DetaMeetup7.png") center/cover no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 30%, rgba(255, 107, 0, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Decorative floating elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Text gradient effect */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #FF9F43 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 107, 0, 0.1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 107, 0, 0.15);
+  border-color: var(--color-accent);
+}
+
+/* Monospace badge */
+.mono-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+}
+
+/* Noise texture overlay */
+.noise-overlay {
+  position: relative;
+}
+
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* Custom selection */
+::selection {
+  background: var(--color-accent);
+  color: white;
 }
 
 

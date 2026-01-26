@@ -1,12 +1,16 @@
 import Link from "next/link";
+
 const FooterButton = ({ address, title }) => {
   return (
-    <Link
-      href={"/".concat(address)}
-      className="hover:-translate-y-1 hover:text-slate-400 duration-150"
-    >
-      <li>{title}</li>
-    </Link>
+    <li>
+      <Link
+        href={address ? `/${address}` : "/"}
+        className="text-white/60 hover:text-[#FF6B00] transition-colors duration-300 inline-block"
+      >
+        {title}
+      </Link>
+    </li>
   );
 };
+
 export default FooterButton;

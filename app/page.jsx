@@ -1,466 +1,400 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Card from "@/components/Card";
 import Link from "next/link";
-import FeaturedProjects from "@/components/FeaturedProjects";
 import Image from "next/image";
 import ProjectCard from "@/components/new/ProjectCard";
+import { FiArrowRight, FiCalendar, FiMapPin, FiClock } from "react-icons/fi";
 
 export default function Home() {
+  const features = [
+    {
+      icon: "💻",
+      title: "Coding for Everyone",
+      description: "From weekend hobbyist to aspiring pros, we believe coding should be accessible and enjoyable for all.",
+      gradient: "from-blue-500/20 to-cyan-500/20"
+    },
+    {
+      icon: "🤝",
+      title: "Supportive Network",
+      description: "Join a supportive network of fellow programmers who share your passion for building amazing things.",
+      gradient: "from-purple-500/20 to-pink-500/20"
+    },
+    {
+      icon: "🚀",
+      title: "Build Real Projects",
+      description: "Gain hands-on experience by working on real projects that make a difference in our community.",
+      gradient: "from-orange-500/20 to-red-500/20"
+    }
+  ];
+
+  const events = [
+    {
+      id: 1,
+      title: "DeTA Meetup 8.0",
+      date: "26 April 2025",
+      time: "09:00 PM - 11:00 PM",
+      location: "Male Student Lounge, KICT, IIUM",
+      description: "Gather and network with everybody from different backgrounds in the IT industry",
+      image: "images/DeTAMeetup7_2.png",
+      badge: "Upcoming"
+    },
+    {
+      id: 2,
+      title: "DeTA Hackathon",
+      date: "Coming Soon",
+      time: "TBA",
+      location: "KICT, IIUM",
+      description: "48 hours of coding, collaboration, and innovation. Build amazing solutions with your team.",
+      image: "images/Hackathon.png",
+      badge: "Registration Open"
+    }
+  ];
+
   return (
-    <main className="mt-0">
+    <main className="min-h-screen bg-[#080808]">
       <Header />
-{/* <div>
-  <div className="relative">
-    <Image
-      src="/images/DetaMeetup7.png"
-      alt="hero"
-      width={1000}
-      height={1000}
-      className="w-full h-[100dvh] object-cover brightness-50"
-    />
-    <div className="absolute top-1/2  transform  -translate-y-1/2  text-white p-10 xl:p-24 flex flex-col items-start  container m-auto mt-10">
-      <h1 className=" text-6xl lg:text-9xl font-bold">DeTA</h1>
-      <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-1 md:p-2">Developer Tanah Air</h2>
-      <p className="md:text-xl"> A community of developers, git pushers and turbo-nerds. Made in
-      IIUM.</p>
-      <ul className="flex mt-4">
-            <li className="flex">
-              <Link
-                href={"about"}
-                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
-              >
-                Join Us
-              </Link>
-            </li>
-            <li className="flex">
-              <Link
-                href={"about"}
-                className="bg-[#eee] h-min text-black ms-4 p-4 hover:bg-slate-500 duration-150 rounded-xl"
-              >
-                Why Join Us?
-              </Link>
-            </li>
-          </ul>
-    </div>
-  </div>
 
-</div> */}
+      {/* Hero Section */}
+      <section className="hero-section relative flex items-center justify-center min-h-screen">
+        {/* Animated grid background */}
+        <div className="absolute inset-0 grid-pattern opacity-30"></div>
 
-      {/* Hero */}
-       <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
-        <div className="flex flex-col items-start text-white container m-auto">
-          <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
-          <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
-            Developer Tanah Air
-          </h2>
-          <p className="lg:w-1/3">
-            A community of developers, git pushers, and turbo-nerds. Made in
-            IIUM.
-          </p>
-          <ul className="flex mt-4">
-            <li className="flex">
-              <Link
-                href={"about"}
-                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
-              >
-                Join Us
-              </Link>
-            </li>
-            <li className="flex">
-              <Link
-                href={"about"}
-                className="bg-[#eee] h-min text-black ms-4 p-4 hover:bg-slate-500 duration-150 rounded-xl"
-              >
-                Why Join Us?
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div> 
+        {/* Floating decorative elements */}
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-[#FF6B00]/10 rounded-full blur-3xl floating"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-[#FF6B00]/5 rounded-full blur-3xl floating" style={{ animationDelay: '-3s' }}></div>
 
-      <div className="min-h-screen xl:p-8">
-        <div className="pt-4">
-          <h1 className="text-center font-bold text-3xl md:text-4xl xl:text-6xl">
-            What Do We <span className="bg-[#FD7014] text-white p-1">Do?</span>
-          </h1>
-          <p className="text-center text-sm pt-3 md:text-xl p-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="flex flex-col  md:flex-row md:p-11  ">
-          <div className="relative">
-            <Image
-              src="/images/mainpage/focuscoding.png"
-              alt="focus coding"
-              width={1000}
-              height={1000}
-              className="p-2  rounded-2xl md:object-cover brightness-50"
-            />
-            <div className="absolute top-20 xl:top-72 p-5 text-center ">
-              <h1 className="text-white font-bold text-lg xl:text-3xl ">
-                Coding for Everyone
-              </h1>
-              <p className="text-white text-sm xl:text-xl xl:pt-2 pb-2">
-                From weekend hobbyst to aspiring pros, we believe coding should
-                be acccessible and enjoyable for all.
-              </p>
-              <button className="backdrop-blur-sm text-white p-2 rounded-xl font-light shadow-xl border border-white xl:text-xl xl:border-solid ">
-                Get Started
-              </button>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Image
-                src="/images/mainpage/lepakcoding.png"
-                alt="focus coding"
-                width={1000}
-                height={1000}
-                className="p-2 rounded-2xl md:object-cover "
-              />
+        {/* Hero Content */}
+        <div className="relative z-10 container mx-auto px-6 py-32">
+          <div className="max-w-4xl stagger-children">
+            {/* Mono badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 reveal">
+              <span className="mono-badge text-[#FF6B00]">&lt;hello /&gt;</span>
+              <span className="text-sm text-white/70">Welcome to DeTA</span>
             </div>
 
-            <div className="p-2">
-              <p className="text-center font-bold text-2xl xl:text-3xl xl:p-10">
-                Join a supportive{" "}
-                <span className="bg-[#FD7014] text-white p-1">network</span> of
-                fellow programmers who share your{" "}
-                <span className="bg-[#FD7014] text-white p-1">passion.</span>
-              </p> 
-              <div className=" text-center p-2 pb-10">
-                <Link
-                  href="about"
-                  className="inline hover:underline md:text-xl xl:text-2xl"
-                >
-                  Read more info
-                </Link>
+            {/* Main heading */}
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-6 leading-none tracking-tight reveal" style={{ fontFamily: 'var(--font-display)' }}>
+              <span className="block">Developer</span>
+              <span className="block text-gradient">Tanah Air</span>
+            </h1>
+
+            {/* Description */}
+            <p className="text-xl md:text-2xl text-white/60 mb-10 max-w-2xl leading-relaxed reveal">
+              A community of developers, git pushers, and turbo-nerds. Made in IIUM. Building the future, one commit at a time.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 reveal">
+              <Link
+                href="about"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#FF6B00] rounded-2xl font-bold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] hover:scale-105"
+              >
+                <span>Join Our Community</span>
+                <FiArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+              </Link>
+
+              <Link
+                href="about"
+                className="inline-flex items-center gap-3 px-8 py-4 glass rounded-2xl font-semibold hover:bg-white/10 transition-all duration-300"
+              >
+                <span>Learn More</span>
+                <FiArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
+
+            {/* Scroll indicator */}
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
+              <span className="mono-badge text-xs">Scroll to explore</span>
+              <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start justify-center p-2">
+                <div className="w-1 h-2 bg-white/60 rounded-full animate-bounce"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* What Do We Do?
-        <div className="container bg-white pt-[2rem] lg:p-[6rem] pb-0 ">
-          <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold text-center">
-            What Do We <span className="bg-[#FD7014] px-2 text-white">Do?</span>
-          </h1>
-
-          <p className="text-center text-lg md:text-xl pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-
-          <div className="flex gap-2 py-16 px-[2rem] bg-white m-auto h-[512px] box-content">
-            <div className="flex flex-col w-full h-full ">
-              <img
-                src="/images/mainpage/focuscoding.png"
-                alt="joker"
-                className="w-full h-full object-cover flex rounded-2xl"
-              />
+      {/* What Do We Do Section */}
+      <section className="relative py-32 px-6 grid-pattern">
+        <div className="container mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
+              <span className="mono-badge text-[#FF6B00]">01.</span>
+              <span className="text-sm text-white/70">What We Do</span>
             </div>
-            <div className="flex gap-1 flex-col w-full h-full">
-              <div className="flex w-full h-[50%]">
-                <img
-                  src="/images/mainpage/lepakcoding.png"
-                  alt="joker"
-                  className="w-full object-cover rounded-2xl"
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+              Building <span className="text-gradient">Together</span>
+            </h2>
+            <p className="text-lg text-white/60 max-w-2xl mx-auto">
+              We&apos;re more than just a community—we&apos;re a movement. Here&apos;s what makes DeTA special.
+            </p>
+          </div>
+
+          {/* Features Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="group relative p-8 rounded-3xl bg-gradient-to-br from-[#111] to-[#0a0a0a] border border-white/5 hover:border-[#FF6B00]/30 transition-all duration-500 card-hover overflow-hidden"
+              >
+                {/* Gradient overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="text-5xl mb-6">{feature.icon}</div>
+                  <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
+                  <p className="text-white/60 leading-relaxed">{feature.description}</p>
+                </div>
+
+                {/* Decorative corner */}
+                <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-[#FF6B00]/20 to-transparent rounded-tl-full translate-x-1/2 translate-y-1/2"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Image Showcase Section */}
+      <section className="relative py-32 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Left: Image */}
+            <div className="relative group">
+              <div className="relative rounded-3xl overflow-hidden border border-white/5">
+                <Image
+                  src="/images/mainpage/focuscoding.png"
+                  alt="DeTA Community Coding"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent"></div>
               </div>
-              <div className="flex w-full flex-col h-[50%] p-4">
-                <p className=" text-[2em] font-bold font-montserrat">
-                  Join a supportive{" "}
-                  <span className="bg-[#FD7014] px-2 text-white">network</span>{" "}
-                  of fellow programmers who share your{" "}
-                  <span className="bg-[#FD7014] px-2 text-white">passion</span>.
+              {/* Floating badge */}
+              <div className="absolute -bottom-6 -right-6 glass rounded-2xl p-6 border border-[#FF6B00]/20">
+                <div className="text-3xl font-black text-[#FF6B00]">60+</div>
+                <div className="text-sm text-white/60">Active Members</div>
+              </div>
+            </div>
+
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
+                  <span className="mono-badge text-[#FF6B00]">02.</span>
+                  <span className="text-sm text-white/70">Our Community</span>
+                </div>
+                <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+                  Where Passion <span className="text-gradient">Meets Purpose</span>
+                </h2>
+              </div>
+
+              <div className="space-y-4 text-white/70 text-lg leading-relaxed">
+                <p>
+                  Join a supportive network of fellow programmers who share your passion. Whether you&apos;re just starting out or you&apos;ve been coding for years, there&apos;s a place for you here.
                 </p>
-                <Link
-                  href={"about"}
-                  className="inline w-fit mt-4 hover:underline"
-                >
-                  Read more info
-                </Link>
+                <p>
+                  We organize meetups, hackathons, study sessions, and workshops to help you grow as a developer and connect with like-minded individuals.
+                </p>
               </div>
+
+              <Link
+                href="about"
+                className="inline-flex items-center gap-3 text-[#FF6B00] font-semibold hover:gap-5 transition-all"
+              >
+                <span>Discover Our Story</span>
+                <FiArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
-        </div> */}
-
-      {/* Innovations by Our Community */}
-      <div className="container mx-auto bg-white lg:p-[6rem] pb-0 ">
-        <h1 className="text-3xl font-bold text-center xl:text-6xl">
-          <span className="bg-[#FD7014] px-2 text-white ">Innovations</span> by
-          Our Community
-        </h1>
-
-        <p className="text-center pt-3 md:text-xl ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-
-        <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
-          <ProjectCard
-            src="/images/ProReg.webp"
-            title="ProReg: Manage Your Studies"
-            desc="Lorem Ipsum"
-          />
-          <ProjectCard
-            src="/images/SimplifiedImaluum.png"
-            title="Simplified Imaluum"
-            desc="Lorem Ipsum"
-          />
-          <ProjectCard />
-          <ProjectCard />
         </div>
-      </div>
+      </section>
 
-  
-      
-<div className="bg-[#121212] text-white lg:p-[6rem] pb-0">
-  <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl">
-    Upcoming Event
-  </div>
-  <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
-{"Upcoming DeTA Events - Don't Miss Out!"}
-  </h1>
-  <p className="text-center pt-3 md:text-xl">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </p>
-
-  <div className="font-montserrat flex flex-col gap-8 py-16 m-auto w-full">
-    <ul className="flex flex-col gap-8 w-full">
-      {[1, 2].map((item) => (
-        <li
-          key={item}
-          className="flex flex-col lg:flex-row items-center justify-around gap-6"
-        >
-          {/* Date and Location */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left h-auto px-4">
-            <p className="bg-[#FD7014] flex w-fit rounded-full px-2 py-1 text-sm">
-              26 April 2025
-            </p>
-            <p className="mt-2">Male Student Lounge, KICT, IIUM</p>
-          </div>
-
-          {/* Image */}
-          <img
-            src={item === 1 ? "images/DeTAMeetup7_2.png" : "images/Hackathon.png"}
-            alt="DeTA Meetup 8.0"
-            title="DeTA Meetup 8.0"
-            className="w-full max-w-[350px] h-[240px] rounded-xl object-cover"
-          />
-
-          {/* Details */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-[400px] px-4">
-            <h3 className="text-2xl lg:text-3xl font-bold">DeTA Meetup 8.0</h3>
-            <p className="my-2">
-              Gather and network with everybody with different background in IT industry
-            </p>
-            <div className="flex gap-6 my-2">
-              <div>
-                <p className="font-semibold">Start</p>
-                <p>09:00 PM</p>
+      {/* Innovations / Projects Section */}
+      <section className="relative py-32 px-6 bg-[#0a0a0a]">
+        <div className="container mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
+                <span className="mono-badge text-[#FF6B00]">03.</span>
+                <span className="text-sm text-white/70">Our Projects</span>
               </div>
-              <div>
-                <p className="font-semibold">End</p>
-                <p>11:00 PM</p>
-              </div>
+              <h2 className="text-4xl md:text-6xl font-black" style={{ fontFamily: 'var(--font-display)' }}>
+                Innovations by Our <span className="text-gradient">Community</span>
+              </h2>
             </div>
-            <a
+            <Link
               href="#"
-              className="bg-[#FD7014] mt-2 px-4 py-2 rounded-xl text-white font-semibold"
+              className="inline-flex items-center gap-2 px-6 py-3 glass rounded-xl hover:bg-white/10 transition-all"
             >
-              RSVP
-            </a>
+              <span>View All Projects</span>
+              <FiArrowRight className="w-5 h-5" />
+            </Link>
           </div>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
 
-      {/* <div className=" bg-[#121212] text-white lg:p-[6rem] pb-0">
-        <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl  ">
-          Upcoming Event
+          {/* Projects Carousel */}
+          <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+            <ProjectCard
+              src="/images/ProReg.webp"
+              title="ProReg: Manage Your Studies"
+              desc="A comprehensive course registration and management system designed to simplify academic planning for IIUM students."
+              tags={["Web App", "React"]}
+            />
+            <ProjectCard
+              src="/images/SimplifiedImaluum.png"
+              title="Simplified Imaluum"
+              desc="A modern, user-friendly interface for the IIUM student portal that makes accessing important information a breeze."
+              tags={["Mobile", "Flutter"]}
+            />
+            <ProjectCard
+              title="DeTA Connect"
+              desc="An internal communication platform that keeps our community connected and informed about upcoming events and opportunities."
+              tags={["Web", "Next.js"]}
+            />
+            <ProjectCard
+              title="CodeShare"
+              desc="A collaborative code editing tool that allows multiple developers to work together in real-time."
+              tags={["Web", "WebSocket"]}
+            />
+          </div>
         </div>
-        <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
-          {"Upcoming DeTA Events - Don't Miss Out!"}
-        </h1>
+      </section>
 
-        <p className="text-center pt-3 md:text-xl ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      {/* Events Section */}
+      <section className="relative py-32 px-6">
+        <div className="container mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
+              <span className="mono-badge text-[#FF6B00]">04.</span>
+              <span className="text-sm text-white/70">Events</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-black mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+              Upcoming <span className="text-gradient">Events</span>
+            </h2>
+            <p className="text-lg text-white/60 max-w-2xl mx-auto">
+              Don&apos;t miss out on our exciting events. Join us and be part of something amazing.
+            </p>
+          </div>
 
-        <div className="font-montserrat flex gap-8 py-16 m-auto w-full ">
-          <ul className="flex flex-col gap-4 w-full">
-            <li className="flex justify-around">
-              <div className="flex flex-col justify-center h-[240px] px-4">
-                <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
-                  26 April 2025
-                </p>
-                <p>Male Student Lounge, KICT, IIUM</p>
+          {/* Events Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {events.map((event) => (
+              <div
+                key={event.id}
+                className="group relative bg-[#111] rounded-3xl overflow-hidden border border-white/5 hover:border-[#FF6B00]/30 transition-all duration-500 card-hover"
+              >
+                {/* Event Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={`/${event.image}`}
+                    alt={event.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#111] to-transparent"></div>
+                  {/* Badge */}
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-[#FF6B00] rounded-full text-xs font-semibold text-white">
+                    {event.badge}
+                  </div>
+                </div>
+
+                {/* Event Content */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-[#FF6B00] transition-colors">
+                    {event.title}
+                  </h3>
+
+                  <p className="text-white/60 mb-6">
+                    {event.description}
+                  </p>
+
+                  {/* Event Details */}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center gap-3 text-white/70">
+                      <FiCalendar className="w-5 h-5 text-[#FF6B00]" />
+                      <span>{event.date}</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-white/70">
+                      <FiClock className="w-5 h-5 text-[#FF6B00]" />
+                      <span>{event.time}</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-white/70">
+                      <FiMapPin className="w-5 h-5 text-[#FF6B00]" />
+                      <span>{event.location}</span>
+                    </div>
+                  </div>
+
+                  {/* RSVP Button */}
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF6B00] rounded-xl font-semibold text-white hover:shadow-[0_0_30px_rgba(255,107,0,0.4)] transition-all"
+                  >
+                    <span>RSVP Now</span>
+                    <FiArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
-              <img
-                src="images/DeTAMeetup7_2.png"
-                alt="DeTA Meetup 8.0"
-                title="DeTA Meetup 8.0"
-                className="h-[240px] w-[350px] rounded-xl object-cover"
-              />
-              <div className="flex flex-col justify-center w-[400px] px-4">
-                <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
-                <p>
-                  Gather and network with everybody with different background in
-                  IT industry
-                </p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Start</th>
-                      <th>End</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>09.00 PM</td>
-                      <td>11:00 PM</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
-                  RSVP
-                </a>
-              </div>
-            </li>
-            <hr />
-            <li className="flex justify-around">
-              <div className="flex flex-col justify-center h-[240px] px-4">
-                <p className="bg-[#FD7014] flex w-fit rounded-full px-2">
-                  26 April 2025
-                </p>
-                <p>Male Student Lounge, KICT, IIUM</p>
-              </div>
-              <img
-                src="images/Hackathon.png"
-                alt="DeTA Meetup 8.0"
-                title="DeTA Meetup 8.0"
-                className="h-[240px] w-[350px] rounded-xl object-cover"
-              />
-              <div className="flex flex-col justify-center w-[400px] px-4">
-                <h3 className="text-3xl font-bold">DeTA Meetup 8.0</h3>
-                <p>
-                  Gather and network with everybody with different background in
-                  IT industry
-                </p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Start</th>
-                      <th>End</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>09.00 PM</td>
-                      <td>11:00 PM</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a href="#" className="bg-[#FD7014] p-2 rounded-xl w-fit">
-                  RSVP
-                </a>
-              </div>
-            </li>
-          </ul>
+            ))}
+          </div>
         </div>
-      </div> */}
+      </section>
 
-      <h2 className="text-xl md:text-2xl xl:text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
-        “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
-      </h2>
+      {/* Quote Section */}
+      <section className="relative py-32 px-6 bg-[#0a0a0a] overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#FF6B00]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6B00]/5 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto max-w-5xl text-center relative z-10">
+          <div className="glass rounded-3xl p-12 md:p-16 border border-white/5">
+            <div className="text-6xl mb-8">&ldquo;</div>
+            <blockquote className="text-2xl md:text-4xl font-bold leading-relaxed mb-8">
+              Building the future, <span className="text-gradient">one commit</span> at a time.
+            </blockquote>
+            <div className="flex items-center justify-center gap-4">
+              <div className="w-12 h-0.5 bg-[#FF6B00]"></div>
+              <cite className="text-white/60 not-italic">
+                <span className="font-semibold text-white">Aiman Rahim</span>, DeTA BDFL
+              </cite>
+              <div className="w-12 h-0.5 bg-[#FF6B00]"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative py-32 px-6">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl md:text-6xl font-black mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+            Ready to <span className="text-gradient">Join Us?</span>
+          </h2>
+          <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">
+            Be part of our growing community of developers. Learn, build, and grow together.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="about"
+              className="group inline-flex items-center gap-3 px-10 py-5 bg-[#FF6B00] rounded-2xl font-bold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,107,0,0.4)] hover:scale-105"
+            >
+              <span>Get Started</span>
+              <FiArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link
+              href="contact"
+              className="inline-flex items-center gap-3 px-10 py-5 glass rounded-2xl font-semibold hover:bg-white/10 transition-all"
+            >
+              <span>Contact Us</span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </main>
   );
-}
-
-{
-  /* <div className="flex items-center justify-center bg-none flex-col w-full p-2 lg:p-16">
-          <div className="pb-10 lg:pb-16 ">
-            <p className="lg:text-4xl text-center">
-              Interested in web or software development?
-            </p>
-          <p className="drop-shadow-md text-9xl text-center ">
-              DeTA is the community for you!
-            </p>
-          </div>
-          <div className="flex justify-between gap-10 items-center">
-            <Link
-              href={"about"}
-              className="bg-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
-            >
-              Know More
-            </Link>
-            <Link
-              href={
-                "https://docs.google.com/forms/d/e/1FAIpQLSf-4JnJQNX2Yf2n9I8BzQySDcG_CPpyDVAT8b8_AAAQT5n1EA/viewform"
-              }
-              target="_blank"
-              className="bg-slate-700 text-slate-50 h-min p-4 hover:bg-slate-500 duration-150 rounded-xl"
-            >
-              Register Now
-            </Link>
-          </div>
-        </div>
-
-        <div className="flex justify-center bg-white flex-col w-full p-4 lg:p-16">
-          <div className="pb-5">
-            <p className="text-2xl lg:text-4xl">Membership Perks</p>
-            <p className="text-slate-500 lg:text-2xl">
-              “What will I get if I join DeTA?”
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 w-full px-[10%]">
-            <Card
-              title={"Enhance Website Skill"}
-              desc={"Introduce to you about the website skills!"}
-            />
-            <Card
-              title={"Knowledge"}
-              desc={"Many valuable knowledge can be gained!"}
-            />
-            <Card
-              title={"Coding Mobility Enhancement"}
-              desc={
-                "You will get lots of chances to become a coding expertise!"
-              }
-            />
-            <Card
-              title={"Free Programming Skill"}
-              desc={"Adding more new skills in programming!"}
-            />
-            <Card
-              title={"Coding Language Improvement"}
-              desc={"Improve your understanding in every coding languages!"}
-            />
-            <Card
-              title={"Software Development Skill"}
-              desc={
-                "You can learn many things about software development with us!"
-              }
-            />
-            <Card
-              title={"Lifetime Project"}
-              desc={
-                "You can do many projects to show your developer's performance"
-              }
-            />
-            <Card
-              title={"Developing Experiences"}
-              desc={"Get to know many developers and website expertises!"}
-            />
-          </div>
-        </div> */
 }
