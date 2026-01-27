@@ -10,7 +10,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 export const NavList = ({ mobile = false, closeMenu = () => { } }) => {
   return (
-    <div className={`${mobile ? "w-full" : "lg:h-[30px]"}`}>
+    <div className={`${mobile ? "w-full" : "lg:h-7.5"}`}>
       <ul
         className={`flex ${mobile
           ? "flex-col gap-4"

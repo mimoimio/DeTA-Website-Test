@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
+      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-dvh hero-section ">
         <div className="flex flex-col items-start text-white container m-auto">
           <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
           <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
@@ -24,7 +24,7 @@ export default function Home() {
             <li className="flex">
               <Link
                 href={"about"}
-                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
+                className="bg-[#FD7014] h-min p-4 duration-1000 rounded-xl hover:bg-[#fdf914]"
               >
                 Join Us
               </Link>
