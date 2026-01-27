@@ -1,32 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "Oswald";
-  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2")
-      format("woff2"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff")
-      format("woff"),
-    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf")
-      format("truetype");
+  src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2") format("woff2"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8F.woff") format("woff"),
+    url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8E.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Comic Sans MS";
   src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
-  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")
-      format("svg");
+  src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS") format("svg");
 }
+
 html,
 body {
   height: 100%;
@@ -37,6 +29,7 @@ body {
 /* Styling for the main element */
 main {
   /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
+  margin-top: 4rem;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
@@ -44,13 +37,24 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f82;
+  background: #fff
+    /*#f82*/
+  ;
   /* Add the background image here */
   /* background: url('/images/DeTAPattern.png') repeat fixed; */
 }
+
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
-    url("/images/DetaMeetup7.png") no-repeat center center/cover fixed;
+    url("/images/DetaMeetup7.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Montserrat";
-  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)) */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+    /* Override for mobile */
+  }
 }

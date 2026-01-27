@@ -18,7 +18,7 @@ export default function Organisation() {
             <div className="text-xl text-center mb-4 lg:text-4xl"> The Benevolent Dictator For Life </div>
 
             <div className="grid grid-cols-1 w-full gap-4">
-              <OrganisationDisplay name="Aiman Rahim" linkedin="https://www.linkedin.com/in/aiman-rahim-grad-eng-4267091a3/"/>
+              <OrganisationDisplay name="Aiman Rahim" linkedin="https://www.linkedin.com/in/aiman-rahim-grad-eng-4267091a3/" />
             </div>
 
           </div>
@@ -30,11 +30,11 @@ export default function Organisation() {
                 name="Hakim"
                 linkedin="https://www.linkedin.com/in/hakim-nazri/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"
               />
-              <OrganisationDisplay position="Vice President" name="Luqman" linkedin="https://www.linkedin.com/in/lqmkim/"/>
+              <OrganisationDisplay position="Vice President" name="Luqman" linkedin="https://www.linkedin.com/in/lqmkim/" />
               <OrganisationDisplay position="Secretary" name="Syamil" linkedin="https://www.linkedin.com/in/syamil-yusof/" />
               <OrganisationDisplay position="Exco Meetup" name="Mior" linkedin="https://www.linkedin.com/in/adib-bida-4b312a296/" />
-              <OrganisationDisplay position="Exco Alumni Talk" name="Fadzwan" linkedin="https://www.linkedin.com/in/mohd-fadzwan-ashriq-5114a41aa/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D"/>
-              <OrganisationDisplay position="Exco Workshop" name="Emrul" linkedin="https://www.linkedin.com/in/arif-emrullah/"/>
+              <OrganisationDisplay position="Exco Alumni Talk" name="Fadzwan" linkedin="https://www.linkedin.com/in/mohd-fadzwan-ashriq-5114a41aa/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people_connections%3BXAF8PsjNRzekGbj3gerkyQ%3D%3D" />
+              <OrganisationDisplay position="Exco Workshop" name="Emrul" linkedin="https://www.linkedin.com/in/arif-emrullah/" />
             </div>
           </div>
         </div>
