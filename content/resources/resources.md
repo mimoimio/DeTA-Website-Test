@@ -121,3 +121,7 @@ lastUpdated: "2024-07-14"
 ### The Net Ninja
 - **URL**: https://youtube.com/@NetNinja
 - **Description**: Programming tutorials
+
+### Mimoimio
+- **URL**: https://youtube.com/@mimoimio
+- **Description**: Roblox enthusiasts

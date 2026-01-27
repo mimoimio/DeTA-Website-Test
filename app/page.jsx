@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-[100dvh] hero-section ">
+      <div className="flex md:flex-row flex-col justify-start items-center p-8 h-dvh hero-section ">
         <div className="flex flex-col items-start text-white container m-auto">
           <h1 className="text-5xl lg:text-9xl font-bold">DeTA</h1>
           <h2 className="text-xl lg:text-4xl font-bold bg-[#FD7014] p-2">
@@ -24,7 +24,7 @@ export default function Home() {
             <li className="flex">
               <Link
                 href={"about"}
-                className="bg-[#FD7014] h-min p-4 duration-[1000ms] rounded-xl hover:bg-joker bg-center bg-cover"
+                className="bg-[#FD7014] h-min p-4 duration-1000 rounded-xl"
               >
                 Join Us
               </Link>
@@ -106,7 +106,7 @@ export default function Home() {
       </div>
 
       {/* Innovations by Our Community */}
-      <div className="container mx-auto bg-white lg:p-[6rem] pb-0 ">
+      <div className="container mx-auto bg-white lg:p-24 pb-0 ">
         <h1 className="text-3xl font-bold text-center xl:text-6xl">
           <span className="bg-[#FD7014] px-2 text-white ">Innovations</span> by
           Our Community
@@ -134,7 +134,7 @@ export default function Home() {
       </div>
 
       {/* Upcoming Events */}
-      <div className="bg-[#121212] text-white lg:p-[6rem] pb-0">
+      <div className="bg-[#121212] text-white lg:p-24 pb-0">
         <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl">
           Upcoming Event
         </div>
@@ -165,11 +165,11 @@ export default function Home() {
                   src={item === 1 ? "images/DeTAMeetup7_2.png" : "images/Hackathon.png"}
                   alt="DeTA Meetup 8.0"
                   title="DeTA Meetup 8.0"
-                  className="w-full max-w-[350px] h-[240px] rounded-xl object-cover"
+                  className="w-full max-w-87.5 h-60 rounded-xl object-cover"
                 />
 
                 {/* Details */}
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-[400px] px-4">
+                <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-100 px-4">
                   <h3 className="text-2xl lg:text-3xl font-bold">DeTA Meetup 8.0</h3>
                   <p className="my-2">
                     Gather and network with everybody with different background in IT industry
@@ -197,7 +197,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="text-xl md:text-2xl xl:text-5xl text-center font-montserrat font-semibold bg-white py-[4rem] px-[20%]">
+      <h2 className="text-xl md:text-2xl xl:text-5xl text-center font-montserrat font-semibold bg-white py-16 px-[20%]">
         “Building the future, one commit at a time.” - Aiman Rahim, DeTA BDFL
       </h2>
 

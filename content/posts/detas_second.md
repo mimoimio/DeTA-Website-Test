@@ -1,12 +1,12 @@
 ---
-title: "After The Beginning"
-image: "content_repo/images/freakuna.webp"
+title: "Amazing blender render"
+image: "/content_repo/images/hous.png"
 date: 2025-07-01
-description: "How a handful of curious students turned casual study sessions into DeTA — a community that codes, learns, and grows together."
+description: "Blender rendering made by mimoimio."
 tags: [bruh]
 ---
-
-![alt text](../public/content_repo/images/freakuna.webp)
-
+![alt text](/content_repo/images/hous.png)
 *Questions, ideas, or just want to say hi?*  
+
+[`Mimoimio's yt channel`](https://youtube.com/@mimoimio)
 Ping **@site-dev** in Discord or open an issue on our GitHub repo. See you at the next meetup!
