@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Import distinctive fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -44,6 +42,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+html,
 
 body {
   font-family: var(--font-body);
@@ -205,5 +205,3 @@ main {
   background: var(--color-accent);
   color: white;
 }
-
-

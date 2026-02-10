@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    // output: 'export', // Comment this out for traditional Next.js
+    // trailingSlash: true, // Comment this out for traditional Next.js
     images: {
+        // unoptimized: true, // Comment this out for traditional Next.js
         formats: ["image/avif", "image/webp"],
         remotePatterns: [
             {

@@ -7,10 +7,16 @@ import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiMenu, FiX } from "react-icons/fi";
 
-export const NavList = ({ mobile = false, closeMenu = () => {} }) => {
+export const NavList = ({ mobile = false, closeMenu = () => { } }) => {
   return (
+    <div className={`${mobile ? "w-full" : "lg:h-7.5"}`}>
     <div className={`${mobile ? "w-full" : ""}`}>
       <ul
+        className={`flex ${mobile
+          ? "flex-col gap-4"
+          : "items-center justify-center gap-6 text-base font-medium "
+          }`
+        }
         className={`flex ${
           mobile
             ? "flex-col gap-3"
@@ -20,6 +26,8 @@ export const NavList = ({ mobile = false, closeMenu = () => {} }) => {
         <Pill address="blogs" title="Blogs" onClick={closeMenu} />
         <Pill address="about" title="About" onClick={closeMenu} />
         <Pill address="gallery" title="Gallery" onClick={closeMenu} />
+        <Pill address="affiliates" title="Affiliates" onClick={closeMenu} />
+        <Pill address="resources" title="Resources" onClick={closeMenu} />
         <Pill address="activities" title="Activities" onClick={closeMenu} />
       </ul>
     </div>
@@ -45,6 +53,9 @@ const Logo = () => {
 const ContactUs = ({ mobile = false }) => {
   return (
     <Link
+      href="#contact"
+      className={`flex items-center rounded-full px-4 py-2 shadow-md bg-white font-medium ${mobile ? "w-full justify-center mt-4" : ""
+        } hover:scale-105 transition-transform`}
       href="contact"
       className={`relative group flex items-center gap-2 rounded-2xl bg-[#FF6B00] px-5 py-2.5 font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,107,0,0.4)] hover:scale-105 ${
         mobile ? "w-full justify-center" : ""
