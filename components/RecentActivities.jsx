@@ -28,7 +28,7 @@ const RecentActivities = () => {
     };
 
     return (
-        <div className="flex justify-center bg-white flex-col w-full p-4 lg:p-16">
+        <div className="flex justify-center  flex-col w-full p-4 lg:p-16">
             <div className="pb-2 lg:pb-16">
                 <p className="text-2xl lg:text-4xl">Recent pictures of activities in DeTA</p>
                 <p className="text-slate-500 lg:text-2xl">Check out more in the Gallery!</p>
@@ -36,10 +36,10 @@ const RecentActivities = () => {
 
             <div className="flex flex-col items-center">
                 <div className="flex justify-between lg:gap-10 items-center">
-                    <button onClick={handlePrev} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
+                    <button onClick={handlePrev} className=" h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
                         &lt;
                     </button>
-                    
+
                     <div className="
                     relative m-1
                     w-[300px] md:w-[500px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1200px]
@@ -55,7 +55,7 @@ const RecentActivities = () => {
                         ))}
                     </div>
 
-                    <button onClick={handleNext} className="bg-slate-300 h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
+                    <button onClick={handleNext} className=" h-min p-2 hover:bg-slate-500 duration-150 rounded-full">
                         &gt;
                     </button>
                 </div>

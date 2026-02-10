@@ -101,10 +101,7 @@ export default function Home() {
                 <span>Learn More</span>
                 <FiArrowRight className="w-5 h-5" />
               </Link>
-            </li>
-          </ul>
-        </div>
-      </div> 
+            </div>
 
             {/* Scroll indicator */}
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">

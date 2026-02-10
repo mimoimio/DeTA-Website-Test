@@ -10,18 +10,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 export const NavList = ({ mobile = false, closeMenu = () => { } }) => {
   return (
     <div className={`${mobile ? "w-full" : "lg:h-7.5"}`}>
-    <div className={`${mobile ? "w-full" : ""}`}>
       <ul
         className={`flex ${mobile
           ? "flex-col gap-4"
           : "items-center justify-center gap-6 text-base font-medium "
           }`
         }
-        className={`flex ${
-          mobile
-            ? "flex-col gap-3"
-            : "items-center justify-center gap-1"
-        }`}
       >
         <Pill address="blogs" title="Blogs" onClick={closeMenu} />
         <Pill address="about" title="About" onClick={closeMenu} />
@@ -54,16 +48,12 @@ const ContactUs = ({ mobile = false }) => {
   return (
     <Link
       href="#contact"
-      className={`flex items-center rounded-full px-4 py-2 shadow-md bg-white font-medium ${mobile ? "w-full justify-center mt-4" : ""
-        } hover:scale-105 transition-transform`}
-      href="contact"
-      className={`relative group flex items-center gap-2 rounded-2xl bg-[#FF6B00] px-5 py-2.5 font-semibold text-white overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,107,0,0.4)] hover:scale-105 ${
-        mobile ? "w-full justify-center" : ""
-      }`}
+      className={`flex items-center rounded-full px-4 py-2 shadow-md font-medium ${mobile ? "w-full justify-center mt-4" : ""
+        } hover:scale-105 transition-transform hover:bg-white/10`}
     >
       <span>Contact Us</span>
       <GoArrowUpRight className="w-5 h-5 transition-transform group-hover:rotate-45 group-hover:scale-110" />
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[0%] transition-transform duration-700"></div> */}
     </Link>
   );
 };
@@ -89,9 +79,8 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? "glass border-b border-white/5 py-3" : "bg-transparent py-5"
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass border-b border-white/5 py-3" : "bg-transparent py-5"
+      }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Logo />
@@ -116,12 +105,11 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${
-          mobileMenuOpen ? "max-h-96 mt-5 opacity-100" : "max-h-0 opacity-0"
-        }`}>
+        <div className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${mobileMenuOpen ? "max-h-96 mt-5 opacity-100" : "max-h-0 opacity-0"
+          }`}>
           <div className="glass rounded-2xl p-5 space-y-4">
             <NavList mobile closeMenu={closeMenu} />
-            <div className="h-px bg-white/10"></div>
+            <div className="h-px "></div>
             <ContactUs mobile />
           </div>
         </div>

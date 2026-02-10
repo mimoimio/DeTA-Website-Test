@@ -75,7 +75,7 @@ export default function About() {
             priority
           />
         </div>
-      </section>
+      </div>
 
       {/* Stats Section */}
       <div className="mx-auto min-h-screen text-center py-10 px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
@@ -112,7 +112,7 @@ export default function About() {
         point2="We aim to foster a collaborative community."
         point3="We strive for continuous learning and improvement."
       />
-  
+
       <Vision
         image="/images/about/second.png"
         title="Our Vision"

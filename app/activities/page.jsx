@@ -4,10 +4,8 @@ import Footer from "@/components/Footer";
 import RecentActivities from "@/components/RecentActivities";
 const ActivityCard = ({ title, desc, src = "/images/DeTA.png" }) => {
   return (
-    <div className="flex flex-col lg:flex-row bg-slate-100 bg-opacity-25 border duration-150 rounded-2xl p-4 lg:p-8">
+    <div className="flex flex-col lg:flex-row border duration-150 rounded-2xl p-4 lg:p-8">
       <div className="flex flex-shrink-0  rounded-xl object-cover ">
-        {" "}
-        {/*bg-slate-500*/}
         <Image
           src={src}
           alt="gambar"
@@ -29,7 +27,7 @@ export default function Activities() {
   return (
     <main>
       <Header />
-      <div className="mx-auto container">
+      <div className="mx-auto container  pt-24">
         <div className="flex flex-col items-center gap-4 p-[2rem] lg:p-[2rem]">
           <h1 className="text-5xl lg:text-7xl">Activities</h1>
           {/* <h2 className="text-xl lg:text-2xl flex-wrap lg:mx-[26rem] text-center">For the memories within DeTA</h2> */}
@@ -37,7 +35,7 @@ export default function Activities() {
 
         <RecentActivities />
 
-        <div className="flex flex-col gap-1 p-4 lg:p-16 bg-white">
+        <div className="flex flex-col gap-1 p-4 lg:p-16">
           {/* Title of section */}
           <div className="pb-2 lg:pb-16">
             <p className="text-2xl lg:text-4xl">Types of Activities</p>

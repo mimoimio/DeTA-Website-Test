@@ -17,6 +17,13 @@ module.exports = {
         montserrat: ["var(--font-montserrat)"],
         plusjakarta: ["var(--font-plusjakartasans)"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+          },
+        },
+      },
     },
   },
   plugins: [

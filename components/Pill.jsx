@@ -1,10 +1,11 @@
+"use client";
 import Link from "next/link";
 
-const Pill = ({ address, title, onClick }) => {
+const Pill = ({ address, title, onClick, back }) => {
   return (
     <Link
       href={address ? `/${address}` : "/"}
-      onClick={onClick}
+      onClick={back ? history.back : onClick}
       className="relative group px-4 py-2 rounded-xl transition-all duration-300 hover:text-[#FF6B00]"
     >
       <span className="relative z-10">{title}</span>

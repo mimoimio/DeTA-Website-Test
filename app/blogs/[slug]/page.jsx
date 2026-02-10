@@ -7,6 +7,8 @@ import getPostMetadata from "@/utils/getPostMetadata";
 import React from "react";
 import fs from 'fs'
 import matter from "gray-matter";
+import FooterButton from "@/components/FooterButton";
+import Pill from "@/components/Pill";
 
 
 function getPostContent(slug) {
@@ -55,7 +57,10 @@ export default async function BlogPage({ params }) {
     return (
         <main className="min-h-full flex flex-col">
             <Header />
-            <div className="flex flex-col max-w-4xl w-full mx-auto p-4 pt-12 gap-4">
+            <div className="flex flex-col max-w-4xl w-full mx-auto p-4 pt-24 gap-4">
+                <div className="flex flex-col justify-center w-10 ">
+                    <Pill address="blogs" title="Back" back />
+                </div>
                 <h1 className="text-2xl">{`${post.data.title}`}</h1>
                 <hr />
 
