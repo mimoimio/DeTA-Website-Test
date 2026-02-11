@@ -22,7 +22,7 @@ export default function Gallery() {
               Past Events, Future Inspirations Ahead
             </h1>
             <h2 className="text-xl lg:text-2xl text-center max-w-4xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */}
               {/* For the memories within DeTA */}
             </h2>
 
@@ -42,10 +42,10 @@ export default function Gallery() {
       </div>
 
       {/* Newest events */}
-      <div className="flex max-h-screen p-32">
-        <div className="flex flex-col items-center justify-center w-1/3 p-8 ">
-          <h2 className="text-5xl font-bold mb-4">{"What's Happening in Our Community"}</h2>
-          <p className="text-gray-600 mb-6">Check out our latest events and activities.</p>
+      <div className="flex flex-col lg:flex-row gap-8 p-6 sm:p-12 lg:p-32">
+        <div className="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/3 p-4 sm:p-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center lg:text-left">{"What's Happening in Our Community"}</h2>
+          <p className="text-gray-600 mb-6 text-center lg:text-left">Check out our latest events and activities.</p>
           <a href="/events" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">
             View Events
           </a>

@@ -1,9 +1,5 @@
 'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import { Marquee } from '@/components/ui/marquee';
 
 export default function EventSwiper() {
   const eventImages = [
@@ -34,43 +30,29 @@ export default function EventSwiper() {
   ];
 
   return (
-    <div className="w-2/3 relative">
-      <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
-        spaceBetween={30}
-        slidesPerView={1}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        navigation={true}
-        loop={true}
-        className="h-full rounded-xl shadow-lg"
-      >
+    <div className="w-full lg:w-2/3 relative overflow-hidden">
+      <Marquee pauseOnHover className="[--duration:30s]">
         {eventImages.map((image, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative h-full min-h-[400px] overflow-hidden rounded-xl">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
-                  {image.title}
-                </h3>
-                <p className="text-white/90 text-sm">
-                  {image.description}
-                </p>
-              </div>
+          <div
+            key={index}
+            className="relative w-[280px] sm:w-[320px] md:w-[380px] h-[350px] sm:h-[400px] md:h-[450px] overflow-hidden rounded-xl shadow-lg group"
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 sm:p-6">
+              <h3 className="text-white text-lg sm:text-xl font-bold mb-1 sm:mb-2">
+                {image.title}
+              </h3>
+              <p className="text-white/90 text-xs sm:text-sm">
+                {image.description}
+              </p>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </Marquee>
     </div>
   );
 }

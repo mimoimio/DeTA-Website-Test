@@ -118,25 +118,25 @@ export default function Home() {
       <section className="relative py-32 px-6 grid-pattern">
         <div className="container mx-auto max-w-7xl">
           {/* Section Header */}
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6">
+          <div className="text-center  mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 reveal">
               <span className="mono-badge text-[#FF6B00]">01.</span>
-              <span className="text-sm text-white/70">What We Do</span>
+              <span className="text-sm text-white/70 reveal">What We Do</span>
             </div>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 reveal" style={{ fontFamily: 'var(--font-display)' }}>
               Building <span className="text-gradient">Together</span>
             </h2>
-            <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            <p className="text-lg text-white/60 max-w-2xl mx-auto reveal">
               We&apos;re more than just a community—we&apos;re a movement. Here&apos;s what makes DeTA special.
             </p>
           </div>
 
           {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 ">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group relative p-8 rounded-3xl bg-gradient-to-br from-[#111] to-[#0a0a0a] border border-white/5 hover:border-[#FF6B00]/30 transition-all duration-500 card-hover overflow-hidden"
+                className="group reveal relative p-8 rounded-3xl bg-gradient-to-br from-[#111] to-[#0a0a0a] border border-white/5 hover:border-[#FF6B00]/30 transition-all duration-500 card-hover overflow-hidden"
               >
                 {/* Gradient overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
@@ -158,7 +158,7 @@ export default function Home() {
 
       {/* Image Showcase Section */}
       <section className="relative py-32 px-6">
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-7xl reveal">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left: Image */}
             <div className="relative group">

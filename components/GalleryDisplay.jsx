@@ -12,7 +12,7 @@ const GalleryDisplay = ({ title, desc, url = "/images/Deta.png" }) => {
           objectFit="cover"
           className="z-0 rounded-md"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,_#fff_20%,_#fff0_30%)] z-10">
+        <div className="absolute text-primary inset-0 bg-[linear-gradient(to_top,_#fff_20%,_#fff0_30%)] z-10">
           <div className='absolute bottom-0 p-1'>
             <h1 className="text-2xl">{title}</h1>
             <p className="text-lg">{desc}</p>
