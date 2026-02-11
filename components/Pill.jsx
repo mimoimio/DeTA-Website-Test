@@ -1,11 +1,21 @@
 "use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // 1. Import the hook
 
 const Pill = ({ address, title, onClick, back }) => {
+  const router = useRouter(); // 2. Initialize the hook
+
+  // 3. Create a safe handler
+  const handleBack = (e) => {
+    e.preventDefault(); // Prevents the Link from navigating to href
+    router.back();
+  };
+
   return (
     <Link
-      href={address ? `/${address}` : "/"}
-      onClick={back ? history.back : onClick}
+      // If going back, we use a dummy href, otherwise constructs the path
+      href={address ? `/${address}` : "#"} 
+      onClick={back ? handleBack : onClick}
       className="relative group px-4 py-2 rounded-xl transition-all duration-300 hover:text-[#FF6B00]"
     >
       <span className="relative z-10">{title}</span>
