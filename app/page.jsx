@@ -45,11 +45,10 @@ export default function Home() {
       <div className="min-h-screen xl:p-8">
         <div className="pt-4">
           <h1 className="text-center font-bold text-3xl md:text-4xl xl:text-6xl">
-            What Do We <span className="bg-[#FD7014] text-white p-1">Do?</span>
+            What We <span className="text-[#FD7014] p-1">Do?</span>
           </h1>
           <p className="text-center text-sm pt-3 md:text-xl p-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We strive to leave an impact on the world through technology.
           </p>
         </div>
         <div className="flex flex-col  md:flex-row md:p-11  ">
@@ -88,14 +87,14 @@ export default function Home() {
             <div className="p-2">
               <p className="text-center font-bold text-2xl xl:text-3xl xl:p-10">
                 Join a supportive{" "}
-                <span className="bg-[#FD7014] text-white p-1">network</span> of
+                <span className="text-[#FD7014] p-1">network</span> of
                 fellow programmers who share your{" "}
-                <span className="bg-[#FD7014] text-white p-1">passion.</span>
+                <span className="text-[#FD7014] p-1">passion.</span>
               </p>
               <div className=" text-center p-2 pb-10">
                 <Link
                   href="about"
-                  className="inline hover:underline md:text-xl xl:text-2xl"
+                  className="inline bg-[#FD7014] h-min p-4 duration-400 rounded-xl hover:md:text-xl hover:xl:text-2xl"
                 >
                   Read more info
                 </Link>
@@ -108,41 +107,68 @@ export default function Home() {
       {/* Innovations by Our Community */}
       <div className="container mx-auto bg-white lg:p-24 pb-0 ">
         <h1 className="text-3xl font-bold text-center xl:text-6xl">
-          <span className="bg-[#FD7014] px-2 text-white ">Innovations</span> by
+          <span className="px-2 text-[#FD7014] ">Innovations</span> by
           Our Community
         </h1>
 
         <p className="text-center pt-3 md:text-xl ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Expand your ideas and innovation throughout the days with us!
         </p>
 
         <div className="font-montserrat flex gap-8 py-16  m-auto w-full h-full overflow-x-scroll justify-start">
           <ProjectCard
             src="/images/ProReg.webp"
             title="ProReg: Manage Your Studies"
-            desc="Lorem Ipsum"
+            desc="Simplify the scheduling of your timetable for the next semester."
           />
           <ProjectCard
             src="/images/SimplifiedImaluum.png"
             title="Simplified Imaluum"
-            desc="Lorem Ipsum"
+            desc="A simplified version of i-Ma'luum for students. An attempt to make i-Ma'luum more user-friendly."
           />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard 
+            src="/images/bucava.png"
+            title="Bucava: Online Business Card Paltform"
+            desc="A business card vault mobile app for networking and collaboration."
+          />
+          <ProjectCard 
+            src="/images/forecaster.png"
+            title="Forecaster: Intelligent Cashflow Management"
+            desc="An accounting and cashflow forecasting tool for small businesses."
+          />
+          <ProjectCard 
+            src="/images/mindfulScroll.png"
+            title="Mindful Scroll: A Quran app for Doom Scrollers"
+            desc="A mobile application for managing screen time and promoting mindful digital habits."
+          />
+          <ProjectCard 
+            src="/images/pdfCompanion.png"
+            title="PDF Companion"
+            desc="A pdf tool that began as a simple automation tool for pdf forms. now improved through iterations with form filling, annotations, and collaboration features."
+          />
+          <ProjectCard 
+            src="/images/proRegAurum.png"
+            title="ProReg Aurum: Enhanced Version of ProReg"
+            desc="With a refined design and smarter features, ProReg Aurum makes it easier than ever to manage your courses, stay organized and connect with everything that matters in university life."
+          />
+          <ProjectCard 
+            src="/images/scopeguard.png"
+            title="ScopeGuard"
+            desc="A SaaS product for managing scope of work and payments for freelance clients."
+          />
         </div>
       </div>
 
       {/* Upcoming Events */}
       <div className="bg-[#121212] text-white lg:p-24 pb-0">
-        <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl">
+        {/* <div className="bg-[#FD7014] flex w-fit m-auto rounded-full p-2 mt-5 mb-4 md:text-2xl">
           Upcoming Event
-        </div>
+        </div> */}
         <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
-          {"Upcoming DeTA Events - Don't Miss Out!"}
+          <span className="px-2 text-[#FD7014] ">Upcoming DeTA Events</span> - Don't Miss Out!
         </h1>
         <p className="text-center pt-3 md:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Attend to our exciting programs and build your development dream here!
         </p>
 
         <div className="font-montserrat flex flex-col gap-8 py-16 m-auto w-full">
