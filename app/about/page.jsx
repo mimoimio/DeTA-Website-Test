@@ -27,7 +27,7 @@ export default function About() {
         </div>
         <div className="lg:pr-10 flex justify-center lg:w-1/2">
           <Image
-            src="/images/about/catcode.png"
+            src="/images/about/techtamu-deta.jpg"
             alt="gambar"
             width={700}
             height={700}
