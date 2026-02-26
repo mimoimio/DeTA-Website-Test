@@ -165,7 +165,7 @@ export default function Home() {
           Upcoming Event
         </div> */}
         <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold text-center">
-          <span className="px-2 text-[#FD7014] ">Upcoming DeTA Events</span> - Don't Miss Out!
+          <span className="px-2 text-[#FD7014] ">Upcoming DeTA Events</span> - {"Don't Miss Out!"}
         </h1>
         <p className="text-center pt-3 md:text-xl">
           Attend to our exciting programs and build your development dream here!
