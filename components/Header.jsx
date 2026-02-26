@@ -43,7 +43,7 @@ const Logo = () => {
 const ContactUs = ({ mobile = false }) => {
   return (
     <Link
-      href="#contact"
+      href="/contact"
       className={`flex items-center rounded-full px-4 py-2 shadow-md bg-white font-medium ${mobile ? "w-full justify-center mt-4" : ""
         } hover:scale-105 transition-transform`}
     >

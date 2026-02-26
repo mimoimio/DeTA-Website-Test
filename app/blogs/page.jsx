@@ -19,7 +19,7 @@ const Blogs = () => {
 
       <h4 className="text-xl text-center mt-32">The blog</h4>
       <h1 className="text-5xl lg:text-5xl text-center font-semibold my-4">
-        <span className="bg-[#FD7014] text-white p-1">Writings</span> from our community
+        <span className="text-[#FD7014] p-1">Writings</span> from our community
       </h1>
       <p className="text-center">The latest industry news, interviews, technologies, and resources.</p>
 

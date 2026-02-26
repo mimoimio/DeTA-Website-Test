@@ -65,7 +65,7 @@ export default function About() {
       </div>
 
       <Mission
-        image="/images/about/first.png"
+        image="/images/about/focus-mode-deta.jpg"
         title="Our Mission"
         description="DeTA is dedicated to fostering innovation and collaboration in the tech community."
         point1="We target to be the best in the world."
@@ -74,7 +74,7 @@ export default function About() {
       />
   
       <Vision
-        image="/images/about/second.png"
+        image="/images/about/smile-deta.jpg"
         title="Our Vision"
         description="DeTA envisions a future where technology drives positive change and empowers communities worldwide."
         point1="To be a global leader in tech innovation."
@@ -138,20 +138,47 @@ export default function About() {
       {/* Work Section */}
       <div className="mx-auto bg-black text-white text-center py-16 px-4 sm:px-6 lg:px-8">
         <h1 className="font-semibold text-4xl sm:text-5xl lg:text-6xl p-3 lg:p-5">
-          How <span className="bg-orange-600">We</span> Do Work
+          How <span className="text-orange-600">We</span> Do Work
         </h1>
         <p className="text-xl sm:text-2xl font-light p-3 lg:p-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We think, ask, brainstorm, and execute the idea to make the impossible comes true!
         </p>
-        <div className="mt-10">
+        <div className="mt-10 flex">
           <Image
-            src="/images/about/last.png"
+            src="/images/about/meetup4.jpg"
             alt="gambar"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             className="mx-auto w-full max-w-xs sm:max-w-md"
           />
+          <Image
+            src="/images/about/meetup5.jpg"
+            alt="gambar"
+            width={300}
+            height={300}
+            className="mx-auto w-full max-w-xs sm:max-w-md"
+          />
+          {/* <Image
+            src="/images/about/meetup3.jpg"
+            alt="gambar"
+            width={300}
+            height={300}
+            className="mx-auto w-full max-w-xs sm:max-w-md"
+          /> */}
+          <Image
+            src="/images/about/meetup1.jpg"
+            alt="gambar"
+            width={300}
+            height={300}
+            className="mx-auto w-full max-w-xs sm:max-w-md"
+          />
+          {/* <Image
+            src="/images/about/meetup5.jpg"
+            alt="gambar"
+            width={300}
+            height={300}
+            className="mx-auto w-full max-w-xs sm:max-w-md"
+          /> */}
         </div>
       </div>
 
