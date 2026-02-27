@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import RecentActivities from "@/components/RecentActivities";
+
+export const dynamic = 'force-dynamic';
+
 const ActivityCard = ({ title, desc, src = "/images/DeTA.png" }) => {
   return (
     <div className="flex flex-col lg:flex-row bg-slate-100 bg-opacity-25 border duration-150 rounded-2xl p-4 lg:p-8">

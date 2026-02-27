@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from 'next/image';
 import { FaLinkedin } from "react-icons/fa";
@@ -20,8 +22,5 @@ export default function OrganisationDisplay({ position, name, title, linkedin = 
         <FaLinkedin className="h-10 w-10" />
       </Link>
     </div>
-
-
   );
 }
-

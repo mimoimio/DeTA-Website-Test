@@ -8,6 +8,7 @@ import React from "react";
 import fs from 'fs'
 import matter from "gray-matter";
 
+export const dynamic = 'force-dynamic';
 
 function getPostContent(slug) {
     const folder = 'content/posts/'  // Changed from 'posts/' to 'content/posts/'

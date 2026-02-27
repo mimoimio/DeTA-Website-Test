@@ -5,14 +5,14 @@ import Image from "next/image";
 import Resources from "@/components/Resources";
 import { getResourcesData } from "@/utils/getResourcesData";
 
-export default function About() {
+export const dynamic = 'force-dynamic';
+
+export default function ResourcesPage() {
   const resourcesData = getResourcesData();
 
   return (
     <>
       <Header />
-
-      {/* Main Section */}
       <Resources resourcesData={resourcesData} />
       <Footer />
     </>

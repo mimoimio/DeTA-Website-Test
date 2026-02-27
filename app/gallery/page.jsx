@@ -3,6 +3,8 @@ import GalleryDisplay from "@/components/GalleryDisplay";
 import Footer from "@/components/Footer";
 import EventSwiper from "@/components/EventSwiper";
 
+export const dynamic = 'force-dynamic';
+
 export default function Gallery() {
   return (
     <main className="mt-0">

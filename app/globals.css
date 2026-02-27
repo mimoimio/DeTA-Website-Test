@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-orange: #FD7014;
+  --color-brand-orange-light: #ff8c42;
+  --color-brand-orange-dark: #e55a00;
+  --color-brand-coral: #FF6B6B;
+  --color-brand-amber: #FFB347;
+  --color-brand-dark: #121212;
+  --color-brand-dark-light: #1E1E1E;
+  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-glass-border: rgba(255, 255, 255, 0.2);
+}
+
 @font-face {
   font-family: "Oswald";
   src: url("https://fonts.gstatic.com/s/oswald/v49/TK3iWkUHHAIjg752GT8G.woff2") format("woff2"),
@@ -26,35 +38,157 @@ body {
   padding: 0;
 }
 
-/* Styling for the main element */
 main {
-  /*height: 100vh;   !* Ensures main takes up at least the full screen *!*/
-  margin-top: 4rem;
+  margin-top: 0;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
-  background-size: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff
-    /*#f82*/
-  ;
-  /* Add the background image here */
-  /* background: url('/images/DeTAPattern.png') repeat fixed; */
+  background: #fff;
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(18, 18, 18, 0.6) 100%),
     url("/images/DetaMeetup7.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Montserrat";
 }
 
+.hero-gradient {
+  background: linear-gradient(135deg, #FD7014 0%, #FF8C42 50%, #FFB347 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FD7014 0%, #FF6B6B 50%, #FFB347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.glass-card-dark {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.orange-glow {
+  box-shadow: 0 0 40px rgba(253, 112, 20, 0.3);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(253, 112, 20, 0.2);
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-delay-1 {
+  animation-delay: -2s;
+}
+
+.floating-delay-2 {
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(253, 112, 20, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(253, 112, 20, 0.8);
+  }
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #FD7014 0%, #FF8C42 100%);
+}
+
 @media (max-width: 768px) {
   .hero-section {
     background-attachment: scroll;
-    /* Override for mobile */
   }
+  
+  .timeline-line {
+    left: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FD7014;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e55a00;
+}
+
+.section-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

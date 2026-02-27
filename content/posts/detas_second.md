@@ -1,11 +1,11 @@
 ---
 title: "Amazing blender render"
-image: "/content_repo/images/hous.png"
+image: "/images/DetaMeetup7.png"
 date: 2025-07-01
 description: "Blender rendering made by mimoimio."
 tags: [bruh]
 ---
-![alt text](/content_repo/images/hous.png)
+![alt text](/images/DetaMeetup7.png)
 *Questions, ideas, or just want to say hi?*  
 
 [`Mimoimio's yt channel`](https://youtube.com/@mimoimio)
