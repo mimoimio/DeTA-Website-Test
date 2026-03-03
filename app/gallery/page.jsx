@@ -29,12 +29,14 @@ export default function Gallery() {
             </h2>
 
             {/* Placeholder images here */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <EventSwiper />
+
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
               <div className="w-48 h-64 bg-gray-200 border-4 rotate-[10deg] border-gray-50 transform-gpu will-change-transform antialiased bg-[url('/images/Hackathon.png')] bg-cover bg-center"></div>
               <div className="w-48 h-64 bg-gray-200 border-4 -rotate-[20deg] border-gray-50 transform-gpu will-change-transform antialiased bg-[url('/images/DeTAMeetup7.png')] bg-cover bg-center"></div>
               <div className="w-48 h-64 bg-gray-200 border-4 rotate-[10deg] border-gray-50 transform-gpu will-change-transform antialiased bg-[url('/images/mainpage/lepakcoding.png')] bg-cover bg-center"></div>
               <div className="w-48 h-64 bg-gray-200 border-4 -rotate-[20deg] border-gray-50 transform-gpu will-change-transform antialiased bg-[url('/images/DeTAMeetup7_2.png')] bg-cover bg-center"></div>
-            </div>
+            </div> */}
           </div>
 
 
@@ -44,16 +46,16 @@ export default function Gallery() {
       </div>
 
       {/* Newest events */}
-      <div className="flex max-h-screen p-32">
-        <div className="flex flex-col items-center justify-center w-1/3 p-8 ">
-          <h2 className="text-5xl font-bold mb-4">{"What's Happening in Our Community"}</h2>
-          <p className="text-gray-600 mb-6">Check out our latest events and activities.</p>
-          <a href="/events" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">
+      <div className="flex max-h-screen p-4 md:p-16 lg:p-4">
+        <div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-1/3 p-4 md:p-8 mx-auto">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">{"What's Happening in Our Community"}</h2>
+          <p className="text-gray-600 mb-6 text-center text-sm md:text-base">Check out our latest events and activities.</p>
+          <a href="/events" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 text-center">
             View Events
           </a>
         </div>
 
-        <EventSwiper />
+        {/* <EventSwiper /> */}
       </div>
 
 
